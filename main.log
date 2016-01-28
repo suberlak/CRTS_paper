@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.9.3)  27 JAN 2016 17:07
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.9.3)  27 JAN 2016 17:17
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -821,19 +821,20 @@ replaced by a fixed one
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/blu
 esky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/sh
 are/texmf/fonts/type1/bluesky/cm/cmbx8.pfb></usr/share/texmf/fonts/type1/bluesk
-y/cm/cmbx9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/t
-exmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
-cmr6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fo
-nts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy8.pf
-b></usr/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/t
-ype1/bluesky/cm/cmti8.pfb></usr/share/texmf/fonts/type1/public/txfonts/rtxmi.pf
-b></usr/share/texmf/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf/fonts
-/type1/public/txfonts/txex.pfb></usr/share/texmf/fonts/type1/public/txfonts/txs
-y.pfb></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/font
-s/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 509396 bytes).
+y/cm/cmbx9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/t
+exmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
+cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texmf/f
+onts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmsy8.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti8.pfb></
+usr/share/texmf/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf/fonts/ty
+pe1/public/txfonts/rtxr.pfb></usr/share/texmf/fonts/type1/public/txfonts/txex.p
+fb></usr/share/texmf/fonts/type1/public/txfonts/txsy.pfb></usr/share/texmf/font
+s/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on main.pdf (4 pages, 511971 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
+ 179 PDF objects out of 1000 (max. 8388607)
  24 named destinations out of 1000 (max. 131072)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
