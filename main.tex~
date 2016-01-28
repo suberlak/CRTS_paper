@@ -183,7 +183,7 @@ If this was caused by an error underestimate, the variability on short timescale
 
 \begin{figure}
 \label{fig:SF_panel}
-\includegraphics[width=\columnwidth]{Fig_3_histogram_panels.png}
+\includegraphics[width=1.1\columnwidth]{Fig_3_histogram_panels.png}
  \caption{The response of the structure function to a correction factor $f_{c} = 1.3$. All errors were increased by  $f_{c}$ in this sample of 3814 CRTS quasars (black points), 1922 "blue" stars (blue points), 2564 "red" stars (red points). "Red" and "blue" samples were prepared as in Fig.~\ref{fig:panel_plots}. We overplot the fiducial DRW model (fit parameters  $\tau = 0.274$ days, $SF_{\infty}1055.865$ days). The quasar black points now follow more closely the model, which is indicative or CRTS error underestimate.}
 \end{figure}
 
