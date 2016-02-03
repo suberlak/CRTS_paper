@@ -130,14 +130,14 @@ In section \ref{sec:obs} we describe the properties of our dataset, all selectio
 
 \subsection{Data overview}
 
-The CRTS survey (Drake+2009) telescopes use 4kx4k CCDs, and observations are made in an unfiltered white light (Djorgovski+2011).  As part of the CRTS pipeline this unfiltered photometry is calibrated to the V-band zero point. Our CRTS Quasar sample consists of 7754 Quasars from the equatorial region of the sky ($22h 24m < R.A. < 04h 08m$ and $| Dec | < 1.27 deg$)  known as the Stripe 82 (Branimir Sesar, priv comm.). We select lightcurves with more than 10 measurements, which leaves 7707 objects. Within that sample , $96 \% $ observations span the time of 7-9 years. The light curve and sample-averaged mean and median error is 0.22. The mean  brightness is 19.50, and the mean number of individual observations per light curve  is 209. $91.2\%$ of  quasars were observed between 1 to 4 times per night.  (See Fig.\ref{fig:CRTS_QSO_stats})
+Catalina Real-time Transient Survey (CRTS) employed three telescopes ( "0.7 m Catalina Sky Survey Schmidt and 1.5 m Mount Lemmon Survey telescopes in Arizona, and the 0.5 m Siding Springs Survey Schmidt in Australia" Graham+2015), each with a  4kx4k CCD detector (Djorgovski+2011). All observations are taken in an unfiltered white light, calibrated to Johnson V-band zero point (Drake+2013). Our quasar sample consists of 7932 Quasars from the equatorial region of the sky ($22h 24m < R.A. < 04h 08m$ and $| Dec | < 1.27 deg$)  known as the Stripe 82 (Branimir Sesar, priv comm.). We also use a sample of 52133 stars from the CRTS Stripe 82. Our sampling criterion : more than 10 measurements in the lightcurve, leaves 7707 quasars and 50723 stars. (See Fig.\ref{fig:CRTS_QSO_stats}) We also require more than 10 individual days of observations, leaving  7601 quasars and 49387 stars.   We further perform day-averaging to 
 
 As a control sample we use CRTS observations of standard stars in Stripe 82. Both CRTS stars and quasars are positionally matched to SDSS targets, and thus to their CRTS white light photometry  we add the SDSS photometric information. For stars we used the SDSS Stripe 82 standard stars catalog  ver. 2.6  (Ivezic+2007), and for quasars the SDSS DR7 stripe 82 catalog with 2-MASS cross-matched  8974 quasars.  
 
 \begin{figure}
 \label{fig:CRTS_QSO_stats}
  \includegraphics[width=\columnwidth]{Fig_1_Stats_CRTS_QSO_used.png}
- \caption{Statistical information about the CRTS Quasar sample including 7601 day-averaged light curves. The upper-left panel shows the number of days that a given quasar was observed, i.e. $max(MJD)-min(MJD)$ per light curve. The upper-right panel shows the average light curve magnitude. The bottom-left panel shows the light curve averaged error. If $i$, $i+1$ are two consecutive day-averaged observations in the light curve, then $MJD_{i} - MJD_{i+1}$ is the sampling interval. The bottom-right panel shows light curve - averaged sampling intervals.}
+ \caption{Statistical information about the CRTS Quasar sample including 7601 day-averaged light curves. The upper-left panel shows the number of days that a given quasar was observed, i.e. $max(MJD)-min(MJD)$ per light curve. The upper-right panel shows the average light curve magnitude. The bottom-left panel shows the light curve averaged error. If $i$, $i+1$ are two consecutive day-averaged observations in the light curve, then $MJD_{i} - MJD_{i+1}$ is the sampling interval. The bottom-right panel shows light curve - averaged sampling intervals. The light curve and sample-averaged mean and median error is 0.22. The mean  brightness is 19.50, and the mean number of individual observations per light curve  is 209. Within that sample , $96 \% $ observations of quasars span the time of 7-9 years.  $91.2\%$ of  quasars were observed between 1 to 4 times per night.}
 \end{figure}
 
 
@@ -146,7 +146,7 @@ As a control sample we use CRTS observations of standard stars in Stripe 82. Bot
 \label{sec:sample_sel}
 
 
-To improve signal-to-noise ratio CRTS light curves were day-averaged.  Denoting individual CRTS reported measurement error as $e_{i}$, the combined error $e_{w}$ consists of the sum of weighted errors where weight for each point is $ w_{i} = 1 / e_{i}^{2}$ (see eq.\ref{eq:day_averaging}). 
+To improve signal-to-noise ratio we day-average light curve points. The day-average error $e_{w}$ is the weighted sum of individual errors $e_{i}$:  (see eq.\ref{eq:day_averaging})
 
 
 \begin{equation}
@@ -154,9 +154,9 @@ To improve signal-to-noise ratio CRTS light curves were day-averaged.  Denoting 
  e_{w} = \frac{1}{\sqrt[]{\sum_{i} w_{i}}}
 \end{equation}
 
-If the resulting $e_{w}$ was smaller than $0.02$ $mag$, then  $0.01$ $mag$ was added in quadrature. For further analysis we selected light curves that had more than $10$ observation days, which reduced the sample to $7601$ CRTS Quasars. A typical sampling interval of day-averaged CRTS Quasar lightcurves is $\approx 20$ days. 
+where $ w_{i} = 1 / e_{i}^{2}$ is the weight assigned to each point. To avoid unphysically small error values (), we added  $0.01$ $mag$ to $e_{w}$ in quadrature if $e_{w}<0.02$ $mag$.  . A typical sampling interval of day-averaged CRTS Quasar lightcurves is $\approx 20$ days. 
 
-We use CRTS standard stars as  reference objects that exhibit no intrinsic variability (thus SF=0).  To ensure a uniform sample we impose the following selection criteriaS. We select CRTS quasars and stars  based on the SDSS  r-band photometry $17< m_{SDSS,r} < 20$, and the CRTS lightcurve-averaged error  $0.05 < \langle CRTS_{err} \rangle < 0.3$. To assess the influence of colors on variability,  we divide the comparison stars into two color bins: "red" with   $1 < g-i < 3$ and "blue" $-1 < g-i < 1$,  using SDSS $g$ and $i$ filters .
+In the structure function analysis, we use CRTS standard stars as the reference objects that exhibit no intrinsic variability (SF=0).  We define our sample in a following way: for CRTS stars and quasars, we require SDSS  r-band $17< m_{SDSS,r} < 20$, and the CRTS lightcurve-averaged error  to be   $0.05 < \langle <e_{w}> \rangle < 0.3$. To assess the influence of colors on variability,  we divide the comparison stars into two color bins: "red" with   $1 < g-i < 3$ and "blue" $-1 < g-i < 1$,  using SDSS $g$ and $i$ filters .
 
 \subsection{Structure Function}
 
