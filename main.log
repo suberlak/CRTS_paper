@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.9.3)  2 FEB 2016 18:30
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.9.3)  4 FEB 2016 13:50
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -14,9 +14,6 @@ turkish, ukenglish, ukrainian, loaded.
 (./mnras.cls
 Document Class: mnras 2015/05/22\ v3.0\ LaTeX2e MNRAS document class
 MNRAS document style v3.0, released 2015/05/22
-
-Package mnras Warning: Unknown option `a4paper' on input line 113.
-
 (/usr/share/texmf/tex/latex/geometry/geometry.sty
 Package: geometry 2002/07/08 v3.2 Page Geometry
 
@@ -280,6 +277,12 @@ Type  H <return>  for immediate help.
                                                   
 l.506 ...d{\iint}{\DOTSI\protect\MultiIntegral{2}}
                                                   
+? ^^[[A
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
 ? 
 
 ! LaTeX Error: Command \iiint already defined.
@@ -722,141 +725,136 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 115--116
+Underfull \hbox (badness 1675) in paragraph at lines 110--111
 \T1/aer/m/n/9 The Sloan Dig-i-tal Sky Sur-vey (SDSS, Schmidt+2010,
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 115--116
+Underfull \hbox (badness 1112) in paragraph at lines 110--111
 \T1/aer/m/n/9 Sesar+2007) and Catalina Real-Time Tran-sient Sur-vey
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 ! Misplaced alignment tab character &.
-l.119 ...es well the quasar variability ( Butler &
+l.114 ...es well the quasar variability ( Butler &
                                                    Bloom 2011, MacLeod+2010,...
 
 ? 
 
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+[]\T1/aer/m/n/9 Recent SDSS-based stud-ies (MacLeod+2010,
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 118--119
+\T1/aer/m/n/9 quasars us-ing a well-tested ap-proach of the Struc-ture
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 118--119
+\T1/aer/m/n/9 Func-tion, and de-tailed er-ror anal-y-sis (MacLeod+2010,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+\T1/aer/m/n/9 MacLeod+2012, Si-mon-etti+1984, Van-den Berk+2004,
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 122.
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 119.
 
 
 (/usr/share/texmf/tex/latex/ae/omsaer.fd
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 122.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 119.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
-[]\T1/aer/m/n/9 Recent SDSS-based stud-ies (MacLeod+2010,
- []
-
-
-Underfull \hbox (badness 1194) in paragraph at lines 123--124
-\T1/aer/m/n/9 quasars us-ing a well-tested ap-proach of the Struc-ture
- []
-
-
-Underfull \hbox (badness 1668) in paragraph at lines 123--124
-\T1/aer/m/n/9 Func-tion, and de-tailed er-ror anal-y-sis (MacLeod+2010,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
-\T1/aer/m/n/9 MacLeod+2012, Si-mon-etti+1984, Van-den Berk+2004,
- []
-
-<Fig_1_Stats_CRTS_QSO_used.png, id=68, 924.45375pt x 635.37375pt>
+<Fig_1_Stats_CRTS_QSO_used.png, id=67, 924.45375pt x 635.37375pt>
 File: Fig_1_Stats_CRTS_QSO_used.png Graphic file (type png)
 
-<use Fig_1_Stats_CRTS_QSO_used.png>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
+<use Fig_1_Stats_CRTS_QSO_used.png> [2pdfTeX warning (ext4): destination with t
+he same identifier (name{figure.1}) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.166 
-       <./Fig_1_Stats_CRTS_QSO_used.png>]
-<Fig_2_18.5-19_panels_fc-1.0.png, id=84, 578.16pt x 867.24pt>
-File: Fig_2_18.5-19_panels_fc-1.0.png Graphic file (type png)
+l.164 W
+       e calculate the $SF$ using an exact prescription involving marginaliz...
+ <./Fig_1_Stats_CRTS_QSO_used.png>]
+<Fig_2_18.5-19_panels_fc-1.0_NEW.png, id=83, 578.16pt x 867.24pt>
+File: Fig_2_18.5-19_panels_fc-1.0_NEW.png Graphic file (type png)
 
-<use Fig_2_18.5-19_panels_fc-1.0.png>
-<Fig_3_histogram_panels.png, id=85, 548.0475pt x 574.145pt>
-File: Fig_3_histogram_panels.png Graphic file (type png)
+<use Fig_2_18.5-19_panels_fc-1.0_NEW.png>
+<Fig_3_histogram_panels_NEW.png, id=84, 547.0839pt x 573.8238pt>
+File: Fig_3_histogram_panels_NEW.png Graphic file (type png)
 
-<use Fig_3_histogram_panels.png>
-Overfull \hbox (24.00146pt too wide) in paragraph at lines 195--197
+<use Fig_3_histogram_panels_NEW.png>
+Overfull \hbox (24.00146pt too wide) in paragraph at lines 190--192
 [][]
  []
 
 
-LaTeX Warning: Reference `fig:CRTS_StarB_sample' on page 3 undefined on input l
-ine 218.
+<Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298_NEW.png, id=87, 867.24pt x 867.
+24pt>
+File: Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298_NEW.png Graphic file (type
+ png)
+ <use Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298_NEW.png> [3pdfTeX warning 
+(ext4): destination with the same identifier (name{figure.2}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.238 
+       <./Fig_2_18.5-19_panels_fc-1.0_NEW.png>]
+Underfull \vbox (badness 2237) has occurred while \output is active []
 
-
-<Fig_4_SF_QSO_starsB_r_cut_fc-0.863-1.091-1.3.png, id=88, 867.24pt x 867.24pt>
-File: Fig_4_SF_QSO_starsB_r_cut_fc-0.863-1.091-1.3.png Graphic file (type png)
-
-<use Fig_4_SF_QSO_starsB_r_cut_fc-0.863-1.091-1.3.png>
-Underfull \vbox (badness 3271) has occurred while \output is active []
-
- [3pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ [4pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.235 I
-       mplications:  * information from correspondence with M. Graham <./Fig_2_
-18.5-19_panels_fc-1.0.png>] [4pdfTeX warning (ext4): destination with the same 
-identifier (name{figure.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \endgroup \set@typeset@protect 
-l.262 \end{document}
+l.257 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{figure.4}) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
-l.262 \end{document}
-                     <./Fig_3_histogram_panels.png> <./Fig_4_SF_QSO_starsB_r_cu
-t_fc-0.863-1.091-1.3.png>] (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+l.257 \end{document}
+                     <./Fig_3_histogram_panels_NEW.png> <./Fig_4_SF_QSO_starsB_
+r_cut_fc-0.864-1.091-1.298_NEW.png>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 5159 strings out of 256216
- 64713 string characters out of 1917073
- 129875 words of memory out of 1500000
- 8251 multiletter control sequences out of 10000+200000
- 79868 words of font info for 176 fonts, out of 1200000 for 2000
+ 5153 strings out of 256216
+ 64719 string characters out of 1917073
+ 128858 words of memory out of 1500000
+ 8249 multiletter control sequences out of 10000+200000
+ 77440 words of font info for 172 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  32i,15n,34p,1441b,325s stack positions out of 5000i,500n,6000p,200000b,15000s
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
-st, replaced by a fixed one
+pdfTeX warning (dest): name{
+Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{UNDEFINED} has been referenced but does not exist, 
 replaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/blu
-esky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/sh
-are/texmf/fonts/type1/bluesky/cm/cmbx8.pfb></usr/share/texmf/fonts/type1/bluesk
-y/cm/cmbx9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/t
-exmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
-cmr6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fo
-nts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy8.pf
-b></usr/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/t
-ype1/bluesky/cm/cmti8.pfb></usr/share/texmf/fonts/type1/public/txfonts/rtxmi.pf
-b></usr/share/texmf/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf/fonts
-/type1/public/txfonts/txex.pfb></usr/share/texmf/fonts/type1/public/txfonts/txs
-y.pfb></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/font
-s/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 509028 bytes).
+esky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx8.pfb></usr/sha
+re/texmf/fonts/type1/bluesky/cm/cmbx9.pfb></usr/share/texmf/fonts/type1/bluesky
+/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/te
+xmf/fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cm
+r8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/font
+s/type1/bluesky/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti12.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmti8.pfb></usr/share/texmf/fonts/ty
+pe1/public/txfonts/rtxmi.pfb></usr/share/texmf/fonts/type1/public/txfonts/rtxr.
+pfb></usr/share/texmf/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf/fon
+ts/type1/public/txfonts/txsy.pfb></usr/share/texmf/fonts/type1/urw/times/utmr8a
+.pfb></usr/share/texmf/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (4 pages, 540790 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
+ 170 PDF objects out of 1000 (max. 8388607)
  24 named destinations out of 1000 (max. 131072)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
