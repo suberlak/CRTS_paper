@@ -37,7 +37,7 @@
 % Don't change these lines unless you know what you are doing
 \usepackage[T1]{fontenc}
 \usepackage{ae,aecompl}
-
+\usepackage{slashbox}
 
 %%%%% AUTHORS - PLACE YOUR OWN PACKAGES HERE %%%%%
 
@@ -125,9 +125,9 @@ In section \ref{sec:obs} we describe the properties of our dataset, all selectio
 
 \subsection{Data overview}
 
-Catalina Real-time Transient Survey (CRTS) employed three telescopes ( "0.7 m Catalina Sky Survey Schmidt and 1.5 m Mount Lemmon Survey telescopes in Arizona, and the 0.5 m Siding Springs Survey Schmidt in Australia" Graham+2015), each with a  4kx4k CCD detector (Djorgovski+2011). All observations were taken in an unfiltered white light, and calibrated to the Johnson system V-band zero point (Drake+2013). In this research we use CRTS lightcurves of 7932 spectroscopically-confirmed QSOs and 52133 standard stars, from the equatorial region of the sky ($22h 24m < R.A. < 04h 08m$ and $| Dec | < 1.27 deg$)  known as the Stripe 82 (Sesar+2010). Our sampling criterion : more than 10 measurements per lightcurve, leaves 7707 quasars and 49385 stars. (See Fig.\ref{fig:CRTS_QSO_stats}) To improve signal to noise we perform day-averaging, and thus we  also require more than 10 individual days of observations per lightcurve, leaving in the final sample 7601 quasars and 48250 stars. 
+Catalina Real-time Transient Survey (CRTS) employed three telescopes ( "0.7 m Catalina Sky Survey Schmidt and 1.5 m Mount Lemmon Survey telescopes in Arizona, and the 0.5 m Siding Springs Survey Schmidt in Australia" Graham+2015), each with a  4kx4k CCD detector (Djorgovski+2011). All observations were taken in an unfiltered white light, and calibrated to the Johnson system V-band zero point (Drake+2013). In this research we use CRTS lightcurves of 7932 spectroscopically-confirmed QSOs and 52133 standard stars  from the equatorial region of the sky ($22h 24m < R.A. < 04h 08m$ and $| Dec | < 1.27 deg$)  known as the Stripe 82 (Sesar+2010). Our sampling criterion : more than 10 measurements per lightcurve, leaves 7707 quasars and 49385 stars.  To improve signal to noise we perform day-averaging, and thus we  also require more than 10 individual days of observations per lightcurve, leaving in the final sample 7601 quasars and 48250 stars (see Fig.\ref{fig:CRTS_QSO_stats} for statistical description of the quasar sample). 
 
-We complement the CRTS data about each object  with the SDSS photometry by creating a positionally cross-matched catalog using astropy  \verb|match_to_catalog_sky| routine [matching radius distribution : describe or figure?]. For stars we used the SDSS Stripe 82 standard stars catalog  ver. 2.6  (Ivezic+2007), and for quasars the SDSS DR7 (Abazajian+2009) stripe 82 catalog for  8974 quasars.  
+We complement the CRTS data for each object  with the SDSS photometry by creating a positionally cross-matched catalog using astropy  \verb|match_to_catalog_sky| routine [matching radius distribution : describe or figure? + need to discard those few objects that had larger matching radius]. For stars we used the SDSS Stripe 82 standard stars catalog  ver. 2.6  (Ivezic+2007), and for quasars the SDSS DR7 (Abazajian+2009) stripe 82 catalog for  8974 quasars.  
 
 \begin{figure}
 \label{fig:CRTS_QSO_stats}
@@ -136,24 +136,19 @@ We complement the CRTS data about each object  with the SDSS photometry by creat
 \end{figure}
 
 
-
-\subsection{Day-averaging and selection}
-\label{sec:sample_sel}
-
-
-To improve the signal-to-noise ratio we perform day-averaging of quasar and stellar light curves. The day-magnitude is the mean of individual measurements, and the day-error $e_{w}$ is the weighted sum of individual errors $e_{i}$: 
+To improve the signal-to-noise ratio we performed day-averaging of light curves. The day-magnitude is the mean of individual measurements, and the day-error $e_{w}$ is the weighted sum of individual errors $e_{i}$: 
 
 \begin{equation}
  e_{w} = \frac{1}{\sqrt[]{\sum_{i} w_{i}}}
 \end{equation}
 
-where $ w_{i} = 1 / e_{i}^{2}$ is the weight assigned to each point. To avoid unphysically small error values, we added  $0.01$ $mag$ to $e_{w}$ in quadrature if $e_{w}<0.02$ $mag$. A typical sampling interval of day-averaged CRTS Quasar lightcurves is $\approx 20$ days. 
+where $ w_{i} = 1 / e_{i}^{2}$ is the weight assigned to each point. To avoid unphysically small error values, we added  $0.01$ $mag$ to $e_{w}$ in quadrature if $e_{w}<0.02$ $mag$. [A typical sampling interval of day-averaged CRTS Quasar lightcurves is $\approx 20$ days.] 
 
 \subsection{Structure Function}
 
-[The structure function is a well-studied approach to characterising quasar light curves. It describes the relationship between the time lag and the amplitude of brightness variability (Cristiani+1996, Schmidt+2010, Vanden Berk +2004, de Vries + 2005, Rengstorf + 2006). ]
+The structure function is a well-studied approach to characterising quasar light curves. It describes the relationship between the time lag and the amplitude of brightness variability (Cristiani+1996, Schmidt+2010, Vanden Berk +2004, de Vries + 2005, Rengstorf + 2006). 
 
-To study  the intrinsic variability of quasars we use the standard stars that do not exhibit any intrinsic variability as the control sample.  Similarly to Schmidt+2010, we  calculate the structure function for all objects  using  the magnitude difference $\Delta m _{i,j}$ between light curve points $i$ and $j$, separated by a time lag $\Delta t_{i,j}$. To avoid the additional uncertainty of redshift estimates based on the SDSS spectra, we also use time lags in the observed frame. We add the error information in quadrature: $e_{ij} = \sqrt{e_{i}^{2}+e_{j}^{2}}$. Such 'master file' containing  
+ Similarly to Schmidt+2010, we  calculate the structure function for all objects  using  the magnitude difference $\Delta m _{i,j}$ between light curve points $i$ and $j$, separated by a time lag $\Delta t_{i,j}$. To avoid the additional uncertainty of redshift estimates based on the SDSS spectra, we also use time lags in the observed frame. We add the error information in quadrature: $e_{ij} = \sqrt{e_{i}^{2}+e_{j}^{2}}$. Such 'master file' containing  
 
 To analyze the magnitude difference  we bin the $\Delta m _{i,j}$ points from all objects  it in logarithmic $\Delta t_{i,j}$  space. The number of chosen bins is a choice of convenience between very coarse grid (a small number of bins) or a very fine grid, risking a small number of points per bin. Having performed tests  with $50$, $100$, $200$, $400$ bins we find that $N=200$ is the right choice between computational efficiency and information content. 
 
@@ -190,23 +185,27 @@ timescales ($\log{\Delta_{t}} < 1.7$, $t<50$ days) for  quasars (red) overlaps a
 
 \section{Results of detailed sample error analysis}
 \label{sec:err_analysis}
-
-We define our sample in a following way: for both stars and quasars, we require SDSS  r-band $17< m_{SDSS,r} < 20$, and the CRTS lightcurve-averaged error  to be   $0.05 < \langle <e_{w}> \rangle < 0.3$. To assess the influence of colors on variability,  we divide the comparison stars into two color bins: "red" with   $1 < g-i < 3$ and "blue" $-1 < g-i < 1$,  using SDSS $g$ and $i$ filters . To study the structure function and error properties in greater detail we further subdivide this sample into three magnitude bins: 17-18, 18-18.5, and 18.5-19 mag. Fig.~\ref{fig:panel_plots}, shows the 18.5-19 mag, which illustrates the problem : nonzero structure function even for the blue stars. Quasars show the SF on the similar level to blue stars.  A quantity $\chi = \Delta_{m}/ \mathrm{error}$, shown on Fig.~\ref{fig:histograms} for four different $\log{\Delta_{t}}$ regimes illustrates the point.  
-For each magnitude-$\log{\Delta_{t}}$   bin we calculate a set of properties: the  median CRTS lightcurve error, the robust standard deviation of $\Delta_{m}$,    median CRTS lightcurve day-averaged magnitude, median CRTS lightcurve average error, and the robust standard deviation of  the $\chi$ distribution. For stars, which have no intrinsic variability, the width of $\chi$ distribution should be 1.  Any deviation from that is due to unaccounted errors. For this reason we define the $ f_{c,B}$ - the correction factor from blue stars, as the width of $\chi$ distribution for blue stars in the short timescale bin ($\log{\Delta_{t}} < 1.7$). Applying thus derived correction factors to the overall sample shows that the structure function for the blue stars is brought to values allowed by the sky photometric variability (0.05 mag level, green dashed line on Fig.~\ref{fig:CRTS_QSO_sample}). Values of $\chi$ for various magnitude-  bins is shown in Table~\ref{tab:chi_values}. 
+To study  the intrinsic variability of quasars we use the standard stars that do not exhibit any intrinsic variability as the control sample. We define our sample in a following way: for both stars and quasars, we require SDSS  r-band $17< m_{SDSS,r} < 19$, and the CRTS lightcurve-averaged error  to be   $ <e_{w}> \rangle < 0.3$. To study the structure function and error properties in greater detail we further subdivide this sample into three magnitude bins: 17-18, 18-18.5, and 18.5-19 mag.   To acknowledge the influence of colors on photometric error,  we divide the stars in two color bins: "red" with   $1 < g-i < 3$ and "blue" $-1 < g-i < 1$,  using SDSS $g$ and $i$ filters .  Fig.~\ref{fig:panel_plots}, shows the 18.5-19 mag, which illustrates the problem : nonzero structure function even for the blue stars. Quasars show the SF on the similar level to blue stars.  A quantity $\chi = \Delta_{m}/ \mathrm{error}$, shown on Fig.~\ref{fig:histograms} for four different $\log{\Delta_{t}}$ regimes illustrates the point.  
 
 
+For each magnitude-$\log{\Delta_{t}}$   bin we calculate a set of properties: the  median CRTS lightcurve error, the robust standard deviation of $\Delta_{m}$,    median CRTS lightcurve day-averaged magnitude, median CRTS lightcurve average error, and the robust standard deviation of  the $\chi$ distribution. For stars, which have no intrinsic variability, the width of $\chi$ distribution should be 1.  Any deviation from that is due to unaccounted errors. For this reason we define the $ f_{c,B}$ - the correction factor from blue stars, as the width of $\chi$ distribution for blue stars in the short timescale bin ($\log{\Delta_{t}} < 1.7$) (see Table~\ref{tab:chi_values} for values of $\chi$ for other bins). Applying thus derived correction factors to the overall sample shows that the structure function for the blue stars is brought to values allowed by the sky photometric variability (0.05 mag level, green dashed line on Fig.~\ref{fig:CRTS_QSO_sample}). Values of $\chi$ for various magnitude-  bins is shown in . 
 
-%\begin{center}
-%\begin{tabular}{ c|c|c|c|c } 
-%\label{tab:chi_values}
-% \hline
-%        & 0-1.7 &  2.3-2.5 & 2.8-3.0 & 3.2-3.4 \\ 
-%17-18   & 0.864 &   0.907  & 0.916   & 0.915 \\ 
-%18-18.5 & 1.091 &   1.143  & 1.150   & 1.160 \\ 
-%18.5-19 & 1.298 &   1.359  & 1.360   & 1.368 
-% \hline
-%\end{tabular}
-%\end{center}
+
+
+\begin{table}
+
+\caption{Values of $\chi$ for various magnitude- $\log{\Delta_{t}}$ bins for blue stars. }
+\label{tab:chi_values}
+\begin{tabular}{ l|cccc } 
+ \hline
+\backslashbox{mag}{$\log{\Delta_{t}}$ }   & 0-1.7 &  2.3-2.5 & 2.8-3.0 & 3.2-3.4 \\ 
+ \hline
+17-18   & 0.864 &   0.907  & 0.916   & 0.915 \\ 
+18-18.5 & 1.091 &   1.143  & 1.150   & 1.160 \\ 
+18.5-19 & 1.298 &   1.359  & 1.360   & 1.368 
+ \hline
+\end{tabular}
+\end{table}
 
 
 
