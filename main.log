@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 FEB 2016 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 FEB 2016 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -890,140 +890,144 @@ Package pdftex.def Info: Fig_1_Stats_CRTS_QSO_used.png used on input line 132.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.158 \end{equation}
+l.159 \end{equation}
                      <./Fig_1_Stats_CRTS_QSO_used.png>]
 <Fig_2_18.5-19_panels_fc-1.0_NEW.png, id=67, 578.16pt x 867.24pt>
 File: Fig_2_18.5-19_panels_fc-1.0_NEW.png Graphic file (type png)
 
 <use Fig_2_18.5-19_panels_fc-1.0_NEW.png>
 Package pdftex.def Info: Fig_2_18.5-19_panels_fc-1.0_NEW.png used on input line
- 173.
+ 174.
 (pdftex.def)             Requested size: 240.0pt x 359.99052pt.
 
 <Fig_3_histogram_panels_NEW.png, id=68, 547.0839pt x 573.8238pt>
 File: Fig_3_histogram_panels_NEW.png Graphic file (type png)
 
 <use Fig_3_histogram_panels_NEW.png>
-Package pdftex.def Info: Fig_3_histogram_panels_NEW.png used on input line 179.
+Package pdftex.def Info: Fig_3_histogram_panels_NEW.png used on input line 180.
 
 (pdftex.def)             Requested size: 264.00146pt x 276.91203pt.
 
-Overfull \hbox (24.00146pt too wide) in paragraph at lines 179--181
+Overfull \hbox (24.00146pt too wide) in paragraph at lines 180--181
 [][]
  []
 
 ! Undefined control sequence.
 <recently read> \backslashbox 
                               
-l.199 \backslashbox
+l.201 \backslashbox
                    {mag}{$\log{\Delta_{t}}$ }   & 0-1.7 &  2.3-2.5 & 2.8-3.0...
 
 ? 
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \vskip 3pt \hrule \@height \arrayrulewidth...
-l.204  \hline
+l.206  \hline
              
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.204  \hline
+l.206  \hline
              
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.204  \hline
+l.206  \hline
              
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.204  \hline
+l.206  \hline
              
 ? 
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
-l.204  \hline
+l.206  \hline
              
 ? 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.204  \hline
+l.206  \hline
              
 ? 
 ! Misplaced \crcr.
 \endtabular ->\crcr 
                     \egroup \egroup $\egroup 
-l.205 \end{tabular}
+l.207 \end{tabular}
                    
 ? 
 ! Extra }, or forgotten $.
 \endtabular ->\crcr \egroup 
                             \egroup $\egroup 
-l.205 \end{tabular}
+l.207 \end{tabular}
                    
 ? 
 ! Extra }, or forgotten $.
 \endtabular ->\crcr \egroup \egroup 
                                     $\egroup 
-l.205 \end{tabular}
+l.207 \end{tabular}
                    
 ? 
 
-<Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298_NEW.png, id=74, 867.24pt x 867.
+<Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298_NEW.png, id=75, 867.24pt x 867.
 24pt>
 File: Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298_NEW.png Graphic file (type
  png)
  <use Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298_NEW.png>
 Package pdftex.def Info: Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298_NEW.png
- used on input line 213.
+ used on input line 215.
 (pdftex.def)             Requested size: 240.0pt x 239.99368pt.
 
-Underfull \vbox (badness 5331) has occurred while \output is active []
+Underfull \vbox (badness 1325) has occurred while \output is active []
 
- [3pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.230 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2}) has been already used, duplicate ignored
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.230 
-       <./Fig_2_18.5-19_panels_fc-1.0_NEW.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
+l.233 T
+       he SDSS is managed by the Astrophysical Research Consortium for the P...
+ <./Fig_2_18.5-19_panels_fc-1.0_NEW.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 251.
  [4pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.249 \end{document}
+l.251 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{table.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.251 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{figure.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.249 \end{document}
+l.251 \end{document}
                      <./Fig_3_histogram_panels_NEW.png> <./Fig_4_SF_QSO_starsB_
 r_cut_fc-0.864-1.091-1.298_NEW.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 251.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 249.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 251.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 251.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 605D9D68CAF733DC5C9214A1686D1820;236.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 249.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 251.
  ) 
 Here is how much of TeX's memory you used:
  7912 strings out of 493089
@@ -1032,7 +1036,7 @@ Here is how much of TeX's memory you used:
  11183 multiletter control sequences out of 15000+600000
  75148 words of font info for 170 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,15n,34p,1474b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,15n,34p,1469b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1054,10 +1058,10 @@ s/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 c/txfonts/txex.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfon
 ts/txsy.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 597044 bytes).
+Output written on main.pdf (4 pages, 597503 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
+ 162 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
  19 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
