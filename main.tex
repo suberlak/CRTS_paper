@@ -125,7 +125,7 @@ In section \ref{sec:obs} we describe the properties of our dataset, all selectio
 
 Catalina Real-time Transient Survey (CRTS) employed three telescopes ( "0.7 m Catalina Sky Survey Schmidt and 1.5 m Mount Lemmon Survey telescopes in Arizona, and the 0.5 m Siding Springs Survey Schmidt in Australia" Graham+2015), each with a  4kx4k CCD detector (Djorgovski+2011). All observations were taken in an unfiltered white light, and calibrated to the Johnson system V-band zero point (Drake+2013). In this research we use CRTS lightcurves of 7932 spectroscopically-confirmed QSOs and 52133 standard stars  from the equatorial region of the sky ($22h 24m < \mathrm{R.A.} < 04h 08m$ and $\mathrm{| Dec |} < 1.27 deg$)  known as the Stripe 82 (Sesar+2010). Our sampling criterion : more than 10 measurements per lightcurve, leaves 7707 quasars and 49385 stars.  To improve signal to noise we perform day-averaging, and thus we  also require more than 10 individual days of observations per lightcurve, leaving in the final sample 7601 quasars and 48250 stars (see Fig.\ref{fig:CRTS_QSO_stats} for statistical description of the quasar sample). 
 
-We complement the CRTS data for each object  with the SDSS photometry by creating a positionally cross-matched catalog using astropy  \verb|match_to_catalog_sky| routine. For catalog matching we used the SDSS Stripe 82 standard stars catalog  ver. 2.6  (Ivezic+2007), and   the SDSS DR7  Stripe 82 quasars catalog (Abazajian+2009).   Since the SDSS star catalog contains accurate data for 1006849 stars , all CRTS stars were found to have a matching SDSS counterpart within 0.01 arcsec.  Of 7601  CRTS quasars,  7586 had an SDSS counterpart within 0.36 arcsec.  The remaining 15 CRTS quasars had an SDSS counterpart within between  2 and 9 arcmin  [ - they were ignored ?  ]   
+We complement the CRTS data for each object  with the SDSS photometry by creating a positionally cross-matched catalog using astropy  \verb|match_to_catalog_sky| routine. For catalog matching we used the SDSS Stripe 82 standard stars catalog  ver. 2.6  (Ivezic+2007), and   the SDSS DR7  Stripe 82 quasars catalog (Abazajian+2009).   Since the SDSS star catalog contains accurate data for 1006849 stars , all CRTS stars were found to have a matching SDSS counterpart within 0.01 arcsec.  Of 7601  CRTS quasars,  7586 had an SDSS counterpart within 0.36 arcsec. We limit the matching radius for quasars to 1 arcsec, leaving 7586 quasars in the final sample. 
 
 \begin{figure}
 \label{fig:CRTS_QSO_stats}
@@ -171,13 +171,13 @@ with the model error $\sqrt{SF(\Delta t) ^ {2} + err_{SF} ^ {2}}$.
 
 \begin{figure}
 \label{fig:2}
- \includegraphics[width=\columnwidth]{{Fig_2_18.5-19_panels_fc-1.0_NEW}.png}
+ \includegraphics[width=\columnwidth]{{Fig_2_18.5-19_panels_fc-1.0}.png}
  \caption{The four panels show statistics calculated for the subsample of 333 CRTS quasars (black points), 1400 "blue" stars (blue points), and 2087 "red" stars (red points), all  chosen according to the SDSS r magnitude $18.5 < \mathrm{m} < 19$.  For "red"  stars we require that SDSS colors are $1 < \mathrm{g-i} < 3$ and  for "blue" stars $-1 < \mathrm{g-i} < 1$. Lightcurve-derived  pairwise brightness differences for all objects of a given type are binned according to  linearly spaced $200$ bins in $\Delta_{t}$. The binning was not found to affect the main features of the plot.  The sine-like modulation reflects differences in number of points in each bin (from tens to hundreds of thousands per bin). For each bin, we calculated for each type of object the standard deviation $\sigma_{stdev}$, the robust Gaussian standard deviation $\sigma_{G}$ (from the interquartile range $0.7414 (q_{75}-q_{25}$), SF  and the mean(using eqs.$5.67-5.68$ in $Ivezic+2004$ (the AstroML book). Yellow dashed line on the SF panel traces the fiducial Damped Random Walk model. Note how both blue and red stars do not exhibit signs of variability as expected, whereas quasars (black) clearly show an intrinsic variability. At the low timescales $\log{\tau} < 1.7$ CRTS quasar $SF$ departs from the fiducial model of Structure Function.  }
 \end{figure}
 
 \begin{figure}
 \label{fig:histograms}
-\includegraphics[width=1.1\columnwidth]{Fig_3_histogram_panels_NEW.png}
+\includegraphics[width=1.1\columnwidth]{Fig_3_histogram_panels.png}
  \caption{The top panels show how the histogram of  $\chi = \Delta_{m}/ \mathrm{error}$ for small  timescales ($\log{\Delta_{t}} < 1.7$, $t<50$ days) for  quasars (red) overlaps almost perfectly with blue stars (blue). The  implied small quasar variability is at the level  measured by SDSS. On each plot numbers in the upper-left corner indicate the $\log{\Delta_{t}}$ range, and in the upper-right the robust width of stellar and quasar distributions of $\chi$.  From left to right, we iterate over the  magnitude bins :  $17-18$,  $18-18.5$, and $18.5-19$ mag. From top to bottom we change the  $\log{\Delta_{t}}$  range. Note how  the  stars, being nonvariable, maintain the same spread of $\chi$, due to their lack of intrinsic variability. The quasars spread more thanks to their intrinsic variability, but at small timescales their spread is  the same as that of stars, consistent with their lack of short timescale variability. }
 \end{figure}
 
@@ -209,7 +209,7 @@ For each magnitude-$\log{\Delta_{t}}$   bin we calculate a set of properties: th
 
 \begin{figure}
 \label{fig:CRTS_QSO_sample}
- \includegraphics[width=\columnwidth]{{Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298_NEW}.png}
+ \includegraphics[width=\columnwidth]{{Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298}.png}
  \caption{Three panels compare the Structure Function (SF)  for quasars and blue stars in three magnitude bins based on their mean SDSS $r$ magnitude. We correct the CRTS errors using listed $fc$ factors. Stars have a flat SF consistent with their lack of  variability, whereas quasars have a nonzero variability. At short time scales, the quasar variability seen in CRTS data is consistent with that from SDSS, shown by horizontal green lines. }
 \end{figure}
 

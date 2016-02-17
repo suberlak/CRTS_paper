@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.9.3)  12 FEB 2016 13:54
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.9.3)  16 FEB 2016 16:58
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -799,14 +799,14 @@ he same identifier (name{figure.1}) has been already used, duplicate ignored
                    \endgroup \set@typeset@protect 
 l.159 \end{equation}
                      <./Fig_1_Stats_CRTS_QSO_used.png>]
-<Fig_2_18.5-19_panels_fc-1.0_NEW.png, id=70, 578.16pt x 867.24pt>
-File: Fig_2_18.5-19_panels_fc-1.0_NEW.png Graphic file (type png)
+<Fig_2_18.5-19_panels_fc-1.0.png, id=70, 578.16pt x 867.24pt>
+File: Fig_2_18.5-19_panels_fc-1.0.png Graphic file (type png)
 
-<use Fig_2_18.5-19_panels_fc-1.0_NEW.png>
-<Fig_3_histogram_panels_NEW.png, id=71, 547.0839pt x 573.8238pt>
-File: Fig_3_histogram_panels_NEW.png Graphic file (type png)
+<use Fig_2_18.5-19_panels_fc-1.0.png>
+<Fig_3_histogram_panels.png, id=71, 561.5379pt x 552.1428pt>
+File: Fig_3_histogram_panels.png Graphic file (type png)
 
-<use Fig_3_histogram_panels_NEW.png>
+<use Fig_3_histogram_panels.png>
 Overfull \hbox (24.00146pt too wide) in paragraph at lines 180--181
 [][]
  []
@@ -866,11 +866,11 @@ l.204 \end{tabular}
                    
 ? 
 
-<Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298_NEW.png, id=78, 867.24pt x 867.
-24pt>
-File: Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298_NEW.png Graphic file (type
- png)
- <use Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298_NEW.png>
+<Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298.png, id=78, 867.24pt x 867.24pt
+>
+File: Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298.png Graphic file (type png
+)
+ <use Fig_4_SF_QSO_starsB_r_cut_fc-0.864-1.091-1.298.png>
 Underfull \vbox (badness 1325) has occurred while \output is active []
 
  [3pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
@@ -879,9 +879,8 @@ Underfull \vbox (badness 1325) has occurred while \output is active []
                    \endgroup \set@typeset@protect 
 l.230 T
        he SDSS is managed by the Astrophysical Research Consortium for the P...
- <./Fig_2_18.5-19_panels_fc-1.0_NEW.png>] [4pdfTeX warning (ext4): destination 
-with the same identifier (name{figure.3}) has been already used, duplicate igno
-red
+ <./Fig_2_18.5-19_panels_fc-1.0.png>] [4pdfTeX warning (ext4): destination with
+ the same identifier (name{figure.3}) has been already used, duplicate ignored
 <to be read again> 
                    \endgroup \set@typeset@protect 
 l.248 \end{document}
@@ -895,15 +894,15 @@ l.248 \end{document}
 <to be read again> 
                    \endgroup \set@typeset@protect 
 l.248 \end{document}
-                     <./Fig_3_histogram_panels_NEW.png> <./Fig_4_SF_QSO_starsB_
-r_cut_fc-0.864-1.091-1.298_NEW.png>] (./main.aux)
+                     <./Fig_3_histogram_panels.png> <./Fig_4_SF_QSO_starsB_r_cu
+t_fc-0.864-1.091-1.298.png>] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
  5185 strings out of 256216
- 65241 string characters out of 1917073
+ 65181 string characters out of 1917073
  131118 words of memory out of 1500000
  8280 multiletter control sequences out of 10000+200000
  75236 words of font info for 170 fonts, out of 1200000 for 2000
@@ -929,7 +928,7 @@ pe1/bluesky/cm/cmtt9.pfb></usr/share/texmf/fonts/type1/bluesky/latex-fonts/line
 ts/txex.pfb></usr/share/texmf/fonts/type1/public/txfonts/txsy.pfb></usr/share/t
 exmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on main.pdf (4 pages, 544592 bytes).
+Output written on main.pdf (4 pages, 574572 bytes).
 PDF statistics:
  167 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 131072)
