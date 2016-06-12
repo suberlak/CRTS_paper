@@ -1,1 +1,9 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}
+\BOOKMARK [1][-]{section.2}{Data Sets}{}
+\BOOKMARK [2][-]{subsection.2.1}{Sloan Digital Sky Survey \(SDSS\)}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{Catalina Real-time Transient Survey \(CRTS\)}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{Catalog Matching}{section.2}
+\BOOKMARK [2][-]{subsection.2.4}{Preprocessing}{section.2}
+\BOOKMARK [2][-]{subsection.2.5}{Selection}{section.2}
+\BOOKMARK [1][-]{section.3}{Analysis Methods}{}
+\BOOKMARK [2][-]{subsection.3.1}{Structure Function}{section.3}

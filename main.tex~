@@ -94,7 +94,7 @@ $^{4}$National Optical Astronomy Observatory, Tucson, AZ, United States.
 % Abstract of the paper
 \begin{abstract}
 
-We present improved error analysis for the 3,800 CRTS (Catalina Real-Time Transient Survey) optical quasar light curves from the Sloan Digital Sky Survey Stripe 82 catalog. SDSS imaging survey has provided a time-resolved photometric  dataset which greatly improved our understanding of the quasar optical continuum variability: data for monthly and longer timescales  are consistent with a damped random walk. Recently, newer data  obtained by CRTS (Catalina Real-Time Transient Survey) provided  puzzling evidence for enhanced variability, compared to SDSS results, on monthly time scales. Quantitatively, SDSS results predict  about $0.06$ mag rms variability for timescales below 50 days, while CRTS data show about a factor of two larger root-mean-square  for spectroscopically confirmed SDSS quasars. Our analysis presented here has successfully resolved this discrepancy as due to slightly underestimated photometric error estimates provided by the CRTS image processing pipelines. The photometric error correction factors, derived from detailed analysis of non-variable SDSS standard stars that were re-observed by CRTS, are about $20-30\%$, and result in a quasar variability behavior implied by the CRTS data fully consistent with earlier SDSS results.
+We present improved error analysis for the 3,800 CRTS (Catalina Real-Time Transient Survey) optical  light curves for quasars from the Sloan Digital Sky Survey Stripe 82 catalog. SDSS imaging survey has provided a time-resolved photometric  dataset which greatly improved our understanding of the quasar optical continuum variability: data for monthly and longer timescales  are consistent with a damped random walk. Recently, newer data  obtained by CRTS provided  puzzling evidence for enhanced variability, compared to SDSS results, on monthly time scales. Quantitatively, SDSS results predict  about $0.06$ mag root-mean-square variability for timescales below 50 days, while CRTS data show about a factor of two larger rms for spectroscopically confirmed SDSS quasars. Our analysis presented here has successfully resolved this discrepancy as due to slightly underestimated photometric uncertainties provided by the CRTS image processing pipelines. The photometric error correction factors, derived from detailed analysis of non-variable SDSS standard stars that were re-observed by CRTS, are about $20-30\%$, and result in a quasar variability behavior implied by the CRTS data that is fully consistent with earlier SDSS results.
 
 
 \end{abstract}
@@ -107,6 +107,55 @@ We present improved error analysis for the 3,800 CRTS (Catalina Real-Time Transi
 \section{Introduction}
 Variability can be used to both characterize and select quasars  in sky surveys . Ahtough various timescales of variability can be linked to physical parameters, such as accretion disk viscosity, or corona geometry (Kelly+2011, Graham+2014), the physical mechanism remains elusive, and most viable explanations include accretion disk instabilities (Kawaguchi + 1998), surface thermal fluctuations from magnetic field turbulence (Kelly+2009), coronal x-ray heating (Kelly+2011) (see Kozlowski 2016 for review).
 The diversity of  physical scenarios explaining  the origin of quasar variability led to a  plethore of ways to characterize the varying brightness. The two most widely used approaches to describe variability of quasars  are damped random walk (DRW) and structure function. The DRW model is more suited for lightcurves with typical cadence of days (Zu+2013, Koz\l{}owski+2016), whereas an ensemble SF analysis is better for sparsely sampled lightcurves (Hawkins 2002, Vanden Berk 2004 , de Vries 2005, Schmidt 2010, Graham 2014, or review in Kozlowski 2016). Although CRTS data has been used for both an SF and DRW analysis [CITE WHERE],  we use the SF approach, as more robust for sparsely sampled lightcurves than the DRW. [ For a recent overview of the context for variability studies, see Lawrence+2016. ]
+
+Although SF can be defined  in a variety of ways, it can be characterized by a simple broken power law (Schmidt+2010). At short timescales,  the variability amplitude increases, following a steeper power law index,  until the power law index starts to flatten  above the characteristic timescale  $\tau$.   This knee in the power law  description may correspond to a transition from the stochastic thermal  process driving  the variability, to the physical response of the disk that successfully  dampens the amplitude on longer timescales (Lawrence+2016,  Kelly+2007,2009,2011, Collier+Peterson 2001 (linking the amplitude to the black hole mass)). Indeed,  in x-rays quasars are described by a broken  power law, where the  break timescale is linked to the size of x-ray emitting region (Kelly+2011 in Graham+2014). 
+
+Altough previous studies found that  $\tau > 100$ days  (MacLeod+2011,  Koz\l{}owski+2016), recently, Graham+2014 used the SF, DRW, and Slepian Wavelet Variance (SWV) analysis for CRTS and SDSS S82 lightcurves. Using SWV on CRTS data they found characteristic time scales at   QSO rest frame of $\log_{2}(\tau) = 5.75$)  54 days,  and ($\log_{2}(\tau)=8.2$) -  294 days. Additionally, using this method on S82 data they found a peak at $\log_{2}(\tau) = 7.25$ , and for OGLE  at $\log_{2}(\tau)$ $> 6$ . The short timescale of   $\tau = 54$ days is surprising, as it is shorter by a factor of two than any previous estimates (MacLeod+2011, Zu+2013). We set out to reanalyze the CRTS data, and investigate the plausibility of this discrepant timescale. 
+
+
+\section{Data Sets}
+
+We study stars and quasars from  Stripe 82, using the  Sloan Digital Sky Survey   and the Catalina Real-time Transient Survey data. Stripe 82 is a large (over 100 deg$^{2}$), repeatedly observed reqion of the equatorial sky ($22^{h} 24^{m} < \mathrm{RA} < 04^{h} 08^{m}$ and $\mathrm{| Dec |} < 1.27 deg$)    (Sesar+2007, Suveges+2012). 
+
+\subsection{Sloan Digital Sky Survey (SDSS)}
+We use the SDSS catalog data with  robust,  five-band near-simultaneous  photometry for  9258  quasars,  and 1006849 standard stars - we use it for photometric color information and sample selection.  The  quasar catalog contains spectroscopically confirmed quasars from the SDSS Data Release 7 (Abazajian+2009), based on SDSS Quasar  Catalog IV (Schneider+2008, VizieR Online Data Catalog, 7252, 0), and was compiled by Macleod+2011 (see \footnote{\url{http://www.astro.washington.edu/users/ivezic/cmacleod/qso_dr7/Southern.html}} ) .
+The standard stars catalog ver. 2.6 was compiled by Ivezic+2007 (see \footnote{\url{http://www.astro.washington.edu/users/ivezic/sdss/catalogs/stripe82.html}}) .
+
+\subsection{Catalina Real-time Transient Survey (CRTS)}
+The CRTS data consists of white light (no filter) lightcurves  - it was designed to find near-Earth objects, hence short intra-night cadence, to allow a rapid follow up (Graham+2015).  Three survey telescopes (0.7m Catalina Sky Survey Schmidt in Arizona,  1.5m Mount  Lemmon Survey telescope in Arizona, and the 0.5m Siding Spring Survey Schmidt in Australia) were equipped with identical, 4kx4k CCDs (see Djorgovski+2011 for technical details CRTS), taking 4 exposures each night.
+Although in principle white light magnitudes can be calibrated to Johnson V-band zero point (Drake+2013), we found it a redundant step for our analysis. 
+
+For our study we used a sample of 7932 spectroscopically confirmed S82  quasars,   prepared by B. Sesar, from  the Data Release 2, based on the list by MacLeod+2011.  The majority (96\%) of  CRTS quasar lightcurves span the time of 7-9 years, with a mean sampling of 1 to 4 times per night,  on 70 nights on average (see Fig.1, upper-left panel ).  Mean interval between epochs is 209 days (Fig.1 bottom-right panel), and the mean quasar magnitude is 19.5 mag. 
+
+Our comparison sample consists of CRTS lightcurves of 52133 randomly chosen  10\% of the S82 standard stars catalog ver.2.6 (Ivezic+2007), extracted by B. Sesar from the CRTS DR2.
+
+
+\subsection{Catalog Matching}
+To enrich the information about each CRTS object with SDSS color information, we matched positionally CRTS data to SDSS data within S82 using astropy \verb|match_to_catalog_sky|  routine\footnote{\url{http://docs.astropy.org/en/stable/coordinates/matchsep.html}}.  
+Given that the SDSS catalog has 100 times more stars than CRTS, we found an SDSS counterpart to all  CRTS stars within 0.01 arcsec matching radius. However, since there is less SDSS quasars in the S82 catalog, and we found an SDSS counterpart to 7586 CRTS quasars within 0.36 arcsec. We  ignored  15 quasars for which no SDSS counterpart was found within 1 arcsec.  
+
+
+\subsection{Preprocessing}
+
+Because we are not investigating hourly timescales, prior to structure function analysis we day-averaged all  CRTS light curves. Similarly to  Charisi+2016, we replaced the magnitudes  from the  $j$-th  night by their mean weighted by the inverse square of error:
+\begin{equation}
+ m_{j} = \langle m_{ij} \rangle = \frac{\sum_{i=1}^{N} {w_{i,j} m_{i,j}} } {\sum_{i=1}^{N} {w_{i,j}} }
+\end{equation}
+where $i=1...N$, is the number of observations per night, with weights $w_{i,j} = e_{i,j}^{-2}$ .  
+We estimate the error on the weighted mean by the inverse square of the sum of weights:  
+\begin{equation}
+\sigma_{j}(m_{j}) = \frac{1}{\sqrt{\sum_{i}{w_{i,j}}}}
+\end{equation}   [ any CITATION ? is it a standard thing to do ? ] Finally, to avoid unphysically small errors, we added in quadrature 0.01 mag  to $\sigma_{j}$ if $\sigma_{j} < 0.02 \,  mag $. 
+
+
+\subsection{Selection}
+We selected both quasars and stars using a combination of information from SDSS and CRTS. To find magnitude difference between different days we first required that the raw lightcurve has more than 10 epochs, which from initial 52131 stars and 7932 quasars left 49385 stars and 7707 quasars. We thus also removed those lightcurves with less than 10 days of observations, leaving 7601 quasars and 48250 stars.  We also required that the lightcurve-average of day-error ($\langle \sigma_{j}(m_{j}) \rangle$) be less than $0.3^{mag}$. Since the raw distribution of errors   peaks at lower values (mean of 0.19 for stars and 0.22 for quasars) than the distribution of the weighted mean errors (mean of 0.13 for stars and 0.15 for quasars), this cut only removes less than 10\% of lightcurves. Our final sample consists of 7108 quasars and 42864 stars.
+
+\section{Analysis Methods}
+To analyze the quasar and stellar lightcurves we consider a relationship between measured data $m_{j}$  at times $t_{j}$, and its "copy" shifted by $\Delta  t$ (Koz\l{}owski+2016). We bin the data in bins of $\Delta t$, and calculate statistics that characterize  the variability of stars and quasars. By splitting our sample of stars by color into "blue" and "red" we compare their variability properties to those of quasars in three magnitude bins.
+
+\subsection{Structure Function}
+The structure function is a well-studied approach to characterizing lightcurves (Vanden Berk +2004,  de Vries+ 2005, Koz\l{}owski+2016, Graham+2015) . To avoid the uncertain redshift estimate based on SDSS spectra that would be required to correct to the rest-frame variability, we use the observed frame time lags (like Schmidt+2010)  (see Kozlowski+2016).  The  magnitude difference $\Delta m_{j,k}$ for $\Delta t_{j,k} = |t_{j} - t_{k}|$, and the errors added in quadrature :  $\sigma_{j,k}^{2} = \sigma_{j}^{2} + \sigma_{k}^{2}$. 
 
 
 
