@@ -131,7 +131,7 @@ Our comparison sample consists of CRTS lightcurves of 52133 randomly chosen  10\
 
 
 \subsection{Catalog Matching}
-To enrich the information about each CRTS object with SDSS color information, we matched positionally CRTS data to SDSS data within S82 using astropy \verb|match_to_catalog_sky|  routine\footnote{\url{http://docs.astropy.org/en/stable/coordinates/matchsep.html}}.  
+To enrich the information about each CRTS object with SDSS color information, we matched positionally CRTS data to SDSS data within S82 using astropy \verb|match_to_catalog_sky|  routine\footnote{\url{http://docs.astropy.org/en/stable/coordinates/matchsep.html\#matching-catalogs}}.  
 Given that the SDSS catalog has 100 times more stars than CRTS, we found an SDSS counterpart to all  CRTS stars within 0.01 arcsec matching radius. However, since there is less SDSS quasars in the S82 catalog, and we found an SDSS counterpart to 7586 CRTS quasars within 0.36 arcsec. We  ignored  15 quasars for which no SDSS counterpart was found within 1 arcsec.  
 
 
@@ -157,6 +157,12 @@ To analyze the quasar and stellar lightcurves we consider a relationship between
 \subsection{Structure Function}
 The structure function is a well-studied approach to characterizing lightcurves (Vanden Berk +2004,  de Vries+ 2005, Koz\l{}owski+2016, Graham+2015) . To avoid the uncertain redshift estimate based on SDSS spectra that would be required to correct to the rest-frame variability, we use the observed frame time lags (like Schmidt+2010)  (see Kozlowski+2016).  The  magnitude difference $\Delta m_{j,k}$ for $\Delta t_{j,k} = |t_{j} - t_{k}|$, and the errors added in quadrature :  $\sigma_{j,k}^{2} = \sigma_{j}^{2} + \sigma_{k}^{2}$. 
 
+
+We prepared 'master' files for stars and quasars, with $\Delta m_{j,k}$, $\Delta t_{j,k} $, $\sigma_{j,k}$.  After day-averaging,  given that the median lightcurve length is  70  days,  each object on average has $\sum_{i=2}^{70}{(i-1)} = 2415 ~ 2E3$  pairwise magnitude difference points. Therefore selecting to study eg.  1000 Quasars,  we have approximately 2E6  magnitude differences.    We study statistical properties of magnitude differences vs time lag by calculating various properties in linearly spaced  bins of $\Delta t_{j,k} $.  We calculated statistical descriptors for each bin, as described in (SECTION ABOUT STATISTICS).    We found that  binning does not affect significantly the shape of structure function nor our conclusions about error properties, and that  choosing 200 bins was optimal for our purpose. 
+
+We characterized the distribution of $\Delta m_{j,k}$  vs  $\Delta t_{j,k}$ by calculating statistics for each bin:  the rms standard deviation $\sigma_{stdev} = \sqrt(mean(abs(x - x.mean())**2))$, the standard deviation based on the interquartile range: $\sigma_{G} = 0.714 IQR $, where IQR = 25% Z - 75% Z, if Z i the sorted distribution of $\Delta m_{j,k}$,   finally $\sigma$, $\mu$, following   [Ivezic+2013 : AstroML], which represent the dispersion of the underlying distribution, and its mean.  
+
+For   each delta(tau) bin, to calculate  sigma and mu we analysed a  distribution of approximate values of those parameters for  1000 boostrapped resamples of the (m_ij, e_ij) data.  The maximum and minimum  of this distribution served as upper and lower bound on calculation of the full solution.  We find that, as in AstroML Fig. 5.8, approximate calculation slightly underestimates sigma, and thus we chose to use full solution, based on marginalizing the log-likelihood of various values of sigma that could describe the (m_ij, e_ij) ensemble.  [ DESCRIBE IN MORE DETAIL, AS IN PAPER II ?  ] 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
