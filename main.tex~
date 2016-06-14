@@ -129,6 +129,13 @@ For our study we used a sample of 7932 spectroscopically confirmed S82  quasars,
 
 Our comparison sample consists of CRTS lightcurves of 52133 randomly chosen  10\% of the S82 standard stars catalog ver.2.6 (Ivezic+2007), extracted by B. Sesar from the CRTS DR2.
 
+\begin{figure}
+\label{fig:1}
+ \includegraphics[width=\columnwidth]{Fig_1_QSO_CRTS_AVG_stats_USED_data_four_panels.png}
+ \caption{The sample of 7601 day-averaged quasar light-curves. The upper-left panel shows the distribution of the observations time span, i.e. $max(MJD)-min(MJD)$. The upper-right panel shows the average light curve magnitude. The bottom-left panel shows the light curve averaged error. The bottom-right panel shows the average number of days between epochs. Within that sample , $96 \% $ observations of quasars span the time of 7-9 years.  $91.2\%$ of  quasars were observed between 1 to 4 times per night. We use only quasars with light curve averaged error smaller than 0.3, leaving 7108 quasars in the sample.}
+\end{figure}
+
+
 
 \subsection{Catalog Matching}
 To enrich the information about each CRTS object with SDSS color information, we matched positionally CRTS data to SDSS data within S82 using astropy \verb|match_to_catalog_sky|  routine\footnote{\url{http://docs.astropy.org/en/stable/coordinates/matchsep.html\#matching-catalogs}}.  
@@ -137,7 +144,7 @@ Given that the SDSS catalog has 100 times more stars than CRTS, we found an SDSS
 
 \subsection{Preprocessing}
 
-Because we are not investigating hourly timescales, prior to structure function analysis we day-averaged all  CRTS light curves. Similarly to  Charisi+2016, we replaced the magnitudes  from the  $j$-th  night by their mean weighted by the inverse square of error:
+It is common to bin data to reduce noise, by averaging over timescales shorter than what is required by the science goals. In this study, the intra-night variability of CRTS lightcurves, with $\approx 4$ epochs each night, is much shorter than considered timescales of order of tens of days.  Thus, prior to analysis we day-averaged all  CRTS light curves, following a procedure similar to Charisi+2016, replacing the magnitudes  from the  $j$-th  night by their mean weighted by the inverse square of error:
 \begin{equation}
  m_{j} = \langle m_{ij} \rangle = \frac{\sum_{i=1}^{N} {w_{i,j} m_{i,j}} } {\sum_{i=1}^{N} {w_{i,j}} }
 \end{equation}
@@ -149,20 +156,136 @@ We estimate the error on the weighted mean by the inverse square of the sum of w
 
 
 \subsection{Selection}
-We selected both quasars and stars using a combination of information from SDSS and CRTS. To find magnitude difference between different days we first required that the raw lightcurve has more than 10 epochs, which from initial 52131 stars and 7932 quasars left 49385 stars and 7707 quasars. We thus also removed those lightcurves with less than 10 days of observations, leaving 7601 quasars and 48250 stars.  We also required that the lightcurve-average of day-error ($\langle \sigma_{j}(m_{j}) \rangle$) be less than $0.3^{mag}$. Since the raw distribution of errors   peaks at lower values (mean of 0.19 for stars and 0.22 for quasars) than the distribution of the weighted mean errors (mean of 0.13 for stars and 0.15 for quasars), this cut only removes less than 10\% of lightcurves. Our final sample consists of 7108 quasars and 42864 stars.
+We selected both quasars and stars using a combination of information from SDSS and CRTS. To find magnitude difference between different days we first required that the raw lightcurve has more than 10 epochs, which from initial 52131 stars and 7932 quasars left 49385 stars and 7707 quasars. We thus also removed those lightcurves with less than 10 days of observations, leaving 7601 quasars and 48250 stars.  We also required that the lightcurve-average of day-error ($\langle \sigma_{j}(m_{j}) \rangle$) be less than $0.3^{mag}$ (see Fig.1). Since the raw distribution of errors   peaks at lower values (mean of 0.19 for stars and 0.22 for quasars) than the distribution of the weighted mean errors (mean of 0.13 for stars and 0.15 for quasars), this cut only removes less than 10\% of lightcurves. Our final sample consists of 7108 quasars and 42864 stars.
 
 \section{Analysis Methods}
+% opening sentence
 To analyze the quasar and stellar lightcurves we consider a relationship between measured data $m_{j}$  at times $t_{j}$, and its "copy" shifted by $\Delta  t$ (Koz\l{}owski+2016). We bin the data in bins of $\Delta t$, and calculate statistics that characterize  the variability of stars and quasars. By splitting our sample of stars by color into "blue" and "red" we compare their variability properties to those of quasars in three magnitude bins.
 
 \subsection{Structure Function}
-The structure function is a well-studied approach to characterizing lightcurves (Vanden Berk +2004,  de Vries+ 2005, Koz\l{}owski+2016, Graham+2015) . To avoid the uncertain redshift estimate based on SDSS spectra that would be required to correct to the rest-frame variability, we use the observed frame time lags (like Schmidt+2010)  (see Kozlowski+2016).  The  magnitude difference $\Delta m_{j,k}$ for $\Delta t_{j,k} = |t_{j} - t_{k}|$, and the errors added in quadrature :  $\sigma_{j,k}^{2} = \sigma_{j}^{2} + \sigma_{k}^{2}$. 
+% What is SF
+The structure function is a well-studied approach to characterizing lightcurves (Vanden Berk +2004,  de Vries+ 2005, Koz\l{}owski+2016, Graham+2015) . To avoid the uncertain redshift estimate based on SDSS spectra that would be required to correct to the rest-frame variability, we use the observed frame time lags (like Schmidt+2010)  (see Kozlowski+2016).   The  magnitude difference $\Delta m_{j,k} = m_{j} - m_{k}$ for $\Delta t_{j,k} = |t_{j} - t_{k}|$, and the errors added in quadrature :  $\sigma_{j,k}^{2} = \sigma_{j}^{2} + \sigma_{k}^{2}$. 
+%[NOTE : Graham+2014 uses observed and rest-frame interchangeably - some timescales are quoted in %observed, the others in restframe... ]
+
+% Binning
+To study the statistical distribution of time-lag magnitude differences in an ensemble of quasars or stars we bin the data in bins of $\Delta t_{j,k} $, or for brevity  $\Delta t$. For each object  we prepared 'master' files containing $\Delta m_{j,k}$, $\Delta t$, $\sigma_{j,k}$. Even after day-averaging, with a median lightcurve length of 70 days, each object contributes on average $\sum_{i=2}^{70}{(i-1)} = 2415$  $\Delta m_{j,k}$ points . Thus we have sufficient amount of pairwise time differences to study their statistical properties by splitting them into 200 linearly spaced bins of  $\Delta t$. Bin number does not affect significantly the shape of the structure function, and 200 bins provide best resolution in affordable computational time, with a sizable number of  $\Delta m_{j,k}$ in each bin.
+
+% Structure Function 
+With  various theoretical definitions of structure function (see Koz\l{}owski+2016 for overview), we adopt a view from Ivezic+2014, that $SF$ corresponds to the intrinsic width of the $\delta m_{j,k}$ distribution  $\mathcal{N}(\sigma,\mu)$. Each $\delta m_{j,k}$ has an error, assumed to be drawn from the Gaussian distribution with a known width $e_{i}$. Thus each $\delta m_{j,k}$ (called $x_{i}$ in Ivezic+2014, and here for brevity), is drawn from a distribution  with a total width $\sigma_{tot} = \sqrt{\sigma^{2} + e_{i}^{2}}$. 
+
+Then the likelihood for a set of measurements $\{x_{i}\}$ is given by a product of likelihoods for each value of $x_{i}$:
+
+\begin{equation}
+p(\{ x_{i}\} | \mu, \sigma, I) =  \prod _{i=1}^{N} { \frac{1}{\sqrt{2\pi \sigma_{tot}}} \exp{\left( \frac{-(x_{i}-\mu)^{2}}{2\sigma_{tot}^{2}} \right)}}
+\end{equation}
+
+Using uniform priors, the logarithm of the posterior pdf becomes :
+
+\begin{equation}
+\label{eq:logP}
+L_{p} = const - \frac{1}{2} \sum_{i=1}^{N} {\left( \ln{(\sigma_{tot}^{2})} + \frac{(x_{i}-\mu)^{2}}{\sigma_{tot}} \right) }
+\end{equation}
+
+To find $SF = \sigma$, we would evaluate $L_{p}$ on a grid of $\mu, \sigma$, and marginalize over $\mu$ to find likelihood for $\sigma$:  
+
+\begin{equation}
+p(\sigma|\{ x_{i}\}, I) = \int_{0}^{\infty} {p(\mu,\sigma |\{ x_{i}\}, I )} d \mu
+\end{equation}
+
+The zero point of the first derivative of this likelihood - $\sigma_{0}$ - is the most likely value of $\sigma$. An alternative way is to find the $2D$ maximum of $\exp{(L_{p})}$ to obtain simultaneously both $\mu_{0}$ and $\sigma_{0}$.
+
+However, this procedure is computationally expensive without any prior constraint on the bounds of $\mu_{0}$ or $\sigma_{0}$. 
+
+Fortunately, it is possible to quickly find  approximate values of  $\sigma_{0}$ and $\mu_{0}$.  It turns out that sample median is a good estimator of $\mu_{0}$, and $\sigma_{0}$ can be estimated by:
+
+\begin{equation}
+\sigma_{0}^{2} = \zeta^{2} \sigma_{G}^{2} - e_{50}^{2}
+\end{equation} 
+where:
+\begin{equation}
+\zeta = median(\tilde{\sigma_{i}}) / mean(\tilde{\sigma_{i}}),
+\end{equation} 
+\begin{equation}
+\tilde{\sigma_{i}} = (\sigma_{G}^{2} + e_{i}^{2} - e_{50}^{2})^{1/2},
+\end{equation}
+\begin{equation}
+\sigma_{G} = 0.741 (Z_{75\%} - Z_{25\%}), 
+\end{equation}
+with $Z$ is the sorted $\Delta m_{j,k}$ per bin, and $e_{50} = median(\sigma_{j,k})$.
+
+Now, if errors were all equal ($e_{i} = e$), then $e_{50} = e$, and $\tilde{\sigma_{i}}= \sigma_{G}$, so that $\zeta=1$ , and thus $\sigma_{0}^{2} = \sigma_{G}^{2} - e^{2}$. 
+
+If errors were not all equal, but very small compared to $\sigma_{G}$, then $\tilde{\sigma_{i}} \to \sigma_{G}$, and $\zeta \to 1$, so that  $\sigma_{0}^{2} = \sigma_{G}^{2} - e_{50}^{2}$, but since $e_{50} \ll \sigma_{G}$,  $\sigma_{0}^{2} \approx \sigma_{G}^{2}$. This explains why $\sigma_{G}$ can be seen as an approximation of $SF$ (see Koz\l{}owski+16, eq.10). 
+
+Therefore, to find the best estimate of $SF = \sigma_{0}$, we evaluate 1000 boostrapped resamples of $\delta m_{j,k}$ in each $\delta t$ bin, and thus find upper and lower limits on the approximate value of $\sigma_{0}$. We use these values as limits on our grid  of  $\mu$, $\sigma$, on which we evaluate the full solution from  $L_{p}$. 
 
 
-We prepared 'master' files for stars and quasars, with $\Delta m_{j,k}$, $\Delta t_{j,k} $, $\sigma_{j,k}$.  After day-averaging,  given that the median lightcurve length is  70  days,  each object on average has $\sum_{i=2}^{70}{(i-1)} = 2415 ~ 2E3$  pairwise magnitude difference points. Therefore selecting to study eg.  1000 Quasars,  we have approximately 2E6  magnitude differences.    We study statistical properties of magnitude differences vs time lag by calculating various properties in linearly spaced  bins of $\Delta t_{j,k} $.  We calculated statistical descriptors for each bin, as described in (SECTION ABOUT STATISTICS).    We found that  binning does not affect significantly the shape of structure function nor our conclusions about error properties, and that  choosing 200 bins was optimal for our purpose. 
+\subsection{Statistics, sample construction}
+% What is on the four-panel plot: SF, st dev , sigmaG, mu  
+As described above, $\sigma$, $\sigma_{G}$ and $\mu$ are all related in describing the structure function and variability of quasars, and thus we include them in Fig.2, as a function of $\Delta t$. As a guide to the width of the $\Delta m_{j,k}$ distribution, we also plot its standard deviation, i.e. the square root of the average of the squared deviations from the mean:
+\begin{equation}
+\sigma_{stdev} = \sqrt{\frac{\sum(\Delta m_{j,k} - \overline{\Delta m_{j,k}})^{2})}{ N_{bin}}}
+\end{equation}
 
-We characterized the distribution of $\Delta m_{j,k}$  vs  $\Delta t_{j,k}$ by calculating statistics for each bin:  the rms standard deviation $\sigma_{stdev} = \sqrt(mean(abs(x - x.mean())**2))$, the standard deviation based on the interquartile range: $\sigma_{G} = 0.714 IQR $, where IQR = 25% Z - 75% Z, if Z i the sorted distribution of $\Delta m_{j,k}$,   finally $\sigma$, $\mu$, following   [Ivezic+2013 : AstroML], which represent the dispersion of the underlying distribution, and its mean.  
+% color selection
+To consider the effect of stellar color on variability we divided stars into two SDSS g-i color bins: "red" stars with $1<g-i<3$, and  "blue" stars with $-1<g-i<1$. We expect blue stars to be preferentially brighter, and have smaller variability than the red stars. See Table 1 for the number of stars and quasars in each color-magnitude bin. 
 
-For   each delta(tau) bin, to calculate  sigma and mu we analysed a  distribution of approximate values of those parameters for  1000 boostrapped resamples of the (m_ij, e_ij) data.  The maximum and minimum  of this distribution served as upper and lower bound on calculation of the full solution.  We find that, as in AstroML Fig. 5.8, approximate calculation slightly underestimates sigma, and thus we chose to use full solution, based on marginalizing the log-likelihood of various values of sigma that could describe the (m_ij, e_ij) ensemble.  [ DESCRIBE IN MORE DETAIL, AS IN PAPER II ?  ] 
+\begin{table}
+
+\caption{Count of stars and quasars, selected by their SDSS r-magnitude. For all objects we also required that the CRTS lightcurve error is smaller than $0.3 mag$}
+\label{tab:object_count}
+\begin{tabular}{ l|ccc } 
+% \hline
+r-mag  & red stars & blue stars & quasars \\ 
+ \hline
+17-18   & 2993 & 2795   & 185    \\ 
+18-18.5 & 2087 &  1400  & 333   \\ 
+18.5-19 & 1496 &  2327  & 747   
+% \hline
+\end{tabular}
+\end{table}
+ 
+% magnitude selection 
+
+
+\section{Results}
+
+\begin{figure}
+\label{fig:2}
+ \includegraphics[width=\columnwidth]{{Fig_2_18.5-19_panels_fc-1.0}.png}
+ \caption{The four panels show statistics calculated for the subsample of 333 CRTS quasars (black points), 1400 "blue" stars (blue points), and 2087 "red" stars (red points), all  chosen according to the SDSS r magnitude $18.5 < \mathrm{m} < 19$. Red and blue stars have  $1 < \mathrm{g-i} < 3$ and  $-1 < \mathrm{g-i} < 1$ respectively. All pairwise brightness differences  in white light ($\Delta m_{i,j}$) are binned in linearly spaced $200$ bins in $\Delta t_{i,j}$. For each bin, we calculate different statistics, from top to bottom panels: the standard deviation $\sigma_{stdev}$, the robust Gaussian deviation based on the interquartile range $\sigma_{G}$, the structure function $SF$, and  the mean value of $\Delta m_{i,j}$  per bin:$\mu$. Both $\mu$ and $\sigma$ are found from the 2D maximum of the log-likelihood $L_{p}$ on the $[\mu,\sigma]$ grid (see eq.~\ref{eq:logP}, and Ivezic+2004).  The signal modulation reflects differences in the number of $\Delta m_{i,j}$ points in each bin (from tens to hundreds of thousands per bin) - bigger number of points corresponds to larger spread of $\Delta m_{i,j}$  per bin (and thus slightly larger $\sigma_{stdev}$, $\sigma_{G}$, and $SF$).  Yellow dashed line on the third panel traces the fiducial Damped Random Walk model. Note how both blue and red stars do not exhibit signs of variability as expected, whereas quasars (black) clearly show an intrinsic variability. At the low timescales $\log{\tau} < 1.7$ CRTS quasar $SF$ departs from the fiducial model of Structure Function.  }
+\end{figure}
+
+%the problem : Fig 2 
+
+%finding the solution : Fig 3 
+  %- description of what we are plotting 
+  %- derivation of how fc impact an individual error measurement  (move to appendix)
+
+\begin{figure}
+\label{fig:3}
+\includegraphics[width=1.1\columnwidth]{Fig_3_histogram_panels.png}
+ \caption{This grid of histograms shows $\chi = \Delta m / \mathrm{error}$ for CRTS blue stars (blue shading) and quasars (red shading), for bins of $\log{\Delta t}$- SDSS r magnitude. Vertically, from top to bottom, we iterate over bins of $\log{\Delta t}$ : $0<\log{\Delta t}<1.7$ ($t < 50 $ days) ,$2.3<\log{\Delta t}<2.5$, $2.8<\log{\Delta t}<3.0$, and $3.2<\log{\Delta t}<3.4$ (indicated by numbers in the upper left corner of each subplot). Horizontally, from left to right, we iterate over SDSS r-magnitude bins $17-18$,  $18-18.5$, and $18.5-19$. Objects in each vertical strip were chosen according to the same magnitude cut, and all $\Delta m$ points in a given  $\log{\Delta t}$ range were binned together. The  implied small quasar variability at short timescales is at the level  measured by SDSS (indistinguishable from blue, non-variable stars). Numbers in the upper-right corner of each subplot are the robust width of stellar  and quasar  distributions of $\chi$. Blue, bright  stars in the left strip ($17-18$ r mag) have low $\sigma_{G}$, at the level of 0.9, and fainter blue stars (eg. right vertical strip, $18.5-19$ r mag) have higher $\sigma_{G} \approx 1.3$. Part of that increase is due to larger errors at fainter magnitude end. However, in each bin we expect that if errors for blue stars are correct, then  $\sigma_{G}(\chi) = 1$. We use  correction factors $f_{c} = \sigma_{G}(\chi_{blue}(\Delta t, mag))$ to correct for that effect. This implies that magnitude-difference errors  $\sigma_{corr} (\Delta m) = f_{c}\sigma (\Delta m) $. If all raw errors were identical, it would also correspond to the linear correction of raw photometric errors by $f_{c}$. Quasars  as intrinsically variable sources have a larger spread of $\chi$ than non-variable blue stars, but after applying the $f_{c}$ correction their short-timescale $\chi$ at $t < 50$ days becomes much closer to $1$, consistent with lack of variability (see Fig.4 for an illustration of the impact of $f_{c}$ on $SF$ of stars and quasars).}
+\end{figure}
+
+%applying the solution : Fig 4 
+
+
+\begin{figure}
+\label{fig:4}
+ \includegraphics[width=\columnwidth]{Fig_4_SF_QSO_starsB_r_cut.png}
+ \caption{Three panels depict the impact that applying correction factors $f_{c}(\Delta t, mag)$ to errors $\sigma(\Delta m)$ has on the structure function ($\sigma$) for quasars and blue stars. In the middle of each panel we list the SDSS r-magnitude used to select quasars and stars for that magnitude bin. Note that with $f_{c}$ the apparently discrepant variability of non-variable standard stars  vanishes (the residual $SF$ is consistent with the noise rms of $0.05$ mag). The variability of quasars is reduced . We plot the observed frame timelags - see Fig.5 for the effect of converting that to the restframe timelags using known quasar redshifts from SDSS. The corrected $SF$ of quasars at short time scales ($\log(\Delta t) < 1.7$) is consistent with lack of variability, consistent with SDSS results (upper limits of $0.1$ mag marked by green dashed lines) (see MacLeod+2011).}
+\end{figure}
+
+\section{Conclusions}
+
+
+\section*{Acknowledgements}
+
+Funding for the SDSS and SDSS-II has been provided by the Alfred P. Sloan Foundation, the Participating Institutions, the National Science Foundation, the U.S. Department of Energy, the National Aeronautics and Space Administration, the Japanese Monbukagakusho, the Max Planck Society, and the Higher Education Funding Council for England. The SDSS Web Site is http://www.sdss.org/.
+
+The SDSS is managed by the Astrophysical Research Consortium for the Participating Institutions. The Participating Institutions are the American Museum of Natural History, Astrophysical Institute Potsdam, University of Basel, University of Cambridge, Case Western Reserve University, University of Chicago, Drexel University, Fermilab, the Institute for Advanced Study, the Japan Participation Group, Johns Hopkins University, the Joint Institute for Nuclear Astrophysics, the Kavli Institute for Particle Astrophysics and Cosmology, the Korean Scientist Group, the Chinese Academy of Sciences (LAMOST), Los Alamos National Laboratory, the Max-Planck-Institute for Astronomy (MPIA), the Max-Planck-Institute for Astrophysics (MPA), New Mexico State University, Ohio State University, University of Pittsburgh, University of Portsmouth, Princeton University, the United States Naval Observatory, and the University of Washington. 
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
