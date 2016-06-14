@@ -246,6 +246,13 @@ r-mag  & red stars & blue stars & quasars \\
 % magnitude selection  
 To consider any magnitude-dependent trends in the data, such as increasing photometric error for fainter objects, we split our sample into three magnitude bins: bright  17-18,  medium 18-18.5 , and faint  18.5-19 mag. We used SDSS r-magnitude to select the magnitude of objects, which is correlated to the CRTS white light magnitude for both stars and quasars. Table 1 shows the number of objects per magnitude bin.  
 
+\begin{figure}
+\label{fig:2}
+ \includegraphics[width=\columnwidth]{Fig_2_18.5-19_panels.png}
+ \caption{The four panels show statistics calculated for the subsample of 333 CRTS quasars (black points), 1400 "blue" stars (blue points), and 2087 "red" stars (red points), all  chosen according to the SDSS r magnitude $18.5 < \mathrm{m} < 19$. Red and blue stars have  $1 < \mathrm{g-i} < 3$ and  $-1 < \mathrm{g-i} < 1$ respectively. All pairwise brightness differences  in white light ($\Delta m_{i,j}$) are binned in $200$ linearly spaced bins of $\Delta t_{i,j}$. For each bin, we calculate different statistics, from top to bottom panels: the standard deviation $\sigma_{stdev}$, the robust Gaussian deviation based on the interquartile range $\sigma_{G}$, the structure function $SF$, and  the mean value of $\Delta m_{i,j}$  per bin:$\mu$. Both $\mu$ and $\sigma$ are found from the 2D maximum of the log-likelihood $L_{p}$ on the $[\mu,\sigma]$ grid (see eq.~\ref{eq:logP}, and Ivezic+2004).  The signal modulation reflects differences in the number of $\Delta m_{i,j}$ points in each bin (from tens to hundreds of thousands per bin) - bigger number of points corresponds to a larger spread of $\Delta m_{i,j}$  per bin (and thus slightly larger $\sigma_{stdev}$, $\sigma_{G}$, and $SF$).  Yellow dashed line on the third panel traces the fiducial Damped Random Walk model. Note how both blue and red stars do not exhibit signs of variabilityon longer timescales as we expected, whereas quasars (black) clearly show an intrinsic variability above 0.1 mag. At low timescales $\log{\tau} < 1.7$ CRTS quasar $SF$ departs from the fiducial model of Structure Function, which we claim is due to incorrect errors.}
+\end{figure}
+
+
 \section{Results}
 \label{sec:results}
 % "what we measured"
@@ -256,13 +263,6 @@ To consider any magnitude-dependent trends in the data, such as increasing photo
 
 %the problem : Fig 2 
 The measured level of variability for standard stars is above the acceptable $0.05$ mag rms, and is incompatible with their known non-variability. Fig.2 illustrates the problem, using the four statistics calculated for the 18.5-19 mag bin, as described in Sec.~\ref{sec:stats}.  Especially $SF$ shows that even on short timescales, stars exhibit a non-zero variability for stars. Based on the SDSS data concerning the same stars, we would expect their $SF$ to be below the level of noise : $0.05$ mag (Ivezic+2007). This larger than expected variability is inspected in more detail in Fig.3. 
-
-
-\begin{figure}
-\label{fig:2}
- \includegraphics[width=\columnwidth]{{Fig_2_18.5-19_panels_fc-1.0}.png}
- \caption{The four panels show statistics calculated for the subsample of 333 CRTS quasars (black points), 1400 "blue" stars (blue points), and 2087 "red" stars (red points), all  chosen according to the SDSS r magnitude $18.5 < \mathrm{m} < 19$. Red and blue stars have  $1 < \mathrm{g-i} < 3$ and  $-1 < \mathrm{g-i} < 1$ respectively. All pairwise brightness differences  in white light ($\Delta m_{i,j}$) are binned in $200$ linearly spaced bins of $\Delta t_{i,j}$. For each bin, we calculate different statistics, from top to bottom panels: the standard deviation $\sigma_{stdev}$, the robust Gaussian deviation based on the interquartile range $\sigma_{G}$, the structure function $SF$, and  the mean value of $\Delta m_{i,j}$  per bin:$\mu$. Both $\mu$ and $\sigma$ are found from the 2D maximum of the log-likelihood $L_{p}$ on the $[\mu,\sigma]$ grid (see eq.~\ref{eq:logP}, and Ivezic+2004).  The signal modulation reflects differences in the number of $\Delta m_{i,j}$ points in each bin (from tens to hundreds of thousands per bin) - bigger number of points corresponds to a larger spread of $\Delta m_{i,j}$  per bin (and thus slightly larger $\sigma_{stdev}$, $\sigma_{G}$, and $SF$).  Yellow dashed line on the third panel traces the fiducial Damped Random Walk model. Note how both blue and red stars do not exhibit signs of variabilityon longer timescales as we expected, whereas quasars (black) clearly show an intrinsic variability above 0.1 mag. At low timescales $\log{\tau} < 1.7$ CRTS quasar $SF$ departs from the fiducial model of Structure Function, which we claim is due to incorrect errors.}
-\end{figure}
 
 
 %finding the solution : Fig 3 

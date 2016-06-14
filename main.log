@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.9.3)  14 JUN 2016 01:23
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.9.3)  14 JUN 2016 15:42
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -466,10 +466,10 @@ Underfull \hbox (badness 1194) in paragraph at lines 166--168
 \T1/aer/m/n/9 use the ob-served frame time lags (see Schmidt+2010,
  []
 
-[3] <Fig_2_18.5-19_panels_fc-1.0.png, id=123, 578.16pt x 867.24pt>
-File: Fig_2_18.5-19_panels_fc-1.0.png Graphic file (type png)
+[3] <Fig_2_18.5-19_panels.png, id=123, 578.16pt x 867.24pt>
+File: Fig_2_18.5-19_panels.png Graphic file (type png)
 
-<use Fig_2_18.5-19_panels_fc-1.0.png>
+<use Fig_2_18.5-19_panels.png>
 <Fig_3_histogram_panels.png, id=129, 562.1pt x 553.06625pt>
 File: Fig_3_histogram_panels.png Graphic file (type png)
 
@@ -499,7 +499,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <to be read again> 
                    \endgroup \set@typeset@protect 
 l.366 \end{document}
-                     <./Fig_2_18.5-19_panels_fc-1.0.png>]
+                     <./Fig_2_18.5-19_panels.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
@@ -516,7 +516,7 @@ l.366 \end{document}
 t.png>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  4848 strings out of 256216
- 61282 string characters out of 1917073
+ 61247 string characters out of 1917073
  135412 words of memory out of 1500000
  7918 multiletter control sequences out of 10000+200000
  83284 words of font info for 180 fonts, out of 1200000 for 2000
@@ -543,7 +543,7 @@ type1/bluesky/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb>
 1/urw/symbol/usyr.pfb></usr/share/texmf/fonts/type1/urw/symbol/usyr.pfb></usr/s
 hare/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on main.pdf (6 pages, 450866 bytes).
+Output written on main.pdf (6 pages, 427571 bytes).
 PDF statistics:
  241 PDF objects out of 1000 (max. 8388607)
  45 named destinations out of 1000 (max. 131072)
