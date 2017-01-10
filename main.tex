@@ -288,15 +288,17 @@ for pairwise magnitude difference points, but since our lightcurves are symmetri
 \chi^{2} = \sum_{i=1}^{N}{\chi_{i}^{2}}
 \end{equation}
 
-Therefore, if $\sigma_{i}$ describes well the underlying (Gaussian) error, then we would expect $\sigma_{G}(\chi) = 1$, if there is no intrinsic variability, such as in the case of blue standard stars. 
+Therefore, if $\sigma_{i}$ describes well the underlying (Gaussian) error, then in case of no intrinsic variability we would expect $\sigma_{G}(\chi) = 1$,  such as is the case for blue standard stars. 
 
-We binned the time lag - magnitude difference points into four $\log (\Delta t ) $ bins : one for short timescales  $\log (\Delta t ) < 1.7$ ($\Delta t < 50$ days), and three for longer timescales : $2.3<\log{(\Delta t)}<2.5$, $2.8<\log{(\Delta t)}<3.0$, and $3.2<\log{(\Delta t)}<3.4$.  We also split the sample in three magnitude bins, which together results in 12 separate $\log(\Delta t)$ - magnitude bins for blue stars and quasars. This allows to check whether there is any dependence of error correction on magnitude or timescale.  For each bin we evaluate the histogram of a quantity $\chi$. As shown on Fig.\ref{fig:3}, the width of $\chi$ distribution differs from 1 for blue stars, which means that $\sigma_{i}$ is either over or under-estimated. Furthermore, at short timescales ($\log{(\Delta t)} < 1.7$) quasars are indistinguishable from stars in $\chi$. However, at longer timescales quasars show distinct signature of variability - the distribution of $\chi$ is much wider for quasars than for stars. To correct the discrepant robust width of stellar $\chi$, we find the correction factor based on the $\sigma_{G}(\chi_{blue})$.  We find that for blue stars there is a magnitude-dependent  linear relationship between the robust width of $\chi$ distribution, and the $\log{(\Delta t)}$, but the $\log{(\Delta t)}$ dependence is an order of magnitude smaller than the magnitude dependence.  For each magnitude bin we fit a straight line, and thus find linear correction coefficients, according to 
+We binned the time lag - magnitude difference points into four $\log (\Delta t ) $ bins : one for short timescales  $\log (\Delta t ) < 1.7$ ($\Delta t < 50$ days), and three for longer timescales : $2.3<\log{(\Delta t)}<2.5$, $2.8<\log{(\Delta t)}<3.0$, and $3.2<\log{(\Delta t)}<3.4$.  We also split the sample in three magnitude bins, which together results in 12 separate $\log(\Delta t)$ - magnitude bins for blue stars and quasars. This allows to check whether there is any dependence of error correction on magnitude or timescale.  For each bin we evaluate the histogram of a quantity $\chi$. As shown on Fig.\ref{fig:3}, the width of $\chi$ distribution differs from 1 for blue stars, which means that $\sigma_{i}$ is either over or under-estimated. Furthermore, at short timescales ($\log{(\Delta t)} < 1.7$) quasars are indistinguishable from stars in $\chi$. However, at longer timescales quasars show distinct signature of variability - the distribution of $\chi$ is much wider for quasars than for stars. To correct the discrepant robust width of stellar $\chi$, we find the correction factor based on the $\sigma_{G}(\chi_{blue})$.  We find that for blue stars there is a magnitude-dependent  linear relationship between the robust width of $\chi$ distribution, and the $\log{(\Delta t)}$, but the $\log{(\Delta t)}$ dependence is an order of magnitude smaller than the magnitude dependence. Therefore we average the value of  $\sigma_{G}(\chi_{blue})$   over all timescales for each magnitude bin, resulting in a single value of correction factor, $f_{c}$, per magnitude bin (see Table~\ref{tab:fc}).  
 
-\begin{equation}
-\label{eq:fc}
-f_{c} = \sigma_{G}(\chi_{Blue}) = a  \, \log_{10}(\Delta t) + b
-\end{equation}
-(see Table 2). We find that higher order polynomial unnecessary, given that the standard deviation of straight line fit is smaller than  0.003, i.e. less than $1\%$ level. 
+% For each magnitude bin we fit a straight line, and thus find linear correction coefficients, according to 
+%\begin{equation}
+%\label{eq:fc}
+%f_{c} = \sigma_{G}(\chi_{Blue}) = a  \, \log_{10}(\Delta t) + b
+%\end{equation}
+%(see Table 2). We find that higher order polynomial unnecessary, given that the standard deviation of straight line fit is smaller than  0.003, i.e. less than $1\%$ level. 
+
 Multiplying  $\sigma_{i}$ by the corresponding $f_{c}$ brings  $\sigma_{G}(\chi_{Blue})$ to 1, as expected. We thus correct the day-averaged errors, which brings down the variability (see Fig.4):
 
 \begin{equation}
@@ -311,15 +313,15 @@ e_{corr} = f_{c} \, e
 
 \begin{table}
 
-\caption{The correction coefficients, as evaluated based on $\sigma_{G}(\chi)$ for blue stars. See Eq.~\ref{eq:fc} for the linear form of the correction factor.}
+\caption{The correction coefficients, as evaluated based on $\sigma_{G}(\chi)$ for blue stars.}
 \label{tab:fc}
 \begin{tabular}{ l|cc } 
 % \hline
-a  & b & mag \\ 
+correction & mag \\ 
  \hline
-0.02418  &  0.83258 &  17   - 18  \\
-0.02650  &  1.04461 &  18   - 18.5  \\
-0.02477  &  1.22914 &  18.5 - 19  
+0.08326 &  17   - 18  \\
+1.04461  &  18   - 18.5  \\
+1.22914  &  18.5 - 19  
 % \hline
 \end{tabular}
 \end{table}
