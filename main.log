@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  10 JAN 2017 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 JAN 2017 17:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1088,26 +1088,31 @@ File: Fig_2_18.5-19_panels.png Graphic file (type png)
 
 <use Fig_2_18.5-19_panels.png>
 Package pdftex.def Info: Fig_2_18.5-19_panels.png used on input line 256.
-(pdftex.def)             Requested size: 240.0pt x 359.99052pt.
- [4pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
-has been already used, duplicate ignored
+(pdftex.def)             Requested size: 287.99927pt x 431.99129pt.
+
+Overfull \hbox (47.99927pt too wide) in paragraph at lines 256--257
+[][]
+ []
+
+[4pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
+as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.294 
+l.292 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.294 
+l.292 
        <./Fig_2_18.5-19_panels.png>]
 Underfull \hbox (badness 4940) in paragraph at lines 302--303
 []\T1/aer/m/n/9 Multiplying $\OML/ntxmi/m/it/9 ^^[[]$ \T1/aer/m/n/9 by the cor-
 re-spond-ing $\OML/ntxmi/m/it/9 f[]$ \T1/aer/m/n/9 brings
  []
 
-<Fig_3_histogram_panels.png, id=291, 562.1pt x 553.06625pt>
+<Fig_3_histogram_panels.png, id=295, 562.1pt x 553.06625pt>
 File: Fig_3_histogram_panels.png Graphic file (type png)
 
 <use Fig_3_histogram_panels.png>
@@ -1118,14 +1123,14 @@ Overfull \hbox (24.00146pt too wide) in paragraph at lines 332--333
 [][]
  []
 
-<Fig_4_SF_QSO_starsB_r_cut.png, id=292, 867.24pt x 867.24pt>
+<Fig_4_SF_QSO_starsB_r_cut.png, id=296, 867.24pt x 867.24pt>
 File: Fig_4_SF_QSO_starsB_r_cut.png Graphic file (type png)
 
 <use Fig_4_SF_QSO_starsB_r_cut.png>
 Package pdftex.def Info: Fig_4_SF_QSO_starsB_r_cut.png used on input line 341.
 (pdftex.def)             Requested size: 240.0pt x 239.99368pt.
 
-<Fig_5_SF_QSO_starsB_r_cut_rest.png, id=297, 867.24pt x 867.24pt>
+<Fig_5_SF_QSO_starsB_r_cut_rest.png, id=301, 867.24pt x 867.24pt>
 File: Fig_5_SF_QSO_starsB_r_cut_rest.png Graphic file (type png)
 
 <use Fig_5_SF_QSO_starsB_r_cut_rest.png>
@@ -1150,24 +1155,20 @@ Underfull \hbox (badness 3815) in paragraph at lines 364--366
 /9 cor-rects the value of
  []
 
-(./main.bbl
-Underfull \vbox (badness 1184) has occurred while \output is active []
-
- [6pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
+(./main.bbl [6pdfTeX warning (ext4): destination with the same identifier (name
+{figure.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.80 ...ki}}{{Koz{\l}owski}}{2016}]{kozlowski2016}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{figure.5}) has been already used, duplicat
-e ignored
+l.65 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.80 ...ki}}{{Koz{\l}owski}}{2016}]{kozlowski2016}
-                                                   <./Fig_4_SF_QSO_starsB_r_cut
-.png> <./Fig_5_SF_QSO_starsB_r_cut_rest.png>])
+l.65 
+      <./Fig_4_SF_QSO_starsB_r_cut.png> <./Fig_5_SF_QSO_starsB_r_cut_rest.png>]
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 385.
  [7
 
@@ -1191,11 +1192,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 385.
 Here is how much of TeX's memory you used:
  10640 strings out of 493014
  147127 string characters out of 6133351
- 267355 words of memory out of 5000000
+ 266701 words of memory out of 5000000
  13770 multiletter control sequences out of 15000+600000
  96396 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,15n,35p,2272b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,15n,35p,2272b,503s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1228,10 +1229,10 @@ st/fonts/type1/public/txfonts/txmia.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on main.pdf (7 pages, 599977 bytes).
+Output written on main.pdf (7 pages, 595146 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
+ 439 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
  72 named destinations out of 1000 (max. 500000)
  122 words of extra memory for PDF output out of 10000 (max. 10000000)
 
