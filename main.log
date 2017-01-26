@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  25 JAN 2017 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  25 JAN 2017 17:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1105,7 +1105,12 @@ File: Fig_1_QSO_CRTS_proc_stats.png Graphic file (type png)
 
 <use Fig_1_QSO_CRTS_proc_stats.png>
 Package pdftex.def Info: Fig_1_QSO_CRTS_proc_stats.png used on input line 139.
-(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
+(pdftex.def)             Requested size: 275.99854pt x 206.9972pt.
+
+Overfull \hbox (35.99854pt too wide) in paragraph at lines 139--140
+[][]
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 146--146
 $[]$ [][][][]$\T1/aett/m/n/8 http : / / docs . astropy . org / en / stable / co
@@ -1119,12 +1124,12 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.153 \begin{equation}
                        <./Fig_1_QSO_CRTS_proc_stats.png>] [3]
-<Fig_2_18.5-19_panels.png, id=275, 578.16pt x 867.24pt>
+<Fig_2_18.5-19_panels.png, id=274, 867.24pt x 1156.32pt>
 File: Fig_2_18.5-19_panels.png Graphic file (type png)
 
 <use Fig_2_18.5-19_panels.png>
 Package pdftex.def Info: Fig_2_18.5-19_panels.png used on input line 263.
-(pdftex.def)             Requested size: 287.99927pt x 431.99129pt.
+(pdftex.def)             Requested size: 287.99927pt x 384.00401pt.
  [4pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
 has been already used, duplicate ignored
 
@@ -1155,7 +1160,7 @@ File: Fig_4_SF_QSO_starsB_r_cut.png Graphic file (type png)
 
 <use Fig_4_SF_QSO_starsB_r_cut.png>
 Package pdftex.def Info: Fig_4_SF_QSO_starsB_r_cut.png used on input line 349.
-(pdftex.def)             Requested size: 275.99854pt x 276.00067pt.
+(pdftex.def)             Requested size: 264.00146pt x 263.99835pt.
 
 <Fig_5_SF_QSO_starsB_r_cut_rest.png, id=312, 867.24pt x 867.24pt>
 File: Fig_5_SF_QSO_starsB_r_cut_rest.png Graphic file (type png)
@@ -1163,10 +1168,7 @@ File: Fig_5_SF_QSO_starsB_r_cut_rest.png Graphic file (type png)
 <use Fig_5_SF_QSO_starsB_r_cut_rest.png>
 Package pdftex.def Info: Fig_5_SF_QSO_starsB_r_cut_rest.png used on input line 
 355.
-(pdftex.def)             Requested size: 275.99854pt x 276.00067pt.
-
-Underfull \vbox (badness 1087) has occurred while \output is active []
-
+(pdftex.def)             Requested size: 264.00146pt x 263.99835pt.
  [5pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
 has been already used, duplicate ignored
 
@@ -1180,13 +1182,13 @@ l.364
                                                   \fi \fi 
 l.364 
        <./Fig_3_histogram_panels.png>]
-<Fig_2_Quasar_PTF_population_selection.png, id=337, 578.16pt x 433.62pt>
+<Fig_2_Quasar_PTF_population_selection.png, id=338, 578.16pt x 433.62pt>
 File: Fig_2_Quasar_PTF_population_selection.png Graphic file (type png)
 
 <use Fig_2_Quasar_PTF_population_selection.png>
 Package pdftex.def Info: Fig_2_Quasar_PTF_population_selection.png used on inpu
 t line 370.
-(pdftex.def)             Requested size: 275.99854pt x 206.9972pt.
+(pdftex.def)             Requested size: 240.0pt x 179.99525pt.
  [6pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 
@@ -1206,40 +1208,35 @@ l.391
                                                   \fi \fi 
 l.391 
        <./Fig_4_SF_QSO_starsB_r_cut.png> <./Fig_5_SF_QSO_starsB_r_cut_rest.png>
-] <Fig_2_18.5-19.0_PTF_panels.png, id=359, 578.16pt x 867.24pt>
+] <Fig_2_18.5-19.0_PTF_panels.png, id=361, 867.24pt x 1156.32pt>
 File: Fig_2_18.5-19.0_PTF_panels.png Graphic file (type png)
 
 <use Fig_2_18.5-19.0_PTF_panels.png>
 Package pdftex.def Info: Fig_2_18.5-19.0_PTF_panels.png used on input line 395.
 
-(pdftex.def)             Requested size: 275.99854pt x 413.9944pt.
+(pdftex.def)             Requested size: 275.99854pt x 368.0009pt.
 
-<Fig_2_18.5-19.0_log_2.6-2.75_hist.png, id=370, 578.16pt x 433.62pt>
+<Fig_2_18.5-19.0_log_2.6-2.75_hist.png, id=372, 578.16pt x 433.62pt>
 File: Fig_2_18.5-19.0_log_2.6-2.75_hist.png Graphic file (type png)
 
 <use Fig_2_18.5-19.0_log_2.6-2.75_hist.png>
 Package pdftex.def Info: Fig_2_18.5-19.0_log_2.6-2.75_hist.png used on input li
 ne 403.
 (pdftex.def)             Requested size: 275.99854pt x 206.9972pt.
-
-Underfull \vbox (badness 1308) has occurred while \output is active []
-
  [7pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.415 W
-       e thank Neven Caplar for  fruitful discussions on the use of PTF data...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
-s been already used, duplicate ignored
+l.420 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.415 W
-       e thank Neven Caplar for  fruitful discussions on the use of PTF data...
- <./Fig_2_Quasar_PTF_population_selection.png> <./Fig_2_18.5-19.0_PTF_panels.pn
-g>] (./main.bbl)
+l.420 
+       <./Fig_2_Quasar_PTF_population_selection.png> <./Fig_2_18.5-19.0_PTF_pan
+els.png>] (./main.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 445.
  [8pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
  has been already used, duplicate ignored
@@ -1265,10 +1262,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 445.
  ) 
 Here is how much of TeX's memory you used:
- 11205 strings out of 493014
- 156627 string characters out of 6133351
- 279696 words of memory out of 5000000
- 14292 multiletter control sequences out of 15000+600000
+ 11206 strings out of 493014
+ 156646 string characters out of 6133351
+ 279962 words of memory out of 5000000
+ 14293 multiletter control sequences out of 15000+600000
  99467 words of font info for 229 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,15n,35p,2372b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1307,10 +1304,10 @@ s/type1/public/txfonts/txmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on main.pdf (8 pages, 725548 bytes).
+Output written on main.pdf (8 pages, 794535 bytes).
 PDF statistics:
- 511 PDF objects out of 1000 (max. 8388607)
- 430 compressed objects within 5 object streams
+ 513 PDF objects out of 1000 (max. 8388607)
+ 432 compressed objects within 5 object streams
  81 named destinations out of 1000 (max. 500000)
  145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
