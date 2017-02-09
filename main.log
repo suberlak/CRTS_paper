@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 FEB 2017 12:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 FEB 2017 12:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1095,14 +1095,14 @@ $[]$ [][][][]$\T1/aett/m/n/8 http : / / www . astro . washington . edu / users
 / ivezic / sdss /
  []
 
-<Fig_1_QSO_CRTS_proc_stats.png, id=186, 578.16pt x 433.62pt>
+<Fig_1_QSO_CRTS_proc_stats.png, id=183, 578.16pt x 433.62pt>
 File: Fig_1_QSO_CRTS_proc_stats.png Graphic file (type png)
 
 <use Fig_1_QSO_CRTS_proc_stats.png>
-Package pdftex.def Info: Fig_1_QSO_CRTS_proc_stats.png used on input line 194.
+Package pdftex.def Info: Fig_1_QSO_CRTS_proc_stats.png used on input line 193.
 (pdftex.def)             Requested size: 275.99854pt x 206.9972pt.
 
-Overfull \hbox (35.99854pt too wide) in paragraph at lines 194--201
+Overfull \hbox (35.99854pt too wide) in paragraph at lines 193--200
 [][]
  []
 
@@ -1111,22 +1111,16 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.212 T
-       o enrich the information about each CRTS object with SDSS color infor...
- <./Fig_1_QSO_CRTS_proc_stats.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 212--212
-$[]$ [][][][]$\T1/aett/m/n/8 http : / / docs . astropy . org / en / stable / co
-ordinates /
- []
-
-[3pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
-as been already used, duplicate ignored
+l.208 \begin{equation}
+                       <./Fig_1_QSO_CRTS_proc_stats.png>] [3pdfTeX warning (ext
+4): destination with the same identifier (name{table.1}) has been already used,
+ duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.297 
+l.307 
       ]
-Overfull \hbox (1.02055pt too wide) in paragraph at lines 334--334
+Overfull \hbox (1.02055pt too wide) in paragraph at lines 323--323
 $[]$ [][]\T1/aer/m/n/8 See http://www.astroml.org/book_figures/chapter5/index.h
 tml| 
  []
@@ -1134,107 +1128,108 @@ tml|
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 339.
+(amsmath)                 on input line 328.
 
-<Fig_2_18.5-19_panels.png, id=277, 867.24pt x 1156.32pt>
+<Fig_2_18.5-19_panels.png, id=266, 867.24pt x 1156.32pt>
 File: Fig_2_18.5-19_panels.png Graphic file (type png)
 
 <use Fig_2_18.5-19_panels.png>
-Package pdftex.def Info: Fig_2_18.5-19_panels.png used on input line 358.
+Package pdftex.def Info: Fig_2_18.5-19_panels.png used on input line 347.
 (pdftex.def)             Requested size: 240.0pt x 319.99158pt.
  [4pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.386 
+l.396 
        <./Fig_2_18.5-19_panels.png>]
-<Fig_3_histogram_panels.png, id=305, 562.1pt x 553.06625pt>
+<Fig_3_histogram_panels.png, id=293, 562.1pt x 553.06625pt>
 File: Fig_3_histogram_panels.png Graphic file (type png)
 
 <use Fig_3_histogram_panels.png>
-Package pdftex.def Info: Fig_3_histogram_panels.png used on input line 437.
+Package pdftex.def Info: Fig_3_histogram_panels.png used on input line 426.
 (pdftex.def)             Requested size: 240.0pt x 236.1429pt.
 
-<Fig_4_SF_QSO_starsB_r_cut.png, id=311, 867.24pt x 867.24pt>
+<Fig_4_SF_QSO_starsB_r_cut.png, id=299, 867.24pt x 867.24pt>
 File: Fig_4_SF_QSO_starsB_r_cut.png Graphic file (type png)
 
 <use Fig_4_SF_QSO_starsB_r_cut.png>
-Package pdftex.def Info: Fig_4_SF_QSO_starsB_r_cut.png used on input line 470.
+Package pdftex.def Info: Fig_4_SF_QSO_starsB_r_cut.png used on input line 459.
 (pdftex.def)             Requested size: 240.0pt x 239.99368pt.
 
-<Fig_5_SF_QSO_starsB_r_cut_rest.png, id=318, 867.24pt x 867.24pt>
+<Fig_5_SF_QSO_starsB_r_cut_rest.png, id=306, 867.24pt x 867.24pt>
 File: Fig_5_SF_QSO_starsB_r_cut_rest.png Graphic file (type png)
 
 <use Fig_5_SF_QSO_starsB_r_cut_rest.png>
 Package pdftex.def Info: Fig_5_SF_QSO_starsB_r_cut_rest.png used on input line 
-481.
+470.
 (pdftex.def)             Requested size: 240.0pt x 239.99368pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [5pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.498 
+l.487 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.498 
-       <./Fig_3_histogram_panels.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+l.487 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4}) has been already used, duplicate ignored
 
-
-<Fig_2_18.5-19.0_PTF_panels.png, id=350, 867.24pt x 1156.32pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.487 
+       <./Fig_3_histogram_panels.png> <./Fig_4_SF_QSO_starsB_r_cut.png>]
+<Fig_2_18.5-19.0_PTF_panels.png, id=337, 867.24pt x 1156.32pt>
 File: Fig_2_18.5-19.0_PTF_panels.png Graphic file (type png)
 
 <use Fig_2_18.5-19.0_PTF_panels.png>
-Package pdftex.def Info: Fig_2_18.5-19.0_PTF_panels.png used on input line 530.
+Package pdftex.def Info: Fig_2_18.5-19.0_PTF_panels.png used on input line 519.
 
 (pdftex.def)             Requested size: 275.99854pt x 368.0009pt.
- [6pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+
+Underfull \vbox (badness 6173) has occurred while \output is active []
+
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.559 \section
-              *{Acknowledgements}pdfTeX warning (ext4): destination with the sa
-me identifier (name{figure.5}) has been already used, duplicate ignored
+l.545 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.3
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.559 \section
-              *{Acknowledgements}pdfTeX warning (ext4): destination with the sa
-me identifier (name{table.3}) has been already used, duplicate ignored
+l.545 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.559 \section
-              *{Acknowledgements}pdfTeX warning (ext4): destination with the sa
-me identifier (name{table.4}) has been already used, duplicate ignored
+l.545 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.559 \section
-              *{Acknowledgements} <./Fig_4_SF_QSO_starsB_r_cut.png> <./Fig_5_SF
-_QSO_starsB_r_cut_rest.png>] (./main.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 590.
- [7pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.590 \end{document}
-                     <./Fig_2_18.5-19.0_PTF_panels.png>] [8
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 590.
+l.545 
+       <./Fig_5_SF_QSO_starsB_r_cut_rest.png> <./Fig_2_18.5-19.0_PTF_panels.png
+>] (./main.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 579.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 579.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 590.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 590.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 579.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 579.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AE5A79D72167F4D7AD1AAB3B161790D5;941.
+(rerunfilecheck)             Checksum: 6AF5073AF2947E1A52C02BB072208599;875.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1243,16 +1238,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 590.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 579.
  ) 
 Here is how much of TeX's memory you used:
- 11186 strings out of 493014
- 156120 string characters out of 6133351
- 272731 words of memory out of 5000000
- 14285 multiletter control sequences out of 15000+600000
- 98879 words of font info for 226 fonts, out of 8000000 for 9000
+ 11179 strings out of 493014
+ 156050 string characters out of 6133351
+ 274731 words of memory out of 5000000
+ 14283 multiletter control sequences out of 15000+600000
+ 98391 words of font info for 224 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,15n,35p,1168b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,15n,35p,1168b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1272,24 +1267,23 @@ ts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/texmf-dist/fonts
 type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/tex-gyre/qtmr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/n
-ewtx/rntxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/rn
-txmi5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/rntxmi7.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/newtx/txex-bar.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/txfonts/txmia.pfb></usr/local/texlive/2016/texmf-dist/
-fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on main.pdf (8 pages, 737781 bytes).
+public/tex-gyre/qtmr.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/newtx/rntxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/
+rntxmi5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/rntxmi
+7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/newtx/txex-bar.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/txfonts/txmia.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on main.pdf (7 pages, 725888 bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
- 425 compressed objects within 5 object streams
- 74 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 472 PDF objects out of 1000 (max. 8388607)
+ 405 compressed objects within 5 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 

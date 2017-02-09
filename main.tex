@@ -187,8 +187,7 @@ this step was unnecessary in our analysis.
 In this study we used a sample of 7,932 spectroscopically confirmed S82 quasars from  the Data Release 2, based 
 on the list by \cite{macleod2011}.  The majority (96\%) of  CRTS quasar light curves span the time of 7-9 years, 
 with typical sampling of 1 to 4 observations per night, 70 observing nights on average, and the 
-mean interval between two succesive observing nights of 209 {\bf XXX this cannot be correct!} 
-days (see Fig.~1). We also use CRTS light curves for 52,133 randomly chosen 10\% subsample of the S82 
+mean interval between two succesive observing nights of 1026  days (see Fig.~\ref{fig:1}). We also use CRTS light curves for 52,133 randomly chosen 10\% subsample of the S82 
 standard stars from \cite{ivezic2007}. 
 \begin{figure}
 \includegraphics[width=1.15\columnwidth]{Fig_1_QSO_CRTS_proc_stats.png}
@@ -201,16 +200,6 @@ We use only quasars with light curve averaged error smaller than 0.3, leaving 7,
 The bottom-right panel shows the average time difference (per quasar) between day-averaged epochs.}
 \label{fig:1}
 \end{figure}
-
-
-
-\subsection{Catalog Matching}
-
-{\bf XXX this whole section makes no sense - the starting catalog from MacLeod already includes
-all the relevant SDSS data! I propose to remove this entire section} 
-
-To enrich the information about each CRTS object with SDSS color information, we matched positionally the CRTS data to the SDSS data within the S82 using astropy \citep{robitaille2013} \verb|match_to_catalog_sky|  routine\footnote{\url{http://docs.astropy.org/en/stable/coordinates/matchsep.html\#matching-catalogs}}.  
-Since the SDSS catalog has over 10 times more stars than CRTS, we found an SDSS counterpart to all  CRTS stars within 0.01 arcsec matching radius. The SDSS S82 quasar catalog is not significantly larger than CRTS catalog, and for 7586 CRTS quasars we found an SDSS counterpart within 0.36 arcsec.   We  ignored  15 CRTS quasars for which no SDSS counterpart was found within 1 arcsec.  
 
 
 \subsection{Preprocessing}
@@ -239,11 +228,10 @@ and to avoid implausibly small error estimates, we add in quadrature 0.01$^m$ to
 \subsection{Final Sample Selection}
 
 We have selected both quasars and stars using a combination of information from SDSS and CRTS. 
-To find magnitude difference between different observing nights, we first require that the raw light curve 
-must have more than 10 epochs. This step reduces the sample sizes from the initial 52,131 stars and 7,932 
-quasars to 49,385 stars and 7,707 quasars. We thus also remove those light curves with less than 10 
-observing nights, leaving 48,250 stars and 7,601. {\bf XXX the last two statements sound identical - what's
-the difference between ``10 epochs'' and ``10 nights''?} In addition, we require that the light curve-average 
+To find magnitude difference between different observing nights, we first require that the raw light curves
+must have more than 10 photometric points (raw epochs). This step reduces the sample size from the initial 52,131 stars and 7,932 
+quasars to 49,385 stars and 7,707 quasars. After day-averaging, we also remove light curves with less than 10 
+observing nights (day-averaged epochs), leaving 48,250 stars and 7,601. In addition, we require that the light curve-average 
 of nightly errors $\langle err_{j} \rangle < 0.3^m$ (see Fig.~\ref{fig:1}); this step removes
 fewer than 10\% of light curves. Our final samples include 42,864 stars and 7,108 quasars. 
 
@@ -375,7 +363,7 @@ Both $\mu$ and SF are found from the 2D maximum of the log-likelihood $L_{p}$ on
 \end{figure}
 
 
-The bottem two panels in Fig.~\ref{fig:2} show SF and $\mu$ as a function of $\Delta t$ for quasars, blue 
+The bottom two panels in Fig.~\ref{fig:2} show SF and $\mu$ as a function of $\Delta t$ for quasars, blue 
 and red stars. For $\Delta t$ below about 1000 days, $\mu$ for all three subsamples is within 0.01$^m$
 from zero, as expected. On the other hand, SF below about 100 days is in the range 0.05-0.10$^m$ for
 all three subsamples. In case of quasars, the observed SF$\sim$0.1$^m$ for 10 d $<\Delta t<$100 d
@@ -488,7 +476,7 @@ SF for quasars in agreement with corresponding results obtained by \citep{macleo
 
 \subsection{SF Estimated from PTF Data}
 
-Recently PTF (Palomar Transient Factory) Data Release 3 light curves\footnote{\url{http://www.ptf.caltech.edu/page/lcdb}}
+Recent PTF (Palomar Transient Factory) Data Release 3 light curves\footnote{\url{http://www.ptf.caltech.edu/page/lcdb}}
 can be used for an independent test of our conclusions derived above. We queried the NASA/IPAC Infrared Science 
 Archive\footnote{\url{https://irsa.ipac.caltech.edu}} 'PTF Objects' catalog using coordinates for 7,601 spectroscopically
 confirmed Stripe 82 quasars, and 48,250 standard stars (same as the final samples used for CRTS-based analysis).
