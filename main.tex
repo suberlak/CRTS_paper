@@ -177,7 +177,7 @@ was constructed as described in \cite{ivezic2007}.
 
 \subsection{Catalina Real-time Transient Survey (CRTS) \label{sec:crtsdata}}
 The main goal of CRTS was to find near-Earth objects. Its short intra-night cadence (4 exposures per
-night) was designed to allow a rapid follow-up \citep{graham2015b} , and white light (without filter) 
+night) was designed to allow a rapid follow-up \citep{graham2015b}, and white light (without filter) 
 light curves maximize the sensitivity for faint objects. Three survey telescopes (0.7m Catalina Sky Survey 
 Schmidt in Arizona,  1.5m Mount  Lemmon Survey telescope in Arizona, and the 0.5m Siding Spring Survey 
 Schmidt in Australia) were equipped with identical, 4kx4k CCDs (see \cite{djorgovski2011a} for technical details).
@@ -195,9 +195,9 @@ standard stars from \cite{ivezic2007}.
 on at least 10 distinct nights (epochs). The  distribution of the number of distinct nights is shown in the 
 upper-left panel. Within that sample, $96\%$ of light curves are longer than 7 years.  The upper-right panel 
 shows the mean day-averaged CRTS magnitude, $\langle  m_{j} \rangle$ (see eq.~\ref{eq:1}). 
-The bottom-left panel shows the  mean day-averaged light curve error, $\langle \sigma_{j} \rangle$ (see eq.~\ref{eq:2}). 
+The bottom-left panel shows the  mean day-averaged error, $\langle \sigma_{j} \rangle$ (see eq.~\ref{eq:2}). 
 We use only quasars with light curve averaged error smaller than 0.3, leaving 7,108 quasars in the sample.
-The bottom-right panel shows the average time difference (per quasar) between day-averaged epochs.}
+The bottom-right panel shows the mean time difference $\langle \Delta t \rangle$ between day-averaged epochs. All means here are calculated per lightcurve. }
 \label{fig:1}
 \end{figure}
 
@@ -257,7 +257,7 @@ $r$ mag.  & red stars & blue stars & quasars \\
 18-18.5 & 2087 &  1400  & 333   \\ 
 18.5-19 & 2327 &  1496  & 747   \\
 \hline
-total       & 6576 &  6522 & 1265 
+total       & 7407 &  5691 & 1265 
 \end{tabular}
 \end{table}
  
@@ -349,8 +349,8 @@ evidence for intrinsic variability, SF tends to zero.
 1496 "blue" stars (blue points), and 2327 "red" stars (red points), with SDSS $r$ magnitudes in the range 18.5-19.
  Red and blue stars have SDSS colors $1 < \mathrm{g-i} < 3$ and  $-1 < \mathrm{g-i} < 1$, respectively. All pairwise CRTS brightness 
 differences are binned in 200 linearly spaced bins of time difference $\Delta t$. For each bin, we compute,
-from top to bottom: the standard deviation $\sigma_{stdev}$, the robust standard deviation estimate based on 
-the interquartile range $\sigma_{G}$, the structure function SF, and the mean value of $\Delta m$ per bin $\mu$. 
+from top to bottom: the standard deviation $\sigma_{stdev}$, the robust standard deviation estimate $\sigma_{G}$ based on 
+the interquartile range , the structure function SF, and the mean value of $\Delta m$ per bin $\mu$. 
 Both $\mu$ and SF are found from the 2D maximum of the log-likelihood $L_{p}$ on the $[\mu,\rm{SF}]$ grid
 (see eq.~\ref{eq:logP}).  The yellow dashed line in the third panel traces the fiducial Damped Random Walk model
 (see eq.~\ref{eq:DRWSF}).}
@@ -361,14 +361,14 @@ Both $\mu$ and SF are found from the 2D maximum of the log-likelihood $L_{p}$ on
 The bottom two panels in Fig.~\ref{fig:2} show SF and $\mu$ as a function of $\Delta t$ for quasars, blue 
 and red stars. For $\Delta t$ below about 1000 days, $\mu$ for all three subsamples is within 0.01$^m$
 from zero, as expected. On the other hand, SF below about 100 days is in the range 0.05-0.10$^m$ for
-all three subsamples. In case of quasars, the observed SF$\sim$0.1$^m$ for 10 d $<\Delta t<$100 d
+all three subsamples. In case of quasars, the observed SF$\sim$0.1$^m$ for \mbox{10 d $<\Delta t<$100 d}
 demonstrates that the difference between SDSS results from \cite{macleod2010} (see the yellow dashed
 line in the third panel) and CRTS results from \cite{graham2014} is {\it not} due to different analysis 
 methods (SF vs. SWV, respectively): here we fully reproduce this discrepancy using SF method and 
 CRTS data. 
 
 Fig.~\ref{fig:2} also indicates a plausible solution to this puzzle: the observed SF for both blue and red
-stars in the range 10$^d<\Delta t<$100$^d$ is {\it unexpectedly} range: the values are in the range 
+stars in the range \mbox{10$^d<\Delta t<$100$^d$} is {\it unexpectedly} large: the values are in the range 
 0.05-0.10$^m$ rather than negligible (say, $\la 0.01-0.02^m$). In other words, more variation is 
 observed in light curves of non-variable stars than can be explained with reported photometric errors.
 The same result is obtained for all three chosen magnitude bins. Such a behavior could be observed if 
@@ -385,7 +385,7 @@ computed by the CRTS photometric pipeline are correct, then the distribution of 
 for stars should be distributed as a unit Gaussian, N(0,1). Deviations of the distribution width for stars 
 from unity indicate incorrect photometric error estimates. For quasars, we expect that the width should
 exceed unity because of their intrinsic variability, and that the width should increase with $\Delta t$. 
-We perform this test in Fig.~\ref{fig:3}, where we show $chi$ distributions for both blue stars and quasars, 
+We perform this test in Fig.~\ref{fig:3}, where we show $\chi$ distributions for both blue stars and quasars, 
 and for a grid of $\Delta t$ and magnitude bins. 
 
 For the shortest $\Delta t$ bin ($<$50 days), the distributions for stars and quasars appear indistinguishable

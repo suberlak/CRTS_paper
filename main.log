@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 FEB 2017 12:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 FEB 2017 13:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1143,21 +1143,21 @@ Package pdftex.def Info: Fig_2_18.5-19_panels.png used on input line 346.
                                                   \fi \fi 
 l.390 
        <./Fig_2_18.5-19_panels.png>]
-<Fig_3_histogram_panels.png, id=293, 562.1pt x 553.06625pt>
+<Fig_3_histogram_panels.png, id=294, 562.1pt x 553.06625pt>
 File: Fig_3_histogram_panels.png Graphic file (type png)
 
 <use Fig_3_histogram_panels.png>
 Package pdftex.def Info: Fig_3_histogram_panels.png used on input line 420.
 (pdftex.def)             Requested size: 240.0pt x 236.1429pt.
 
-<Fig_4_SF_QSO_starsB_r_cut.png, id=299, 867.24pt x 867.24pt>
+<Fig_4_SF_QSO_starsB_r_cut.png, id=300, 867.24pt x 867.24pt>
 File: Fig_4_SF_QSO_starsB_r_cut.png Graphic file (type png)
 
 <use Fig_4_SF_QSO_starsB_r_cut.png>
 Package pdftex.def Info: Fig_4_SF_QSO_starsB_r_cut.png used on input line 453.
 (pdftex.def)             Requested size: 240.0pt x 239.99368pt.
 
-<Fig_5_SF_QSO_starsB_r_cut_rest.png, id=306, 867.24pt x 867.24pt>
+<Fig_5_SF_QSO_starsB_r_cut_rest.png, id=307, 867.24pt x 867.24pt>
 File: Fig_5_SF_QSO_starsB_r_cut_rest.png Graphic file (type png)
 
 <use Fig_5_SF_QSO_starsB_r_cut_rest.png>
@@ -1183,7 +1183,7 @@ l.481
                                                   \fi \fi 
 l.481 
        <./Fig_3_histogram_panels.png> <./Fig_4_SF_QSO_starsB_r_cut.png>]
-<Fig_2_18.5-19.0_PTF_panels.png, id=338, 867.24pt x 1156.32pt>
+<Fig_2_18.5-19.0_PTF_panels.png, id=339, 867.24pt x 1156.32pt>
 File: Fig_2_18.5-19.0_PTF_panels.png Graphic file (type png)
 
 <use Fig_2_18.5-19.0_PTF_panels.png>
@@ -1232,16 +1232,19 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 573.
  ) 
 Here is how much of TeX's memory you used:
- 11179 strings out of 493014
- 156050 string characters out of 6133351
- 274652 words of memory out of 5000000
- 14283 multiletter control sequences out of 15000+600000
+ 11175 strings out of 493014
+ 155965 string characters out of 6133351
+ 274591 words of memory out of 5000000
+ 14280 multiletter control sequences out of 15000+600000
  98391 words of font info for 224 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,15n,35p,1085b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,15n,35p,1086b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1274,10 +1277,10 @@ mf-dist/fonts/type1/public/txfonts/txmia.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 722379 bytes).
+Output written on main.pdf (7 pages, 722336 bytes).
 PDF statistics:
  472 PDF objects out of 1000 (max. 8388607)
  405 compressed objects within 5 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 70 named destinations out of 1000 (max. 500000)
  127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
