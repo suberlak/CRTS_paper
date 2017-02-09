@@ -25,7 +25,7 @@
 
 \bibitem[\protect\citeauthoryear{{Djorgovski} et~al.}{{Djorgovski}
   et~al.}{2011}]{djorgovski2011a}
-{Djorgovski}, S.~G., et~al. 2011, ArXiv e-prints
+{Djorgovski}, S.~G., et~al. 2011, ArXiv:1102.5004
 
 \bibitem[\protect\citeauthoryear{{Drake} et~al.}{{Drake}
   et~al.}{2013}]{drake2013}
@@ -51,8 +51,14 @@
 
 \bibitem[\protect\citeauthoryear{{Ivezi{\'c}} et~al.}{{Ivezi{\'c}}
   et~al.}{2014}]{ivezic2014}
-{Ivezi{\'c}}, {\v Z}., {Connelly}, A.~J., {VanderPlas}, J.~T.,  \& {Gray}, A.
-  2014, {Statistics, Data Mining, and Machine Learningin Astronomy}
+{Ivezi{\'c}}, {\v Z}., {Connolly}, A.~J., {VanderPlas}, J.~T.,  \& {Gray}, A.
+  2014, {Statistics, Data Mining, and Machine Learning in Astronomy}
+
+\bibitem[\protect\citeauthoryear{{Ivezi\'c} et~al.}{{Ivezi\'c}
+  et~al.}{2004}]{2004Ivezic}
+{Ivezi\'c}, {\v Z}., et~al. 2004, in IAU Symposium, Vol. 222, The Interplay
+  Among Black Holes, Stars and ISM in Galactic Nuclei, ed.
+  T.~{Storchi-Bergmann}, L.~C. {Ho}, \& H.~R. {Schmitt}, 525
 
 \bibitem[\protect\citeauthoryear{{Ivezi{\'c}} et~al.}{{Ivezi{\'c}}
   et~al.}{2007}]{ivezic2007}
@@ -102,16 +108,14 @@ MacLeod, C.~L., et~al. 2010, The Astrophysical Journal, 721, 1014
   et~al.}{2008}]{schneider2008}
 {Schneider}, D.~P., et~al. 2008, VizieR Online Data Catalog, 7252
 
-\bibitem[\protect\citeauthoryear{Sesar et~al.}{Sesar et~al.}{2007}]{sesar2007}
-Sesar, B., et~al. 2007, The Astronomical Journal, 134, 2236
-
-\bibitem[\protect\citeauthoryear{{S{\"u}veges} et~al.}{{S{\"u}veges}
-  et~al.}{2012}]{suveges2012}
-{S{\"u}veges}, M., et~al. 2012, \mnras, 424, 2528
-
 \bibitem[\protect\citeauthoryear{{Vanden Berk} et~al.}{{Vanden Berk}
   et~al.}{2004}]{berk2004}
 {Vanden Berk}, D.~E., et~al. 2004, \apj, 601, 692
+
+\bibitem[\protect\citeauthoryear{{Vanderplas} et~al.}{{Vanderplas}
+  et~al.}{2012}]{astroML}
+{Vanderplas}, J., {Connolly}, A., {Ivezi{\'c}}, {\v Z}.,  \& {Gray}, A. 2012,
+  in Conference on Intelligent Data Understanding (CIDU), 47
 
 \bibitem[\protect\citeauthoryear{{Zu} et~al.}{{Zu} et~al.}{2013}]{zu2013}
 {Zu}, Y., {Kochanek}, C.~S., {Koz{\l}owski}, S.,  \& {Udalski}, A. 2013, \apj,

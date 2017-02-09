@@ -89,7 +89,7 @@ $^{4}$National Optical Astronomy Observatory, Tucson, AZ, United States.
 \date{Accepted XXX. Received YYY; in original form ZZZ}
 
 % Enter the current year, for the copyright statements etc.
-\pubyear{2016}
+\pubyear{2017}
 
 % Don't change these lines
 \begin{document}
@@ -99,10 +99,21 @@ $^{4}$National Optical Astronomy Observatory, Tucson, AZ, United States.
 
 % Abstract of the paper
 \begin{abstract}
-
-We present improved error analysis for the 7,100 CRTS (Catalina Real-Time Transient Survey) optical  light curves for quasars from the Sloan Digital Sky Survey Stripe 82 catalog. SDSS imaging survey has provided a time-resolved photometric  dataset which greatly improved our understanding of the quasar optical continuum variability: data for monthly and longer timescales  are consistent with a damped random walk. Recently, newer data  obtained by CRTS provided  puzzling evidence for enhanced variability, compared to SDSS results, on monthly time scales. Quantitatively, SDSS results predict  about 0.06 mag root-mean-square variability for timescales below 50 days, while CRTS data show about a factor of two larger rms for spectroscopically confirmed SDSS quasars. Our analysis presented here has successfully resolved this discrepancy as due to slightly underestimated photometric uncertainties provided by the CRTS image processing pipelines. The photometric error correction factors, derived from detailed analysis of non-variable SDSS standard stars that were re-observed by CRTS, are about 20-30\%, and result in a quasar variability behavior implied by the CRTS data that is fully consistent with earlier SDSS results.
-
-
+We present an improved photometric error analysis for the 7,100 CRTS (Catalina Real-Time Transient Survey) 
+optical  light curves for quasars from the SDSS (Sloan Digital Sky Survey) Stripe 82 catalog. SDSS imaging survey 
+has provided a time-resolved photometric  dataset which greatly improved our understanding of the quasar 
+optical continuum variability: data for monthly and longer timescales  are consistent with a damped random walk (DRW).
+Recently, newer data  obtained by CRTS provided  puzzling evidence for enhanced variability, compared to SDSS 
+results, on monthly time scales. Quantitatively, SDSS results predict  about 0.06 mag root-mean-square variability 
+for timescales below 50 days, while CRTS data show about a factor of two larger rms, for spectroscopically confirmed 
+SDSS quasars. Our analysis presented here has successfully resolved this discrepancy as due to slightly underestimated 
+photometric uncertainties provided by the CRTS image processing pipelines. As a result, the correction for observational 
+noise is too small and the implied quasar variability is too large. The CRTS photometric error correction factors, derived 
+from detailed analysis of non-variable SDSS standard stars that were re-observed by CRTS, are about 20-30\%, and 
+result in a quasar variability behavior implied by the CRTS data that is fully consistent with earlier SDSS results. An 
+additional analysis based on independent light curve data for the same objects obtained by the Palomar Transient Factory 
+provides further support for this conclusion. In summary, the quasar variability constraints on weekly and monthly time
+scales from SDSS, CRTS and PTF surveys are mutually compatible, as well as consistent with DRW model. 
 \end{abstract}
 
 
@@ -111,337 +122,470 @@ We present improved error analysis for the 7,100 CRTS (Catalina Real-Time Transi
 %%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-Variability can be used to both characterize and select quasars  in sky surveys (for a recent overview, see \cite{lawrence2016a}) . Although various time scales of variability can be linked to physical parameters, such as accretion disk viscosity, or corona geometry (\cite{kelly2011}, Graham+2014), the physical mechanism remains elusive, and most viable explanations include accretion disk instabilities  \citep{kawaguchi1998}, surface thermal fluctuations from magnetic field turbulence \citep{kelly2009}, coronal x-ray heating \citep{kelly2011} (see \cite{kozlowski2016} for review).
-The diversity of  physical scenarios available to explain the origin of quasar variability results in a variety of ways to characterize it. The two most widely used approaches to describe variability of quasars  are damped random walk (DRW) and structure function (SF). The DRW model is more suited for light curves with a typical cadence of days \citep{zu2013, kozlowski2016}, whereas an ensemble SF analysis is better for sparsely sampled light curves \citep{hawkins2002, berk2004,   devries2005, schmidt2010, graham2014}, or review in \cite{kozlowski2016}). For CRTS sparsely sampled light curves we prefer the SF approach, as more robust  than fitting for DRW parameters.
+Variability can be used to both select and characterize quasars in sky surveys (for a recent overview see \citealt{lawrence2016a}). Although various time scales of variability can be linked to physical parameters, such as accretion disk viscosity, or corona geometry (\citealt{kelly2011}; \citealt{graham2014}), the physical mechanism remains elusive. Most viable explanations for observed
+variability include accretion disk instabilities \citep{kawaguchi1998}, surface thermal fluctuations from magnetic field turbulence \citep{kelly2009}, and
+coronal x-ray heating \citep[][see \citealt{kozlowski2016} for a review]{kelly2011}.
 
-Although SF can be defined  in a variety of ways, it can be characterized by a simple broken power law \citep{schmidt2010}. At short timescales,  the variability amplitude increases, following a steeper power law index,  until the power law index starts to flatten  above the characteristic timescale  $\tau$.   This knee in the power law  description may correspond to a transition from the stochastic thermal  process driving  the variability, to the physical response of the disk that successfully  dampens the amplitude on longer timescales (\cite{lawrence2016a, kelly2007,kelly2009, kelly2011, peterson2001} ,  (linking the amplitude to the black hole mass)). Indeed,  in x-rays quasars are described by a broken  power law, where the  break timescale is linked to the size of x-ray emitting region ( \cite{kelly2011} in \cite{graham2014}). 
+The diversity of  physical scenarios available to explain the origin of quasar variability results in a variety of ways to characterize it. The two most widely used approaches to describing variability of quasars include structure function (SF) analysis and light curve
+fitting based on damped random walk (DRW, also known as the Ornstein--Uhlenbeck process) model (\citealt{kelly2007}; \citealt{macleod2011}). SF analysis essentially measures the 
+width of the magnitude difference distribution as a function of the time separation, $\Delta t$. 
+The DRW model approach is better suited for well-sampled light curves with a typical cadence of days \citep{zu2013, kozlowski2016}, whereas an ensemble SF analysis is better for sparsely sampled light curves \citep{hawkins2002, berk2004,  devries2005}; for a review and discussion see \cite{kozlowski2016}. For sparsely sampled CRTS (the Catalina Real-time Transient Survey) light curves 
+analyzed here (see \S\ref{sec:crtsdata}), the SF approach is more robust than fitting DRW model parameters.
 
-Altough previous studies found that  $\tau > 100$ days  (\cite{macleod2010},  \cite{kozlowski2016}), recently, \cite{graham2014} used the SF, DRW, and Slepian Wavelet Variance (SWV) analysis for CRTS and SDSS S82 lightcurves. Using SWV on CRTS data they found characteristic time scales at   QSO rest frame of $\log_{2}(\tau) = 5.75$)  54 days,  and ($\log_{2}(\tau)=8.2$) -  294 days. Additionally, using this method on S82 data they found a peak at $\log_{2}(\tau) = 7.25$ , and for OGLE  at $\log_{2}(\tau)$ $> 6$ . The short timescale of   $\tau = 54$ days is surprising, as it is shorter by a factor of two than any previous estimates \citep{macleod2011, zu2013}. We set out to reanalyze the CRTS data, and investigate the plausibility of these discrepant timescales. 
+The observed SF is often characterized by a simple power law \citep{schmidt2010}. If the probed time scales are long enough 
+($\sim$ years), the power law flattens above a characteristic timescale, $\tau$ \citep{2004Ivezic, kelly2007, macleod2010}.
+This timescale may correspond to a transition from the stochastic thermal process that drives the variability to the physical 
+response of the disk that successfully  dampens the amplitude on longer timescales \citep{peterson2001, kelly2007, kelly2009, 
+kelly2011, lawrence2016a}. In the context of DRW model, the expected SF is described by 
+\begin{equation}
+\label{eq:DRWSF}
+        {\rm SF}(\Delta t) = {\rm SF}_\infty \, \left[1 - \exp(-\Delta t / \tau) \right]^{1/2},
+\end{equation}
+where ${\rm SF}_\infty$ is the asymptotic value of the structure function (for $\Delta t \ll \tau$, SF($\Delta t$) $\propto \Delta t^{1/2}$). 
+
+Most studies found that $\tau > 100$ days (\citealt{macleod2010};  \citealt{kozlowski2016}). Recently, \cite{graham2014} 
+found a characteristic time scale in quasar's rest frame of about 54 days, using the Slepian Wavelet Variance (SWV) analysis
+of CRTS light curves. This short timescale implies much stronger variability on monthly time scales than observed in SDSS 
+data: SDSS results from \cite{macleod2010} predict about 0.06 mag root-mean-square (rms) variability for timescales below 
+50 days, while this CRTS-based analysis implies about a factor of two larger rms. These discrepancies have serious
+implications for physical interpretations of quasar variability: observed time scales are directly related to physical processes
+and increased variability levels call in question DRW as a viable model for describing quasar light curves 
+(\citealt{macleod2010};  \citealt{kozlowski2016}). 
+
+It is not obvious whether these discrepancies are due to various problems with CRTS and/or SDSS datasets
+(inadequate sampling, incorrect estimates of photometric errors, etc), or perhaps are due to different analysis 
+methods (SWV vs. SF analysis). Here we reanalyze these CRTS data using the same SF method as used by
+\cite{macleod2010} to analyze SDSS data, and investigate the origin of these discrepant timescales and 
+variability levels. We argue that the most likely explanation of these discrepancies are slightly under-estimated
+photometric errors for CRTS light curve data. 
 
 
 \section{Data Sets}
 
-We study stars and quasars from  Stripe 82 (S82), using the  Sloan Digital Sky Survey   and the Catalina Real-time Transient Survey data. S82 is a large (over 100 deg$^{2}$), repeatedly observed reqion of the equatorial sky ($22^{h} 24^{m} < \mathrm{RA} < 04^{h} 08^{m}$ and $\mathrm{| Dec |} < 1.27 deg$)    \citep{sesar2007, suveges2012}. 	
+We study stars and quasars selected from the sky region known as SDSS Stripe 82 (S82; a $\sim$300 deg$^2$ large
+region along the Celestial Equator: $22^{h} 24^{m} < \mathrm{RA} < 04^{h} 08^{m}$ and $\mathrm{| Dec |} < 1.27^\circ$). 
+We utilize both SDSS and CRTS photometric data. 
 
 \subsection{Sloan Digital Sky Survey (SDSS)}
-We use the SDSS catalog data with  robust,  five-band near-simultaneous  photometry for  9258  quasars,  and 1006849 standard stars - we use it for photometric color information and sample selection.  The  quasar catalog \footnote{\url{http://www.astro.washington.edu/users/ivezic/cmacleod/qso_dr7/Southern.html}} contains spectroscopically confirmed quasars from the SDSS Data Release 7 \citep{abazajian2009}, based on the SDSS Quasar  Catalog IV (\cite{schneider2008} VizieR Online Data Catalog, 7252, 0), and was compiled by \cite{macleod2011} . The standard stars catalog\footnote{\url{http://www.astro.washington.edu/users/ivezic/sdss/catalogs/stripe82.html}} ver. 2.6 was compiled by \cite{ivezic2007}.
 
-\subsection{Catalina Real-time Transient Survey (CRTS)}
-The CRTS data consists of white light (no filter) lightcurves  - it was designed to find near-Earth objects, hence short intra-night cadence, to allow a rapid follow up \citep{graham2015b} .  Three survey telescopes (0.7m Catalina Sky Survey Schmidt in Arizona,  1.5m Mount  Lemmon Survey telescope in Arizona, and the 0.5m Siding Spring Survey Schmidt in Australia) were equipped with identical, 4kx4k CCDs taking 4 exposures each night (see \cite{djorgovski2011a} for technical details).
-Although in principle white light magnitudes can be calibrated to Johnson V-band zero point \citep{drake2013}, we found this step redundant in our analysis. 
+We use two SDSS catalogs, with five-band near-simultaneous photometry for 9,258  quasars,  and 1,006,849 standard stars
+(non-variable stars, as implied by the repeated SDSS photometry, see \citealt{ivezic2007}). 
+The quasar catalog\footnote{\url{http://www.astro.washington.edu/users/ivezic/cmacleod/qso_dr7/Southern.html}} includes spectroscopically confirmed quasars from the SDSS Data Release 7 \citep{abazajian2009}, based on the SDSS Quasar Catalog IV \citep{schneider2008}, and was compiled by \cite{macleod2011}. The standard stars
+catalog\footnote{\url{http://www.astro.washington.edu/users/ivezic/sdss/catalogs/stripe82.html}} 
+was constructed as described in \cite{ivezic2007}.
 
-In this study we used a sample of 7932 spectroscopically confirmed S82  quasars,   prepared by B. Sesar, from  the Data Release 2, based on the list by \cite{macleod2011}.  The majority (96\%) of  CRTS quasar lightcurves span the time of 7-9 years, with a mean sampling of 1 to 4 times per night,  on 70 nights on average (see Fig.1, upper-left panel).  Mean interval between epochs is 209 days (\ref{fig:1} bottom-right panel), and the mean quasar magnitude is 19.5 mag. 
 
-For comparison we use the CRTS lightcurves of 52133 randomly chosen  10\% of the S82 standard stars catalog ver.2.6 \citep{ivezic2007}, extracted by B. Sesar from the CRTS Data Release 2.
+\subsection{Catalina Real-time Transient Survey (CRTS) \label{sec:crtsdata}}
+The main goal of CRTS was to find near-Earth objects. Its short intra-night cadence (4 exposures per
+night) was designed to allow a rapid follow-up \citep{graham2015b} , and white light (without filter) 
+light curves maximize the sensitivity for faint objects. Three survey telescopes (0.7m Catalina Sky Survey 
+Schmidt in Arizona,  1.5m Mount  Lemmon Survey telescope in Arizona, and the 0.5m Siding Spring Survey 
+Schmidt in Australia) were equipped with identical, 4kx4k CCDs (see \cite{djorgovski2011a} for technical details).
+Although in principle white light magnitudes can be calibrated to Johnson's V band zero point \citep{drake2013},
+this step was unnecessary in our analysis. 
 
+In this study we used a sample of 7,932 spectroscopically confirmed S82 quasars from  the Data Release 2, based 
+on the list by \cite{macleod2011}.  The majority (96\%) of  CRTS quasar light curves span the time of 7-9 years, 
+with typical sampling of 1 to 4 observations per night, 70 observing nights on average, and the 
+mean interval between two succesive observing nights of 209 {\bf XXX this cannot be correct!} 
+days (see Fig.~1). We also use CRTS light curves for 52,133 randomly chosen 10\% subsample of the S82 
+standard stars from \cite{ivezic2007}. 
 \begin{figure}
+\includegraphics[width=1.15\columnwidth]{Fig_1_QSO_CRTS_proc_stats.png}
+\caption{The distribution of properties of 7,601 CRTS quasar light curves for objects that were observed 
+on at least 10 distinct nights (epochs). The  distribution of the number of distinct nights is shown in the 
+upper-left panel. Within that sample, $96\%$ of light curves are longer than 7 years.  The upper-right panel 
+shows the mean day-averaged CRTS magnitude, $\langle  m_{j} \rangle$ (see eq.~\ref{eq:1}). 
+The bottom-left panel shows the  mean day-averaged light curve error, $\langle \sigma_{j} \rangle$ (see eq.~\ref{eq:2}). 
+We use only quasars with light curve averaged error smaller than 0.3, leaving 7,108 quasars in the sample.
+The bottom-right panel shows the average time difference (per quasar) between day-averaged epochs.}
 \label{fig:1}
- \includegraphics[width=1.15\columnwidth]{Fig_1_QSO_CRTS_proc_stats.png}
- \caption{The properties of 7601 day-averaged CRTS quasar lightcurves that have over 10 day-averaged epochs. The upper-left panel shows the distribution of the lightcurve length after day averaging, corresponding to the number of distinct days on which CRTS quasars were observed. The mean of quantities on the following three panels corresponds to the average over a lightcurve. First, the upper-right panel shows the mean day-averaged CRTS magnitude, $\langle  m_{j} \rangle$ (see eq.~\ref{eq:1}). Second, the bottom-left panel shows the  mean day-averaged lightcurve error, $\langle \sigma_{j} \rangle$ (see eq.~\ref{eq:2}). Finally, the bottom-right panel depicts the average time  difference between day-averaged epochs,  $\langle \Delta t \rangle$. Within that sample , $96 \% $ observations of quasars span the time of 7-9 years.  $91.2\%$ of  quasars were observed between 1 to 4 times per night. We use only quasars with light curve averaged error smaller than 0.3, leaving 7108 quasars in the sample.}
 \end{figure}
 
 
 
 \subsection{Catalog Matching}
+
+{\bf XXX this whole section makes no sense - the starting catalog from MacLeod already includes
+all the relevant SDSS data! I propose to remove this entire section} 
+
 To enrich the information about each CRTS object with SDSS color information, we matched positionally the CRTS data to the SDSS data within the S82 using astropy \citep{robitaille2013} \verb|match_to_catalog_sky|  routine\footnote{\url{http://docs.astropy.org/en/stable/coordinates/matchsep.html\#matching-catalogs}}.  
 Since the SDSS catalog has over 10 times more stars than CRTS, we found an SDSS counterpart to all  CRTS stars within 0.01 arcsec matching radius. The SDSS S82 quasar catalog is not significantly larger than CRTS catalog, and for 7586 CRTS quasars we found an SDSS counterpart within 0.36 arcsec.   We  ignored  15 CRTS quasars for which no SDSS counterpart was found within 1 arcsec.  
 
 
 \subsection{Preprocessing}
 \label{sec:preprocessing}
-It is common to bin the data to reduce noise, by averaging over timescales shorter than what is required by the science goals. In this study, the hourly timescale of intra-night variability of CRTS lightcurves, with $\approx 4$ epochs each night, is much shorter than the timescales of interest on the order of tens of days.  Thus, as part of preprocessing we day-averaged all  CRTS light curves, following a procedure similar to \cite{charisi2016}. We adopt a convention that an index  $i$ runs over intra-night observations, and an index $j$ separates distinct observing nights. Thus the day-averaged timestamp is : 
+It is common to bin the data to reduce noise, by averaging over timescales shorter than what is required by the science goals. In this study, the hourly timescale of intra-night variability of CRTS light curves, with $\sim4$ epochs each night, is much shorter than the timescales of interest (of the order of tens of days).  We day-averaged all CRTS light curves following a procedure similar to \cite{charisi2016}. We adopt a convention that an index  $i$ runs over intra-night observations, and an index $j$ separates distinct observing nights. Thus the day-averaged timestamp is : 
 \begin{equation}
-t_{j} = \langle t_{ij} \rangle = \frac{\sum_{i=1}^{N}{ t_{ij} }} {N} 
+t_{j} = \langle t_{ij} \rangle =  N^{-1} \, \sum_{i=1}^{N}{ t_{ij} }
 \end{equation}
-where $i=1...N$, is the number of observations per night. We similarly replace each set of N brightness measurements from the  $j$-th  night by their mean weighted by the inverse square of error:
+where N is the number of observations per night. We similarly replace each set of N brightness measurements from the  $j$-th  night by their mean weighted by the inverse square of error:
 \begin{equation}
 \label{eq:1}
  m_{j} = \langle m_{ij} \rangle = \frac{\sum_{i=1}^{N} {w_{i,j} m_{i,j}} } {\sum_{i=1}^{N} {w_{i,j}} }
 \end{equation}
-with weights $w_{i,j} = e_{i,j}^{-2}$.  
+with weights $w_{i,j} = err_{i,j}^{-2}$, where $err_{i,j}$ are photometric uncertainty (colloquially, ``error'') estimates
+for individual photometric data points computed by the CRTS photometric pipeline. 
 
 Finally, we estimate the error on the weighted mean $m_{j}$ by the inverse square of the sum of weights:  
 \begin{equation}
 \label{eq:2}
-\sigma_{j}(m_{j}) = \frac{1}{\sqrt{\sum_{i}{w_{i,j}}}}
-\end{equation} and to avoid unphysically small errors, we add in quadrature 0.01\textsuperscript{mag}  to $\sigma_{j}$ if $\sigma_{j} < 0.02$\textsuperscript{mag}. 
-
-
-\subsection{Selection}
-We have selected both quasars and stars using a combination of information from SDSS and CRTS. To find magnitude difference between different days we first require that the raw lightcurve has more than 10 epochs, which from initial 52131 stars and 7932 quasars left 49385 stars and 7707 quasars. We thus also remove those lightcurves with less than 10 days of observations, leaving 7601 quasars and 48250 stars.  We also require that the lightcurve-average of day-error $\langle \sigma_{j}(m_{j}) \rangle < 0.3$\textsuperscript{mag} (see Fig.\ref{fig:1}). Since the raw distribution of errors peaks at lower values (mean of 0.19\textsuperscript{mag} for stars and 0.22\textsuperscript{mag} for quasars) than the distribution of the weighted mean errors (mean of 0.13\textsuperscript{mag} for stars and 0.15\textsuperscript{mag} for quasars), this cut only removes less than 10\% of lightcurves. Our final sample consists of 7108 quasars and 42864 stars.
-
-\section{Analysis Methods}
-\label{sec:analysis}
-% opening sentence
-To analyze the quasar and stellar lightcurves we consider a relationship between measured data $m_{j}$  at times $t_{j}$, and its "copy" shifted by $\Delta  t$ \citep{kozlowski2016}. We simultaneously consider all differential points for a given object type, binning the magnitude differences according to the time shift  $\Delta t$.  For each bin we calculate  statistical properties that characterize the variability. By comparing quasars to stars split by color into "blue" and "red" groups, we infer that from CRTS data their variability is consistent with noise at short timescales ($\log_{10}\Delta t < 1.7 $) . 
-
-\subsection{Structure Function}
-% What is SF
-The structure function is a well-studied approach to characterizing lightcurves \citep{berk2004, devries2005, kozlowski2016, graham2013} . To avoid the uncertain redshift estimate from the SDSS spectra that would be required to correct to the rest-frame variability, for the majority of analysis we use the observed frame time lags (see \cite{schmidt2010, kozlowski2016}).   Thus, for two day-averaged epochs $j$ and $k$, $j > k$ the  magnitude difference is $\Delta m_{j,k} = m_{j} - m_{k}$, the time difference is  $\Delta t_{j,k} = t_{j} - t_{k}$, and the combined error is $\sigma_{j,k}^{2} = \sigma_{j}^{2} + \sigma_{k}^{2}$. 
-%[NOTE : Graham+2014 uses observed and rest-frame interchangeably - some timescales are quoted in %observed, the others in restframe... ]
-
-% Binning
-To study the statistical distribution of ensemble time-lag magnitude differences we bin the data along $\Delta t_{j,k} $, or for brevity  $\Delta t$ (similar convention for $\Delta m$ and $\sigma$). For each object  we prepared 'master' files containing $\Delta m$, $\Delta t$, $\sigma$. Each object, with a median lightcurve length of 70 days,  contributes on average $\sum_{j=2}^{70}{(j-1)} = 2415$  $\Delta m$ points . Thus we have sufficient amount of $\Delta t$ points to study their statistical properties by splitting them into 200 linearly spaced bins of  $\Delta t$. Bin number does not affect significantly the shape of the structure function, and 200 bins is a good choice to provide adequate time resolution and ensure a large number of  $\Delta m$ in each bin.
-
-% Structure Function 
-With  various theoretical definitions of structure function (see \cite{kozlowski2016} for overview), we adopt a view from \cite{ivezic2014}, that $SF$ corresponds to the intrinsic width of the $\Delta m$ distribution  $\mathcal{N}(\sigma,\mu)$. Consider all N  $\Delta m$  points in a certain $\Delta t$  bin.  Each point has an error, which we assume is drawn from the Gaussian distribution with a known width $e_{i}$ (here index $i$ runs over all points in a given $\Delta t$ bin). Thus each $\Delta m$ (called $x_{i}$ for brevity, as  in  \cite{ivezic2014}), is drawn from a distribution  with a total width $\sigma_{tot} = \sqrt{\sigma^{2} + e_{i}^{2}}$. 
-
-Then the likelihood for a set of measurements $\{x_{i}\}$ is given by a product of likelihoods for each value of $x_{i}$:
-
-\begin{equation}
-p(\{ x_{i}\} | \mu, \sigma, I) =  \prod _{i=1}^{N} { \frac{1}{\sqrt{2\pi \sigma_{tot}}} \exp{\left( \frac{-(x_{i}-\mu)^{2}}{2\sigma_{tot}^{2}} \right)}}
-\end{equation}
-
-Using uniform priors, the logarithm of the posterior pdf is :
-
-\begin{equation}
-\label{eq:logP}
-L_{p} = const - \frac{1}{2} \sum_{i=1}^{N} {\left( \ln{(\sigma_{tot}^{2})} + \frac{(x_{i}-\mu)^{2}}{\sigma_{tot}} \right) }
-\end{equation}
-
-To find $SF = (\sigma)$, we evaluate $L_{p}$ on a grid of $\mu, \sigma$, and marginalize over $\mu$ to find likelihood for $\sigma$:  
-
-\begin{equation}
-p(\sigma|\{ x_{i}\}, I) = \int_{0}^{\infty} {p(\mu,\sigma |\{ x_{i}\}, I )} d \mu
-\end{equation}
-
-The zero point of the first derivative of this likelihood: $\sigma_{0}$,  is the most likely value of $\sigma$. An alternative way is to find the $2D$ maximum of $\exp{(L_{p})}$ to obtain simultaneously both $\mu_{0}$ and $\sigma_{0}$. However, without any prior constraint on the value of $\mu_{0}$ or $\sigma_{0}$ this procedure can be  computationally expensive. Thus we first find  approximate values of  $\sigma_{0}$ and $\mu_{0}$.  The sample median is a good estimator of $\mu_{0}$, and $\sigma_{0}$ can be estimated by:
-
-\begin{equation}
-\sigma_{0}^{2} = \zeta^{2} \sigma_{G}^{2} - e_{50}^{2}
+err_{j} = \left(\sum_{i=1}^{N} {w_{i,j}}\right)^{-1/2}, 
 \end{equation} 
-where:
-\begin{equation}
-\zeta = median(\tilde{\sigma_{i}}) / mean(\tilde{\sigma_{i}}),
-\end{equation} 
-\begin{equation}
-\tilde{\sigma_{i}} = (\sigma_{G}^{2} + e_{i}^{2} - e_{50}^{2})^{1/2},
-\end{equation}
-\begin{equation}
-\sigma_{G} = 0.741 (Z_{75\%} - Z_{25\%}), 
-\end{equation}
-where $Z$ is the sorted $\Delta m$ per bin, and $e_{50} = median(\sigma)$.
-
-Now, if errors were all equal ($e_{i} = e$), then $e_{50} = e$, and $\tilde{\sigma_{i}}= \sigma_{G}$, so that $\zeta=1$ , and thus $\sigma_{0}^{2} = \sigma_{G}^{2} - e^{2}$. 
-
-If errors were not all equal, but very small compared to $\sigma_{G}$, then $\tilde{\sigma_{i}} \to \sigma_{G}$, and $\zeta \to 1$, so that  $\sigma_{0}^{2} = \sigma_{G}^{2} - e_{50}^{2}$, but since $e_{50} \ll \sigma_{G}$,  $\sigma_{0}^{2} \approx \sigma_{G}^{2}$. This explains why $\sigma_{G}$ can be seen as an approximation of $SF$ (see eq.10 in \cite{kozlowski2016}). 
-
-Therefore, to find the best estimate of $SF = \sigma_{0}$, we evaluate 1000 boostrapped resamples of $\Delta m$ in each $\Delta t$ bin, and hence find upper and lower limits on the approximate value of $\sigma_{0}$. We use these values as limits on our grid  of  $\mu$, $\sigma$, on which we evaluate the full solution from  $L_{p}$. 
+and to avoid implausibly small error estimates, we add in quadrature 0.01$^m$ to $err_{j}$ if $err_{j} < 0.02^m$
+(note that for homoscedastic errors, $err_{i,j}=\overline{err}$, $err_j = \overline{err}/\sqrt{N}$). 
 
 
-\subsection{Statistics, sample construction}
-\label{sec:stats}
-% What is on the four-panel plot: SF, st dev , sigmaG, mu  
-As described above, $\sigma_{0}$, $\sigma_{G}$ and $\mu$ are all related in describing the structure function and variability of quasars, and thus we plot them as a function of $\Delta t$ on Fig.~\ref{fig:2}. As a guide to the width of the $\Delta m$ distribution, we also plot its standard deviation, i.e. the square root of the average of the squared deviations from the mean:
-\begin{equation}
-\sigma_{stdev} = \sqrt{ \frac{\sum\left(\Delta m - \overline{\Delta m}\right)^{2} } { N_{bin}}}   
-\end{equation}
+\subsection{Final Sample Selection}
 
-% color selection
-To consider the effect of stellar color on variability we divided the sample of stars into two SDSS g-i color bins: "red" stars with $1<g-i<3$, and  "blue" stars with $-1<g-i<1$. We expect blue stars to be preferentially brighter, and have smaller variability than the red stars. See Table ~\ref{tab:object_count} for the number of stars and quasars in each color-magnitude bin. 
+We have selected both quasars and stars using a combination of information from SDSS and CRTS. 
+To find magnitude difference between different observing nights, we first require that the raw light curve 
+must have more than 10 epochs. This step reduces the sample sizes from the initial 52,131 stars and 7,932 
+quasars to 49,385 stars and 7,707 quasars. We thus also remove those light curves with less than 10 
+observing nights, leaving 48,250 stars and 7,601. {\bf XXX the last two statements sound identical - what's
+the difference between ``10 epochs'' and ``10 nights''?} In addition, we require that the light curve-average 
+of nightly errors $\langle err_{j} \rangle < 0.3^m$ (see Fig.~\ref{fig:1}); this step removes
+fewer than 10\% of light curves. Our final samples include 42,864 stars and 7,108 quasars. 
+
+A crucial part of our analysis below is a test of photometric uncertainties computed by the CRTS photometric
+pipeline using repeated CRTS observations of non-variable stars. In order to test for possible systematic
+effects with respect to magnitude (most notably the increase of photometric noise towards
+the faint end) and color, we first select  subsamples from three magnitude bins, using the SDSS $r$ magnitudes: 
+{\it bright:} 17-18,  {\it medium:} 18-18.5, and {\it faint:} 18.5-19. We note that the faint completeness limit 
+of the SDSS spectroscopic quasar sample is $r\sim19$, and that the CRTS white light magnitudes are strongly
+correlated with the SDSS $r$ magnitudes. Furthemore, we split the stellar sample using SDSS color measurements
+into the ``blue'' ($-$1$<g-i<$1) and ``red'' (1$<g-i<$3) subsamples. Table~\ref{tab:object_count} shows the 
+number of objects in each type-magnitude bin.  
 
 \begin{table}
 \centering
-\caption{Count of stars and quasars, selected by their SDSS r-magnitude. For all objects we also required that the CRTS lightcurve error is smaller than $0.3$ mag.}
+\caption{Count of stars and quasars, selected by their SDSS $r$ magnitudes and $g-i$ colors.}
 \label{tab:object_count}
-\begin{tabular}{ l|ccc } 
-% \hline
-r-mag  & red stars & blue stars & quasars \\ 
- \hline
+\begin{tabular}{ r|rrr } 
+\hline
+$r$ mag.  & red stars & blue stars & quasars \\ 
+\hline
 17-18   & 2993 & 2795   & 185    \\ 
 18-18.5 & 2087 &  1400  & 333   \\ 
-18.5-19 & 1496 &  2327  & 747   
-% \hline
+18.5-19 & 1496 &  2327  & 747   \\
+\hline
+total       & 6576 &  6522 & 1265 
 \end{tabular}
 \end{table}
  
-% magnitude selection  
-To consider any magnitude-dependent trends in the data, such as increasing photometric error for fainter objects, we split our sample into three magnitude bins: bright  17-18,  medium 18-18.5 , and faint  18.5-19\textsuperscript{mag}. We used SDSS r-magnitude to select the magnitude of objects, which is correlated to the CRTS white light magnitude for both stars and quasars. Table~\ref{tab:object_count} shows the number of objects per magnitude bin.  
+
+
+\section{Analysis}
+\label{sec:analysis}
+
+The structure function (SF) is a well-studied approach to characterizing light curves \citep{2004Ivezic, berk2004, devries2005, macleod2010, graham2013, kozlowski2016}. SF for a light curve is a measure of the width of the magnitude difference distribution, as a function of
+the time separation, $\Delta t$ (see below for a discussion of how to account for observational errors). SF is closely related to auto-correlation
+function and the frequency power spectrum (for a detailed discussion,  see \citealt{ivezic2014}). For two (day-averaged) epochs $j$ and $k$, 
+with $j > k$, the magnitude difference is computed as $\Delta m_{j,k} = m_{j} - m_{k}$, the time difference is  $\Delta t_{j,k} = t_{j} - t_{k}$, and 
+the combined magnitude measurement error (measurement uncertainty for $\Delta m_{j,k}$) is $e_{j,k} = (err_{j}^{2} + err_{k}^{2})^{1/2}$ (where 
+$err_{j}$ is defined by eq.~\ref{eq:2}). 
+
+We compute SF as a function of time difference $\Delta t_{j,k}$ (hereafter, $\Delta t$ for brevity and similarly, $\Delta m$ for $\Delta m_{j,k}$
+and $e$ for $e_{j,k}$) by binning ($\Delta t$, $\Delta m$, $e$) data along $\Delta t$ axis.  With a median number of data points per light curve of 
+70, on average we generate $\sum_{j=2}^{70}{(j-1)} = 2,415$  ($\Delta t$, $\Delta m$, $e$) data points. This large number allows us 
+to simply use 200 linearly spaced bins of $\Delta t$, which provide adequate time resolution while ensuring sufficiently
+large number of  $\Delta m$ values per bin.
+
+Given that we suspect data and data processing problems as a plausible explanation for discrepant
+results between SDSS-based and CRTS-based studies, we first study variability in the observed frame (the available SDSS
+redshifts for all object enable analysis in the rest frame, too). 
+
+The top two panels in Fig.~\ref{fig:2} show the standard deviation for $\Delta m$, and the robust standard 
+deviation ($\sigma_G=0.741 (q_{75} - q_{25})$, where $q_{25}$ and $q_{75}$ are 25\% and 75\% quartiles) 
+estimate computed from the interquartile range, as a function of $\Delta t$ for quasars, and 
+separately for blue and red stars. The latter is somewhat smaller than the former, which indicates mild 
+non-Gaussianity of $\Delta m$ distributions. For $\Delta t$ below about 100 days, all three subsamples 
+show similar behavior, while for longer time scales quasars show appreciably larger scatter of observed 
+$\Delta m$, presumably due to intrinsic variability. In order to estimate the intrinsic variability, these ``raw'' 
+measurements need to be corrected for the effects of observational (measurement) errors, as described next.
+
+
+
+\subsection{Effects of Observational Errors on Structure Function}
+
+Given a bin with $M$ values of ($\Delta t_i$, $\Delta m_i$, $e_i$), $i=1...M$, SF will correspond to the rms width
+of the $\Delta m_i$ distribution, $\sigma_{tot}$, {\it only if} all $e_i$ are negligibly small compared to the true SF 
+value. When measurement uncertainties are homoscedastic, $e_i = \bar{e}$, then simply SF = $(\sigma_{tot}^2
+- \bar{e}^2)^{1/2}$. In a general case of heteroscedastic uncertainties, the correction for the effects of 
+observational errors is more involved because each value $\Delta m_i$ is drawn from a {\it different}
+Gaussian distribution whose width is given by $\sigma_i  = (\rm{SF}^2 + e_i^2)^{1/2}$. Indeed, in this general 
+case the distribution of all $\Delta m_i$ in a given bin {\it need not be a Gaussian at all!}
+
+We refer the reader for a detailed discussion of how to estimate SF in a general case to \cite{ivezic2014}, 
+and here briefly summarize the gist of their maximum likelihood method. The likelihood of a set of $M$
+measurements $\Delta m_i$ is given by 
+\begin{equation}
+\label{eq:L}
+p(\{\Delta m_{i}\} | \rm{SF}, \mu, \{e_{i}\} ) = 
+ \prod _{i=1}^{M} { \frac{1}{\sqrt{2\pi} \sigma_i} \exp{\left( \frac{-(\Delta m_{i}-\mu)^{2}}{2\sigma_i^{2}} \right)}},
+\end{equation}
+where $\{.\}$ denotes a set of values and $\mu$ is introduced to account for possible systematic photometric 
+errors between observing epochs that define the bin's $\Delta t_i$ values. We note that this expression is only 
+an approximation to the true likelihood because it assumes that measurement errors for $\Delta m_i$ are 
+uncorrelated. This assumption is, strictly speaking, not true because different $\Delta m_i$ values can be 
+based on the same individual magnitude measurements. 
+
+There is no closed form solution for maximizing the likelihood given by eq.~\ref{eq:L} and
+we estimate SF numerically, using code\footnote{See http://www.astroml.org/book\_figures/chapter5/index.html}
+from {\it astroML} python module \citep{astroML}. With the aid of Bayes Theorem and using uniform priors
+for SF and $\mu$, the logarithm of the posterior pdf for SF and $\mu$ becomes
+\begin{equation}
+\label{eq:logP}
+L_p(SF,\mu) = {\rm const.} - {1\over2} \sum_{i=1}^M \left( \ln(\rm{SF}^2+e_i^2)
+               + {  (\Delta m_i-\mu)^2 \over \rm{SF}^2+e_i^2} \right).
+\end{equation}
+We evaluate $L_{p}$ on a grid\footnote{The grid size is set using approximate solutions described by \cite{ivezic2014}.}
+of $\mu$ and SF first, find its maximum which yields the maximum a posteriori (MAP) estimates for SF and $\mu$, 
+and then marginalize over $\mu$ to find the posterior pdf for SF: 
+\begin{equation}
+p(\rm{SF}) = \int_{0}^{\infty} {p(\rm{SF}, \mu |\{\Delta m_{i}\}, \{e_{i}\})} d \mu,
+\end{equation}
+which is used to estimate the uncertainty (the credible region) of MAP estimate for SF. When there is no strong 
+evidence for intrinsic variability, SF tends to zero. 
+
+%\begin{equation}
+%\sigma_{G} = 0.741 (Z_{75\%} - Z_{25\%}), 
+%\end{equation}
+%where $Z$ is the sorted $\Delta m$ per bin, and $e_{50} = median(\sigma)$.
+
 
 \begin{figure}
-\label{fig:2}
- \includegraphics[width=1.2\columnwidth, center]{{Fig_2_18.5-19_panels}.png}
- \caption{The four panels show statistics calculated for the subsample of 333 CRTS quasars (black points), 1400 "blue" stars (blue points), and 2087 "red" stars (red points), all  chosen according to the SDSS r magnitude $18.5 < \mathrm{m} < 19$. Red and blue stars have  $1 < \mathrm{g-i} < 3$ and  $-1 < \mathrm{g-i} < 1$ respectively. All pairwise brightness differences  in white light ($\Delta m_{i,j}$) are binned in 200 linearly spaced bins of $\Delta t_{i,j}$. For each bin, we calculate different statistics, from top to bottom panels: the standard deviation $\sigma_{stdev}$, the robust Gaussian deviation based on the interquartile range $\sigma_{G}$, the structure function $SF$, and  the mean value of $\Delta m_{i,j}$  per bin:$\mu$. Both $\mu$ and $\sigma$ are found from the 2D maximum of the log-likelihood $L_{p}$ on the $[\mu,\sigma]$ grid (see eq.~\ref{eq:logP}, and \citep{ivezic2014}).  Yellow dashed line on the third panel traces the fiducial Damped Random Walk model. Note how the level of variability for both blue and red stars does not increase with timescale (staying on ~0.1 mag level), unlike quasars. Since the variability of stars corresponds here to the measurement noise, until quasars raise above the stellar structure function level (at  $\log{ \Delta t} > 2$), no claim can be made about their intrinsic variability.   Thus any departure of CRTS quasar structure function at low timescales ($\log{\Delta t} < 1.7$ ),   is due to incorrect errors (underestimated measurement noise).}
+\includegraphics[width=1.0\columnwidth, center]{{Fig_2_18.5-19_panels}.png}
+\vskip -0.15in
+\caption{The four panels show various statistics computed for subsamples of 333 CRTS quasars (black points), 
+1400 "blue" stars (blue points), and 2087 "red" stars (red points), with SDSS $r$ magnitudes in the range 18.5-19.
+{\bf XXX according to table 1, these counts correspond to 18-18.5, not 18.5-19!.}  Red and blue stars have  
+SDSS colors $1 < \mathrm{g-i} < 3$ and  $-1 < \mathrm{g-i} < 1$, respectively. All pairwise CRTS brightness 
+differences are binned in 200 linearly spaced bins of time difference $\Delta t$. For each bin, we compute,
+from top to bottom: the standard deviation $\sigma_{stdev}$, the robust standard deviation estimate based on 
+the interquartile range $\sigma_{G}$, the structure function SF, and the mean value of $\Delta m$ per bin $\mu$. 
+Both $\mu$ and SF are found from the 2D maximum of the log-likelihood $L_{p}$ on the $[\mu,\rm{SF}]$ grid
+(see eq.~\ref{eq:logP}).  The yellow dashed line in the third panel traces the fiducial Damped Random Walk model
+(see eq.~\ref{eq:DRWSF}).}
  % The signal modulation  - wiggles - also seen when we simply plot the number 
  % of points per bin as a function of log(delta t) .  
  % Not due to number of points  - the scatter of some distribution does not depend 
  % on sample size (email from 	12/06/16 )
+\label{fig:2}
 \end{figure}
 
 
-\section{Results}
+The bottem two panels in Fig.~\ref{fig:2} show SF and $\mu$ as a function of $\Delta t$ for quasars, blue 
+and red stars. For $\Delta t$ below about 1000 days, $\mu$ for all three subsamples is within 0.01$^m$
+from zero, as expected. On the other hand, SF below about 100 days is in the range 0.05-0.10$^m$ for
+all three subsamples. In case of quasars, the observed SF$\sim$0.1$^m$ for 10 d $<\Delta t<$100 d
+demonstrates that the difference between SDSS results from \cite{macleod2010} (see the yellow dashed
+line in the third panel) and CRTS results from \cite{graham2014} is {\it not} due to different analysis 
+methods (SF vs. SWV, respectively): here we fully reproduce this discrepancy using SF method and 
+CRTS data. 
+
+Fig.~\ref{fig:2} also indicates a plausible solution to this puzzle: the observed SF for both blue and red
+stars in the range 10$^d<\Delta t<$100$^d$ is {\it unexpectedly} range: the values are in the range 
+0.05-0.10$^m$ rather than negligible (say, $\la 0.01-0.02^m$). In other words, more variation is 
+observed in light curves of non-variable stars than can be explained with reported photometric errors.
+The same result is obtained for all three chosen magnitude bins. Such a behavior could be observed if 
+photometric error estimates computed by the CRTS photometric pipeline are mis-estimated, resulting
+in an incorrect correction for observational errors. We proceed to perform an independent test of 
+photometric errors using repeated observations of non-variable standard stars. 
+
+
+\subsection{Tests of Observational Errors Using Non-variable Stars}
 \label{sec:results}
-% "what we measured"
-% "how it affects other theories"
-% "further tests / theories to challenge?"   
-% "patiently teach, and walk before you run" 
 
+Assuming that standard stars from SDSS are truly non-variable, if (Gaussian) photometric error estimates 
+computed by the CRTS photometric pipeline are correct, then the distribution of $\chi_i= \Delta m_i / e_i$ 
+for stars should be distributed as a unit Gaussian, N(0,1). Deviations of the distribution width for stars 
+from unity indicate incorrect photometric error estimates. For quasars, we expect that the width should
+exceed unity because of their intrinsic variability, and that the width should increase with $\Delta t$. 
+We perform this test in Fig.~\ref{fig:3}, where we show $chi$ distributions for both blue stars and quasars, 
+and for a grid of $\Delta t$ and magnitude bins. 
 
-%the problem : Fig 2 
-The measured level of variability for standard stars is above the acceptable 0.05\textsuperscript{mag} rms, and is incompatible with their known non-variability. Fig.2 illustrates the problem, using the four statistics calculated for the 18.5-19\textsuperscript{mag} bin, as described in Sec.~\ref{sec:stats}.  Especially $SF$ shows that even on short timescales, stars exhibit a non-zero variability for stars. Based on the SDSS data concerning the same stars, we would expect their SF to be below the level of noise : 0.05\textsuperscript{mag} \citep{ivezic2007}. This larger than expected variability is inspected in more detail in Fig.\ref{fig:3}. 
-
-
-%finding the solution : Fig 3 
-  %- description of what we are plotting 
-We derive correction factors for CRTS photometric errors using blue stars, since they  have similar colors to quasars. Consider the robust with of $\chi$ distribution:
-
-\begin{equation}
-\chi_{i} = \frac{\Delta m_{i} - \overline{\Delta m_{i}}}{\sigma_{i}}
-\end{equation}
-
-for pairwise magnitude difference points, but since our lightcurves are symmetric around 0, $\overline{\Delta m_{i}} \approx 0$.  It is worth noting that $\chi_{i}$ is related to chi-square: 
-
-\begin{equation}
-\chi^{2} = \sum_{i=1}^{N}{\chi_{i}^{2}}
-\end{equation}
-
-Therefore, if $\sigma_{i}$ describes well the underlying (Gaussian) error, then in case of no intrinsic variability we would expect $\sigma_{G}(\chi) = 1$,  such as is the case for blue standard stars. 
-
-We binned the time lag - magnitude difference points into four $\log (\Delta t ) $ bins : one for short timescales  $\log \Delta t < 1.7$ ($\Delta t < 50$ days), and three for longer timescales : $\log \Delta t \in (2.3,2.5)$, $\log \Delta t \in (2.8,3.0)$, and $\log \Delta t \in (3.2,3.4)$.  We also split the sample in three magnitude bins, which together results in 12 separate $\log\Delta t$ - magnitude bins for blue stars and quasars. This allows to check whether there is any dependence of error correction on magnitude or timescale.  For each bin we evaluate the histogram of a quantity $\chi$. As shown on Fig.\ref{fig:3}, the width of $\chi$ distribution differs from 1 for blue stars, which means that $\sigma_{i}$ is either over or under-estimated. Furthermore, at short timescales ($\log{\Delta t} < 1.7$) quasars are indistinguishable from stars in $\chi$. However, at longer timescales quasars show distinct signature of variability - the distribution of $\chi$ is much wider for quasars than for stars. To correct the discrepant robust width of stellar $\chi$, we find the correction factor based on the $\sigma_{G}(\chi_{blue})$.  We find that for blue stars there is a magnitude-dependent  linear relationship between the robust width of $\chi$ distribution, and the $\log{\Delta t}$, but the $\log{\Delta t}$ dependence is an order of magnitude smaller than the magnitude dependence. Therefore we average the value of  $\sigma_{G}(\chi_{blue})$   over all timescales for each magnitude bin, resulting in a single value of correction factor, $f_{c}$, per magnitude bin (see Table~\ref{tab:fc}).  
-
-% For each magnitude bin we fit a straight line, and thus find linear correction coefficients, according to 
-%\begin{equation}
-%\label{eq:fc}
-%f_{c} = \sigma_{G}(\chi_{Blue}) = a  \, \log_{10}(\Delta t) + b
-%\end{equation}
-%(see Table 2). We find that higher order polynomial unnecessary, given that the standard deviation of straight line fit is smaller than  0.003, i.e. less than $1\%$ level. 
-
-Multiplying  $\sigma_{i}$ by the corresponding f\textsubscript{c} brings  $\sigma_{G}(\chi_{Blue})$ to 1, as expected. We thus correct the day-averaged errors, which brings down the variability (see Fig.~\ref{fig:4}):
-
-\begin{equation}
-\sigma_{i,corr}  = f_{c} \, \sigma_{i}  
-\end{equation} 
-
-As we show in Appendix A, it also is a multiplicative constant that can be applied to correct the raw photometric errors: 
-
-\begin{equation}
-e_{corr} = f_{c} \, e
-\end{equation}
+For the shortest $\Delta t$ bin ($<$50 days), the distributions for stars and quasars appear indistinguishable
+for all three magnitude bins. This similarity immediately argues that there is no detected intrinsic variability
+for quasars. Furthermore, the width of $\chi$ distributions for stars appears to be a function of magnitude,
+with very little dependence on $\Delta t$. The distribution widths for stars in each magnitude bin (all $\Delta t$
+values), obtained using robust width estimator $\sigma_G$, are listed in Table~\ref{tab:fc}. For example,
+the bin with $18.5<r<19$, which contains the majority of quasars, appears to have under-estimated photometric
+errors by a factor of 1.3 on average. The same conclusion is derived using red stars. For small $\Delta t$, where 
+quasar SF is intrinsically small, quasar SF will be thus significantly over-estimated, while for large $\Delta t$, 
+where quasar SF is intrinsically large, the effect on SF will be small. We extend this qualitative conclusion 
+to a more quantiative analysis in the next section. 
 
 \begin{table}
 \centering
-\caption{The correction coefficients, as evaluated from  $\sigma_{G}(\chi)$ for blue stars.}
+\caption{The robust distribution widths for $\chi$ for blue stars.}
 \label{tab:fc}
-\begin{tabular}{ l|cc } 
-% \hline
-correction & mag \\ 
+\begin{tabular}{ r|c } 
+\hline
+ mag    & $\sigma_G$ \\ 
  \hline
-0.0870 &  17   - 18  \\
-1.1072  &  18   - 18.5  \\
-1.2876  &  18.5 - 19  
+17   - 18    & 0.087   \\
+18   - 18.5 & 1.107   \\
+18.5 - 19   & 1.288   
 % \hline
 \end{tabular}
 \end{table}
 
 
 \begin{figure}
-\label{fig:3}
 %\centerfloat
-\includegraphics[width=1.15\columnwidth, center]{Fig_3_histogram_panels.png}
- \caption{This grid of histograms shows $\chi = \Delta m / \mathrm{error}$ for CRTS blue stars (blue shading) and quasars (red shading), split into bins of $\log{\Delta t}$- SDSS r magnitude. Vertically, from top to bottom, we iterate over bins of $\log{\Delta t}$ : $0<\log{\Delta t}<1.7$ ($t < 50 $ days), $2.3<\log{\Delta t}<2.5$, $2.8<\log{\Delta t}<3.0$, and $3.2<\log{\Delta t}<3.4$ (indicated by numbers in the upper left corner of each subplot). Horizontally, from left to right, we iterate over SDSS r-magnitude bins $17-18$,  $18-18.5$, and $18.5-19$. Objects in each vertical strip were chosen according to the same magnitude cut, and all $\Delta m$ points in a given  $\log{\Delta t}$ range were binned together. The  implied small quasar variability at short timescales is at the level  measured by SDSS (indistinguishable from blue, non-variable stars). Numbers in the upper-right corner of each subplot are the robust width of stellar  and quasar  distributions of $\chi$. Blue, bright  stars in the left strip (17-18\textsuperscript{mag}) have low $\sigma_{G}$, at the level of 0.9, and fainter blue stars (eg. right vertical strip, 18.5-19\textsuperscript{mag}) have higher $\sigma_{G} \approx 1.3$. Part of that increase is due to larger errors at fainter magnitude end. However, in each bin we expect that if errors for blue stars are correct, then  $\sigma_{G}(\chi) = 1$. We use  correction factors $f_{c} = \sigma_{G}(\chi_{blue}(\Delta t, mag))$ to correct for that effect. This implies that magnitude-difference errors  $\sigma_{corr} (\Delta m) = f_{c}\sigma (\Delta m) $. If all raw errors were identical, it would also correspond to the linear correction of raw photometric errors by f\textsubscript{c} . Quasars  as intrinsically variable sources have a larger spread of $\chi$ than non-variable blue stars, but after applying the f\textsubscript{c} correction their short-timescale $\chi$ at t < 50 days becomes much closer to 1, consistent with lack of variability (see Fig.~\ref{fig:4} for an illustration of the impact of f\textsubscript{c} on SF of stars and quasars).}
+\includegraphics[width=1.00\columnwidth, center]{Fig_3_histogram_panels.png}
+\vskip -0.15in
+\caption{Histograms show CRTS-based $\chi = \Delta m / \mathrm{error}$ for blue stars (blue shading) 
+and quasars (red shading), split into bins of $\log{\Delta t}$ (rows) and SDSS $r$ magnitude (columns). 
+Vertically, from top to bottom, $\log{\Delta t}$ : $0<\log{\Delta t}<1.7$ ($t < 50 $ days), 
+$2.3<\log{\Delta t}<2.5$, $2.8<\log{\Delta t}<3.0$, and $3.2<\log{\Delta t}<3.4$ (indicated by numbers
+ in the upper left corner of each subplot). Horizontally, from left to right, the SDSS $r$ magnitude bins are: 
+$17-18$,  $18-18.5$, and $18.5-19$. The numbers in the upper-right corner of each subplot are the 
+robust width of $\chi$ distributions determined using interquartile range ($\sigma_G$); upper value for
+blue stars and lower value for quasars.}
+\label{fig:3}
 \end{figure}
 
-%applying the solution : Fig 4 
 
+
+\subsection{Structure Function with Corrected Observational Errors}
+
+Informed by the analysis from preceeding section, we assume that correction factors for photometric
+error estimates are independent of color and are only a function of magnitude. Depending on the magnitude
+of stars and quasars, we multiply their reported photometric errors by $\sigma_G$ values listed in 
+Table~\ref{tab:fc}, and repeat SF analysis. By construction, we expect that the width of $\chi$ distributions
+for blue stars will be unity, and that their SF will tend to 0. For quasars, we expect somewhat smaller SF
+at large $\Delta t$ and much smaller SF at small $\Delta t$, compared to SF values shown in the third 
+panel in Fig.~\ref{fig:2}.
+
+Fig.~\ref{fig:4} shows SF for blue stars and quasars for subsamples from the three selected magnitude bins. 
+As evident, both expectations are born out: for all three magnitude bins, SF for blue stars is essentially 
+vanishing within noise ($\sim$0.05$^m$), while SF for quasars at small $\Delta t$ is about twice smaller 
+than in Fig.~\ref{fig:2} and thus consistent with the values based on SDSS data. In Fig.~\ref{fig:5} we 
+demonstrate that this agreement with SDSS results extends to rest frame analysis, too. 
 
 \begin{figure}
+\vskip -0.15in
+\includegraphics[width=1.0\columnwidth, center]{Fig_4_SF_QSO_starsB_r_cut.png}
+\caption{Analogous to the third panel in Fig.~\ref{fig:2}, except that here SF for blue stars and quasars in
+all three magnitude bins are shown, and photometric errors are modified by multiplicative correction factors 
+listed in Table~\ref{tab:fc}. Note that SF for stars in vanishing, while SF for quasars at $\log_{10}(\Delta t) < 1.7$  
+is about twice as small as in Fig.~\ref{fig:2}.} 
 \label{fig:4}
- \includegraphics[width=1.1\columnwidth, center]{Fig_4_SF_QSO_starsB_r_cut.png}
- \caption{Three panels depict the impact that applying correction factors f\textsubscript{c} to errors $\sigma(\Delta m)$ has on the structure function for blue stars (blue) and quasars (black) in the observer's frame t\textsubscript{obs} (see Fig.~\ref{fig:5} for the same in the quasar restframe, t\textsubscript{rest}). In the middle of each panel we list the SDSS r-magnitude used to select quasars and stars. It is noteworthy that applying the correction factor the apparently discrepant variability of non-variable standard stars  vanishes (the residual SF is consistent with the noise rms of 0.05\textsuperscript{mag}). The variability of quasars also decreases  to a level consistent with noise. Therefore the corrected SF of quasars at short time scales ($\log_{10}(\Delta t) < 1.7$) agrees with a lack of variability, which is consistent with the previous SDSS results (upper limits of 0.1\textsuperscript{mag} marked by green dashed lines) (see \citep{macleod2011}).}
 \end{figure}
 
 \begin{figure}
 \label{fig:5}
- \includegraphics[width=1.1\columnwidth, center]{Fig_5_SF_QSO_starsB_r_cut_rest.png}
- \caption{The same as Fig.~\ref{fig:4}, but plotted in the quasar restframe : t\textsubscript{rest} = t\textsubscript{obs} / (1+z), using known quasar redshifts from SDSS \citep{macleod2010}.   In the middle of each panel we list the SDSS r-magnitude used for selection. The restframe correction shifts time lags to shorter timescales, but does not affect our predictions about the lack of variability in quasars on short timescales ($\log_{10}(\Delta t) < 1.7$).} %The apparent downturn in the $SF$ of quasars, as compared to Fig.4, is due to the smaller number of points in bins of higher $\Delta t$, which leads to smaller bin dispersion in $\Delta m$. }
+\vskip -0.15in
+\includegraphics[width=1.0\columnwidth, center]{Fig_5_SF_QSO_starsB_r_cut_rest.png}
+\caption{Analogous to Fig.~\ref{fig:4}, but here for $\Delta t$ in the quasar rest frame : t\textsubscript{rest} = t\textsubscript{obs} / (1+z), using known quasar redshifts from SDSS \citep{macleod2010}.  The rest frame correction shifts time lags to shorter timescales and produces
+SF for quasars in agreement with corresponding results obtained by \citep{macleod2010}.}
 \end{figure}
 
 
 
-\section{PTF Data}
 
-We compare our CRTS results against recently released  PTF Data Release 3 lightcurves \footnote{\url{http://www.ptf.caltech.edu/page/lcdb}}. We queried the NASA/IPAC Infrared Science Archive \footnote{\url{https://irsa.ipac.caltech.edu}} 'PTF Objects' catalog against the list of ra, dec of 7601 spectroscopically confirmed Stripe 82 quasars, and 48250 standard stars (same as obtained from the CRTS database previously).  A positional multi-object search with a matching radius of 2 arcsec , with  a flag 'ngoodobs' > 10,  resulted with  6471 quasars and 38776 stars.  For these objects we obtained time series data from 'PTF Lightcurve Table' catalog.  We select lightcurves corresponding to individual objects by grouping with SDSS  RA coordinate, because the PTF coordinates might vary from  one CCD chip to another by up to 1.5 arcsec (David Schuppe, priv.comm.)  We avoid grouping by PTF object id ('oid'), because a new detection of the same object on a different chip is assigned a new 'oid'. For example, there  are 38786 'oid's  and only 38776  unique 'ra'  in the stellar sample, with 10  id's  corresponding to those objects that  have been detected on more than one ccd, in the overlapping region. 
+\subsection{SF Estimated from PTF Data}
 
-We processed the PTF lightcurves in exactly the same way as the CRTS lightcurves. We first performed day-averaging, using the weighted error as the measure of uncertainty on day-averaged  brightness measurement. We further selected only those objects that have been observed over at least 10 separate days (i.e. have over 10 day-averaged epochs). Only 2753 quasars and 15714 stars, i.e. less than 50\% sources, fulfill these criteria.  For those objects, we enrich the PTF information with the SDSS catalog photometry, and calculate the magnitude vs. time difference ('master') files : $\Delta m_{jk} = m_{j} - m_{k}$, $\Delta t_{jk} = t_{j} - t_{k}$ for $j>k$, with errors  $\sigma^{2} (\Delta m_{jk})= \sigma_{j}^{2} + \sigma_{k}^{2}$ (see Sec.~\ref{sec:preprocessing}).
+Recently PTF (Palomar Transient Factory) Data Release 3 light curves\footnote{\url{http://www.ptf.caltech.edu/page/lcdb}}
+can be used for an independent test of our conclusions derived above. We queried the NASA/IPAC Infrared Science 
+Archive\footnote{\url{https://irsa.ipac.caltech.edu}} 'PTF Objects' catalog using coordinates for 7,601 spectroscopically
+confirmed Stripe 82 quasars, and 48,250 standard stars (same as the final samples used for CRTS-based analysis).
+A positional multi-object search with a matching radius of 2 arcsec, with a flag 'ngoodobs' $>$ 10,  resulted in  
+6,471 quasars and 38,776 stars.  For these objects we obtained time series data from the 'PTF Light Curve Table' catalog
+(we grouped by SDSS coordinates). 
 
-
-\begin{figure}
-\label{fig:2a}
- \includegraphics[width=1\columnwidth, center]{Fig_2_Quasar_PTF_population_selection.png}
- \caption{Magnitude selection in PTF quasar data. Two histograms represent the magnitude distribution for PTF quasars using either   $\langle m_{j} \rangle $: the mean day-averaged PTF r-band magnitudes, or the information from positionally  matched SDSS DS9 catalog  with  SDSS r-band photometry. Shaded regions illustrate portion of the population selected for each magnitude bin. The majority of quasars do not end up contributing to the final analysis given that we focus on the best-quality bright-end of the quasar population, which peaks  at around 19\textsuperscript{th} magnitude.   }
-\end{figure}
-
+We processed these PTF light curves in exactly the same way as the CRTS light curves. We first performed day-averaging, 
+using the weighted error as the measure of uncertainty on day-averaged brightness measurement. We further selected only 
+those objects that have been observed on at least 10 different nights, resulting in samples of 2,753 quasars and 15,714 stars. 
+The counts of magnitude-limited subsamples are listed in Table~\ref{tab:ptf}. 
 
 \begin{table}
 \centering
-\caption{Analoguously to ~\ref{tab:object_count}, the count of stars and quasars, selected by their SDSS r-magnitude from PTF data (see Fig.~\ref{fig:2a}). For all objects we also required that the PTF lightcurve error is smaller than 0.3\textsuperscript{mag}.}
-\label{tab:object_count_PTF}
-\begin{tabular}{ l|ccc } 
-% \hline
-r-mag  & red stars & blue stars & quasars \\ 
- \hline
+\caption{Count of stars and quasars, selected by their SDSS $r$ magnitudes and $g-i$ colors.}
+\caption{Analoguous to ~\ref{tab:object_count}, except that here the counts of stars and quasars with PTF
+adequate data are listed.}
+\label{tab:ptf}
+\begin{tabular}{ r|rrr } 
+\hline
+$r$ mag.  & red stars & blue stars & quasars \\ 
+\hline
 17-18   & 1243 & 1077   & 90    \\ 
 18-18.5 & 825 &  497  & 160   \\ 
-18.5-19 & 913 &  548  & 377   
-% \hline
+18.5-19 & 913 &  548  & 377   \\
+\hline
+total       & 2981 &  2122 & 627  
 \end{tabular}
 \end{table}
-
-To plot structure functions we selected quasars, blue and red stars according to their SDSS r-magnitude, and PTF average lightcurve error (see Table ~\ref{tab:object_count_PTF}). In each magnitude bin,  for a given type of object we thus have over 100 000 magnitude-difference points  (for quasars averaging across magnitude bins, $N_{\Delta m} = 117 694 $, while for blue and red stars, it is 364 606 and 555 668, respectively ). We removed the outliers in $\Delta m$ stemming from the photometric measurement outliers (we did not perform any sigma clipping on the input lightcurves). Requiring $|\Delta m | < 1.0$ we discarded less than 2\% of $\Delta m$ points. Similar to the CRTS data, we split the magnitude-binned samples into  200 linearly spaced bins in $\Delta t $ space. For each bin we  calculated the  structure function  ($\sigma_{0}$) , mean ($\mu_{0}$),  interquartile range robust standard deviation ($\sigma_{G}$), and the standard deviation ($\sigma_{st.dev.}$), as described in Sec.~\ref{sec:analysis}. We find that regardless of the magnitude bin,  PTF quasars do not exhibit signs of variability at $\log_{10}{\Delta t} < 	2.0$, i.e. $\Delta t$< 100 days.  Unlike CRTS, for PTF both stars and quasars the SF $\approx$ 0 at these short timescales (see Fig.~\ref{fig:2_PTF}). 
-
-
-\begin{figure}
-\label{fig:2_PTF}
- \includegraphics[width=1.15\columnwidth, center]{{Fig_2_18.5-19.0_PTF_panels}.png}
- \caption{The statistics for the subsample of 377 PTF quasars (black points), 548 'blue' stars (blue points), and 913 'red' stars (red points), all  chosen according to the SDSS r magnitude $18.5 < \mathrm{r} < 19$. Red and blue stars have  $1 < \mathrm{g-i} < 3$ and  $-1 < \mathrm{g-i} < 1$ respectively. All pairwise brightness differences  in PTF r-band are binned in $200$ linearly spaced bins of $\Delta t$. For each bin, we calculate different statistics, from top to bottom panels: the standard deviation $\sigma_{stdev}$, the robust Gaussian deviation based on the interquartile range $\sigma_{G}$, the structure function $SF$, and  the mean value of $\Delta m$  per bin: $\mu$. Both $\mu$ and $\sigma$ are found from the 2D maximum of the log-likelihood $L_{p}$ on the $[\mu,\sigma]$ grid (see eq.~\ref{eq:logP}, and \citep{ivezic2014}).  Yellow dashed line on the third panel traces the fiducial Damped Random Walk model. For these uncorrected PTF data, it is evident that there is no sign of variability for quasars on short timescales ($\Delta t < 100 \, \mathrm{days}$), unlike for CRTS data (see Fig.~\ref{fig:2}). Standard stars are used as a good quality comparison, and as expected, they have no variability ($SF \approx 0$). However,  the mean does not stay as close to 0 as for CRTS data - note an asymmetric dip around $\log_{10} \Delta t \approx 2.7$ that signifies some issues with the data pipeline. This shaded region in $\mu$ space is further explored on Fig.~\ref{fig:2_PTF_hist}.}
  
-\end{figure}
-
+The SF results based on PTF light curve data are shown in Fig.~\ref{fig:2PTF}.  For these uncorrected PTF data, 
+it is evident that there is no sign of variability for quasars on short timescales ($\Delta t < 100 \, \mathrm{days}$) 
+above the SDSS-level of $\sim$0.05$^m$ (unlike for CRTS data, see Fig.~\ref{fig:2}). Note also that standard stars 
+show no appreciable variability at any time scale (SF$\approx0$). Therefore, this PTF-based analysis further 
+supports our conclusion that extraneous quasar variability at short time scales was due to slightly understimated
+photometric uncertainties. 
 
 \begin{figure}
-\label{fig:2_PTF_hist}
- \includegraphics[width=1.15\columnwidth, center]{{Fig_2_18.5-19.0_log_2.6-2.75_hist}.png}
- \caption{Normalized histograms for $\Delta m$ from the shaded region on the bottom panel of Fig.~\ref{fig:2_PTF}. Red, blue and black solid lines correspond to red stars, blue stars, and quasars, respectively. Vertical dashed lines outline the mean of $\Delta m$ for each population. In each case, the mean is below 0. }
- % anything more here  ? }
+\includegraphics[width=1.15\columnwidth, center]{{Fig_2_18.5-19.0_PTF_panels}.png}
+\caption{Analogous to Fig.~\ref{fig:2}, but here the statistics for subsamples of 377 quasars (black points), 548 ``blue'' stars (blue points), 
+and 913 ``red'' stars (red points), with adequate PTF light curve data are shown. Note that the mean magnitude difference ($\mu$, 
+the bottom panel) does not stay as close to 0 as for CRTS data -- a deviation around $\log_{10} \Delta t \approx 2.7$ might indicate 
+some issues with photometric zeropoint calibration (at the level of 0.02-0.03$^m$).}
+\label{fig:2PTF} 
 \end{figure}
+
+
 
 \section{Conclusions}
-We analyzed the error properties of the CRTS sample of quasars and standard stars.  We find that the errors require correction on the order of 20\%, and that without this correction even non-variable standard stars show structure function variability on the level of 0.1\textsuperscript{mag}. Through analysis of $\chi$ distribution we show that the listed errors are under- or overestimated.  
+
+We analyzed the error properties of the CRTS sample of quasars and standard stars. Using 
+repeated CRTS observations of non-variable stars, we found that the photometric error estimates 
+computed by the CRTS photometric pipeline are slightly under-estimated for the majority of
+quasars. When quasar light curves are corrected for the impact of observational errors, the
+resulting corrections are thus too small. For small $\Delta t$, where quasar SF is intrinsically 
+small, quasar SF is significantly over-estimated (akin to the subtraction of two large numbers 
+to get a small number, when the second large number is under-estimated). In particular, at time
+scales of about 50 days, SF is over-estimated by about a factor of two. This behavior provides 
+a plausible explanation for the increased quasar variability level in CRTS light curves reported 
+by \cite{graham2014}, compared to earlier SDSS-based results obtained by \cite{macleod2010}.
+An additional analysis based on independent light curve data for the same objects obtained by 
+the Palomar Transient Factory provides further support for this conclusion. We conclude that
+the quasar variability constraints on weekly and monthly time scales from SDSS, CRTS and PTF 
+surveys are mutually compatible, as well as consistent with DRW model. 
+
+
 
 \section*{Acknowledgements}
 
-We thank Eric Bellm for all help with data retrieval and reduction of PTF lightcurves .  
+We thank Eric Bellm for his help with the PTF data retrieval and reduction of light curves.  
+We thank Neven Caplar for fruitful discussions about the use of PTF data and structure 
+function methodology. 
 
-We thank Neven Caplar for  fruitful discussions on the use of PTF data and structure function methodology. 
+Funding for the SDSS and SDSS-II has been provided by the Alfred P. Sloan Foundation, 
+the Participating Institutions, the National Science Foundation, the U.S. Department of 
+Energy, the National Aeronautics and Space Administration, the Japanese Monbukagakusho,
+the Max Planck Society, and the Higher Education Funding Council for England. The SDSS 
+Web Site is http://www.sdss.org/.
 
-Funding for the SDSS and SDSS-II has been provided by the Alfred P. Sloan Foundation, the Participating Institutions, the National Science Foundation, the U.S. Department of Energy, the National Aeronautics and Space Administration, the Japanese Monbukagakusho, the Max Planck Society, and the Higher Education Funding Council for England. The SDSS Web Site is http://www.sdss.org/.
+The SDSS is managed by the Astrophysical Research Consortium for the Participating Institutions. 
+The Participating Institutions are the American Museum of Natural History, Astrophysical Institute 
+Potsdam, University of Basel, University of Cambridge, Case Western Reserve University, University
+of Chicago, Drexel University, Fermilab, the Institute for Advanced Study, the Japan Participation 
+Group, Johns Hopkins University, the Joint Institute for Nuclear Astrophysics, the Kavli Institute for 
+Particle Astrophysics and Cosmology, the Korean Scientist Group, the Chinese Academy of Sciences 
+(LAMOST), Los Alamos National Laboratory, the Max-Planck-Institute for Astronomy (MPIA), the 
+Max-Planck-Institute for Astrophysics (MPA), New Mexico State University, Ohio State University, 
+University of Pittsburgh, University of Portsmouth, Princeton University, the United States Naval
+Observatory, and the University of Washington. 
 
-The SDSS is managed by the Astrophysical Research Consortium for the Participating Institutions. The Participating Institutions are the American Museum of Natural History, Astrophysical Institute Potsdam, University of Basel, University of Cambridge, Case Western Reserve University, University of Chicago, Drexel University, Fermilab, the Institute for Advanced Study, the Japan Participation Group, Johns Hopkins University, the Joint Institute for Nuclear Astrophysics, the Kavli Institute for Particle Astrophysics and Cosmology, the Korean Scientist Group, the Chinese Academy of Sciences (LAMOST), Los Alamos National Laboratory, the Max-Planck-Institute for Astronomy (MPIA), the Max-Planck-Institute for Astrophysics (MPA), New Mexico State University, Ohio State University, University of Pittsburgh, University of Portsmouth, Princeton University, the United States Naval Observatory, and the University of Washington. 
-
-
-\section*{Appendix A}
-  %- derivation of how fc impacts an individual error measurement
-In Sec.~\ref{sec:results} we show how $f_{c}$ corrects the value of the magnitude-difference error : $\sigma(\Delta m_{j,k})$. Now since $\sigma(m_{j}) = 1 / \sqrt{\sum{w_{j}}}$, and $w_{j} = 1 / e_{j}^{2}$; if we assume that errors are homoscedastic, i.e. $e_{j} = e$, then $\sigma(m) = e / \sqrt{M}$, where $M$ is the number of intra-night observations.  
-So since we require $\sigma(\Delta m)_{corr} = f_{c} \, \sigma(\Delta m)$, we have $e_{corr} = f_{c} e$,  so that $f_{c}$ applies as a multiplicative correction factor both for weight-based day-averaged magnitude errors, as well as the raw errors. 
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
-
-% The best way to enter references is to use BibTeX:
 \bibliographystyle{apj}
-%\bibliographystyle{mnras}
-\bibliography{references} % if your bibtex file is called example.bib
-
+\bibliography{references} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 % Don't change these lines
 \bsp	% typesetting comment
 \label{lastpage}
 \end{document}
-
 % End of mnras_template.tex

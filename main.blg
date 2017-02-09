@@ -8,43 +8,43 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--No publisher or address in ivezic2014
 You've used 27 entries,
             2387 wiz_defined-function locations,
-            676 strings with 12430 characters,
-and the built_in function-call counts, 17848 in all, are:
-= -- 2021
-> -- 970
-< -- 1
-+ -- 384
-- -- 388
-* -- 1529
-:= -- 2605
+            681 strings with 12069 characters,
+and the built_in function-call counts, 17513 in all, are:
+= -- 1967
+> -- 941
+< -- 2
++ -- 365
+- -- 369
+* -- 1490
+:= -- 2553
 add.period$ -- 27
 call.type$ -- 27
-change.case$ -- 443
+change.case$ -- 417
 chr.to.int$ -- 27
 cite$ -- 28
-duplicate$ -- 878
-empty$ -- 707
-format.name$ -- 445
-if$ -- 3460
+duplicate$ -- 885
+empty$ -- 722
+format.name$ -- 425
+if$ -- 3406
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 0
 newline$ -- 84
-num.names$ -- 109
-pop$ -- 435
+num.names$ -- 110
+pop$ -- 416
 preamble$ -- 1
-purify$ -- 497
+purify$ -- 471
 quote$ -- 0
-skip$ -- 937
+skip$ -- 938
 stack$ -- 0
-substring$ -- 778
-swap$ -- 451
-text.length$ -- 1
+substring$ -- 770
+swap$ -- 453
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 212
 warning$ -- 1
-while$ -- 77
+while$ -- 79
 width$ -- 0
 write$ -- 324
 (There was 1 warning)
