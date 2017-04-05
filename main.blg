@@ -1,50 +1,50 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
-The style file: apj.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+The style file: mnras.bst
 Database file #1: references.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--No publisher or address in ivezic2014
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty publisher in ivezic2014
 You've used 26 entries,
-            2387 wiz_defined-function locations,
-            675 strings with 11133 characters,
-and the built_in function-call counts, 16278 in all, are:
-= -- 1824
-> -- 847
-< -- 2
-+ -- 320
-- -- 324
-* -- 1369
-:= -- 2365
-add.period$ -- 26
+            2881 wiz_defined-function locations,
+            937 strings with 15187 characters,
+and the built_in function-call counts, 12552 in all, are:
+= -- 989
+> -- 918
+< -- 49
++ -- 406
+- -- 136
+* -- 1595
+:= -- 1939
+add.period$ -- 0
 call.type$ -- 26
-change.case$ -- 367
+change.case$ -- 52
 chr.to.int$ -- 26
 cite$ -- 27
-duplicate$ -- 852
-empty$ -- 696
-format.name$ -- 377
-if$ -- 3181
+duplicate$ -- 620
+empty$ -- 654
+format.name$ -- 212
+if$ -- 2180
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 81
-num.names$ -- 106
-pop$ -- 367
+missing$ -- 27
+newline$ -- 91
+num.names$ -- 170
+pop$ -- 158
 preamble$ -- 1
-purify$ -- 419
+purify$ -- 104
 quote$ -- 0
-skip$ -- 902
+skip$ -- 362
 stack$ -- 0
-substring$ -- 740
-swap$ -- 436
-text.length$ -- 2
+substring$ -- 688
+swap$ -- 317
+text.length$ -- 111
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 204
+type$ -- 231
 warning$ -- 1
-while$ -- 77
+while$ -- 186
 width$ -- 0
-write$ -- 312
+write$ -- 275
 (There was 1 warning)

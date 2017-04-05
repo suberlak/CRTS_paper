@@ -1,120 +1,165 @@
 \begin{thebibliography}{}
+\makeatletter
+\relax
+\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
+  {\mn@doi@[]}}
+\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
+  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
+  \endgroup}
+\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
+  {dblp:#1}}
+\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
+  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
+  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
+  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
+  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
 
-\bibitem[\protect\citeauthoryear{{Abazajian} et~al.}{{Abazajian}
+\bibitem[\protect\citeauthoryear{{Abazajian} et~al.,}{{Abazajian}
   et~al.}{2009}]{abazajian2009}
-{Abazajian}, K.~N., et~al. 2009, \apjs, 182, 543
+{Abazajian} K.~N.,  et~al., 2009, \mn@doi [\apjs]
+  {10.1088/0067-0049/182/2/543}, \href
+  {http://adsabs.harvard.edu/abs/2009ApJS..182..543A} {182, 543}
 
-\bibitem[\protect\citeauthoryear{{Charisi} et~al.}{{Charisi}
+\bibitem[\protect\citeauthoryear{{Charisi}, {Bartos}, {Haiman}, {Price-Whelan},
+  {Graham}, {Bellm}, {Laher}  \& {M{\'a}rka}}{{Charisi}
   et~al.}{2016}]{charisi2016}
-{Charisi}, M., {Bartos}, I., {Haiman}, Z., {Price-Whelan}, A.~M., {Graham},
-  M.~J., {Bellm}, E.~C., {Laher}, R.~R.,  \& {M{\'a}rka}, S. 2016, \mnras, 463,
-  2145
+{Charisi} M.,  {Bartos} I.,  {Haiman} Z.,  {Price-Whelan} A.~M.,  {Graham}
+  M.~J.,  {Bellm} E.~C.,  {Laher} R.~R.,   {M{\'a}rka} S.,  2016, \mn@doi
+  [\mnras] {10.1093/mnras/stw1838}, \href
+  {http://adsabs.harvard.edu/abs/2016MNRAS.463.2145C} {463, 2145}
 
 \bibitem[\protect\citeauthoryear{{Collier} \& {Peterson}}{{Collier} \&
   {Peterson}}{2001}]{peterson2001}
-{Collier}, S.,  \& {Peterson}, B.~M. 2001, \apj, 555, 775
+{Collier} S.,  {Peterson} B.~M.,  2001, \mn@doi [\apj] {10.1086/321517}, \href
+  {http://adsabs.harvard.edu/abs/2001ApJ...555..775C} {555, 775}
 
-\bibitem[\protect\citeauthoryear{{de Vries} et~al.}{{de Vries}
-  et~al.}{2005}]{devries2005}
-{de Vries}, W.~H., {Becker}, R.~H., {White}, R.~L.,  \& {Loomis}, C. 2005, \aj,
-  129, 615
-
-\bibitem[\protect\citeauthoryear{{Djorgovski} et~al.}{{Djorgovski}
+\bibitem[\protect\citeauthoryear{{Djorgovski} et~al.,}{{Djorgovski}
   et~al.}{2011}]{djorgovski2011a}
-{Djorgovski}, S.~G., et~al. 2011, ArXiv:1102.5004
+{Djorgovski} S.~G.,  et~al., 2011, ArXiv:1102.5004, \href
+  {http://adsabs.harvard.edu/abs/2011arXiv1102.5004D} {}
 
-\bibitem[\protect\citeauthoryear{{Drake} et~al.}{{Drake}
+\bibitem[\protect\citeauthoryear{{Drake} et~al.,}{{Drake}
   et~al.}{2013}]{drake2013}
-{Drake}, A.~J., et~al. 2013, \apj, 763, 32
+{Drake} A.~J.,  et~al., 2013, \mn@doi [\apj] {10.1088/0004-637X/763/1/32},
+  \href {http://adsabs.harvard.edu/abs/2013ApJ...763...32D} {763, 32}
 
-\bibitem[\protect\citeauthoryear{{Graham} et~al.}{{Graham}
+\bibitem[\protect\citeauthoryear{{Graham}, {Drake}, {Djorgovski}, {Mahabal},
+  {Donalek}, {Duan}  \& {Maker}}{{Graham} et~al.}{2013}]{graham2013}
+{Graham} M.~J.,  {Drake} A.~J.,  {Djorgovski} S.~G.,  {Mahabal} A.~A.,
+  {Donalek} C.,  {Duan} V.,   {Maker} A.,  2013, \mn@doi [\mnras]
+  {10.1093/mnras/stt1264}, \href
+  {http://adsabs.harvard.edu/abs/2013MNRAS.434.3423G} {434, 3423}
+
+\bibitem[\protect\citeauthoryear{{Graham}, {Djorgovski}, {Drake}, {Mahabal},
+  {Chang}, {Stern}, {Donalek}  \& {Glikman}}{{Graham}
   et~al.}{2014}]{graham2014}
-{Graham}, M.~J., {Djorgovski}, S.~G., {Drake}, A.~J., {Mahabal}, A.~A.,
-  {Chang}, M., {Stern}, D., {Donalek}, C.,  \& {Glikman}, E. 2014, \mnras, 439,
-  703
+{Graham} M.~J.,  {Djorgovski} S.~G.,  {Drake} A.~J.,  {Mahabal} A.~A.,  {Chang}
+  M.,  {Stern} D.,  {Donalek} C.,   {Glikman} E.,  2014, \mn@doi [\mnras]
+  {10.1093/mnras/stt2499}, \href
+  {http://adsabs.harvard.edu/abs/2014MNRAS.439..703G} {439, 703}
 
-\bibitem[\protect\citeauthoryear{{Graham} et~al.}{{Graham}
+\bibitem[\protect\citeauthoryear{{Graham} et~al.,}{{Graham}
   et~al.}{2015}]{graham2015b}
-{Graham}, M.~J., et~al. 2015, \mnras, 453, 1562
-
-\bibitem[\protect\citeauthoryear{{Graham} et~al.}{{Graham}
-  et~al.}{2013}]{graham2013}
-{Graham}, M.~J., {Drake}, A.~J., {Djorgovski}, S.~G., {Mahabal}, A.~A.,
-  {Donalek}, C., {Duan}, V.,  \& {Maker}, A. 2013, \mnras, 434, 3423
+{Graham} M.~J.,  et~al., 2015, \mn@doi [\mnras] {10.1093/mnras/stv1726}, \href
+  {http://adsabs.harvard.edu/abs/2015MNRAS.453.1562G} {453, 1562}
 
 \bibitem[\protect\citeauthoryear{{Hawkins}}{{Hawkins}}{2002}]{hawkins2002}
-{Hawkins}, M.~R.~S. 2002, \mnras, 329, 76
+{Hawkins} M.~R.~S.,  2002, \mn@doi [\mnras] {10.1046/j.1365-8711.2002.04939.x},
+  \href {http://adsabs.harvard.edu/abs/2002MNRAS.329...76H} {329, 76}
 
-\bibitem[\protect\citeauthoryear{{Ivezi{\'c}} et~al.}{{Ivezi{\'c}}
-  et~al.}{2014}]{ivezic2014}
-{Ivezi{\'c}}, {\v Z}., {Connolly}, A.~J., {VanderPlas}, J.~T.,  \& {Gray}, A.
+\bibitem[\protect\citeauthoryear{{Ivezi\'c} et~al.,}{{Ivezi\'c}
+  et~al.}{2004}]{2004Ivezic}
+{Ivezi\'c} {\v Z}.,  et~al., 2004, in {Storchi-Bergmann} T.,  {Ho} L.~C.,
+  {Schmitt} H.~R.,  eds,  IAU Symposium Vol. 222, The Interplay Among Black
+  Holes, Stars and ISM in Galactic Nuclei. pp 525--526 (\mn@eprint {}
+  {astro-ph/0404487}), \mn@doi{10.1017/S1743921304003126}
+
+\bibitem[\protect\citeauthoryear{{Ivezi{\'c}} et~al.,}{{Ivezi{\'c}}
+  et~al.}{2007}]{ivezic2007}
+{Ivezi{\'c}} {\v Z}.,  et~al., 2007, \mn@doi [\aj] {10.1086/519976}, \href
+  {http://adsabs.harvard.edu/abs/2007AJ....134..973I} {134, 973}
+
+\bibitem[\protect\citeauthoryear{{Ivezi{\'c}}, {Connolly}, {VanderPlas}  \&
+  {Gray}}{{Ivezi{\'c}} et~al.}{2014}]{ivezic2014}
+{Ivezi{\'c}} {\v Z}.,  {Connolly} A.~J.,  {VanderPlas} J.~T.,   {Gray} A.,
   2014, {Statistics, Data Mining, and Machine Learning in Astronomy}
 
-\bibitem[\protect\citeauthoryear{{Ivezi\'c} et~al.}{{Ivezi\'c}
-  et~al.}{2004}]{2004Ivezic}
-{Ivezi\'c}, {\v Z}., et~al. 2004, in IAU Symposium, Vol. 222, The Interplay
-  Among Black Holes, Stars and ISM in Galactic Nuclei, ed.
-  T.~{Storchi-Bergmann}, L.~C. {Ho}, \& H.~R. {Schmitt}, 525
+\bibitem[\protect\citeauthoryear{{Kawaguchi}, {Mineshige}, {Umemura}  \&
+  {Turner}}{{Kawaguchi} et~al.}{1998}]{kawaguchi1998}
+{Kawaguchi} T.,  {Mineshige} S.,  {Umemura} M.,   {Turner} E.~L.,  1998,
+  \mn@doi [\apj] {10.1086/306105}, \href
+  {http://adsabs.harvard.edu/abs/1998ApJ...504..671K} {504, 671}
 
-\bibitem[\protect\citeauthoryear{{Ivezi{\'c}} et~al.}{{Ivezi{\'c}}
-  et~al.}{2007}]{ivezic2007}
-{Ivezi{\'c}}, {\v Z}., et~al. 2007, \aj, 134, 973
+\bibitem[\protect\citeauthoryear{{Kelly}, {Bechtold}, {Siemiginowska},
+  {Aldcroft}  \& {Sobolewska}}{{Kelly} et~al.}{2007}]{kelly2007}
+{Kelly} B.~C.,  {Bechtold} J.,  {Siemiginowska} A.,  {Aldcroft} T.,
+  {Sobolewska} M.,  2007, \mn@doi [\apj] {10.1086/510876}, \href
+  {http://adsabs.harvard.edu/abs/2007ApJ...657..116K} {657, 116}
 
-\bibitem[\protect\citeauthoryear{{Kawaguchi} et~al.}{{Kawaguchi}
-  et~al.}{1998}]{kawaguchi1998}
-{Kawaguchi}, T., {Mineshige}, S., {Umemura}, M.,  \& {Turner}, E.~L. 1998,
-  \apj, 504, 671
-
-\bibitem[\protect\citeauthoryear{Kelly, Bechtold, \& Siemiginowska}{Kelly
+\bibitem[\protect\citeauthoryear{Kelly, Bechtold  \& Siemiginowska}{Kelly
   et~al.}{2009}]{kelly2009}
-Kelly, B.~C., Bechtold, J.,  \& Siemiginowska, A. 2009, The Astrophysical
+Kelly B.~C.,  Bechtold J.,   Siemiginowska A.,  2009, The Astrophysical
   Journal, 698, 895
 
-\bibitem[\protect\citeauthoryear{{Kelly} et~al.}{{Kelly}
-  et~al.}{2007}]{kelly2007}
-{Kelly}, B.~C., {Bechtold}, J., {Siemiginowska}, A., {Aldcroft}, T.,  \&
-  {Sobolewska}, M. 2007, \apj, 657, 116
-
-\bibitem[\protect\citeauthoryear{{Kelly}, {Sobolewska}, \&
+\bibitem[\protect\citeauthoryear{{Kelly}, {Sobolewska}  \&
   {Siemiginowska}}{{Kelly} et~al.}{2011}]{kelly2011}
-{Kelly}, B.~C., {Sobolewska}, M.,  \& {Siemiginowska}, A. 2011, \apj, 730, 52
+{Kelly} B.~C.,  {Sobolewska} M.,   {Siemiginowska} A.,  2011, \mn@doi [\apj]
+  {10.1088/0004-637X/730/1/52}, \href
+  {http://adsabs.harvard.edu/abs/2011ApJ...730...52K} {730, 52}
 
 \bibitem[\protect\citeauthoryear{{Koz{\l}owski}}{{Koz{\l}owski}}{2016}]{kozlowski2016}
-{Koz{\l}owski}, S. 2016, \apj, 826, 118
+{Koz{\l}owski} S.,  2016, \mn@doi [\apj] {10.3847/0004-637X/826/2/118}, \href
+  {http://adsabs.harvard.edu/abs/2016ApJ...826..118K} {826, 118}
 
 \bibitem[\protect\citeauthoryear{{Lawrence}}{{Lawrence}}{2016}]{lawrence2016a}
-{Lawrence}, A. 2016, in Astronomical Society of the Pacific Conference Series,
-  Vol. 505, Astronomical Surveys and Big Data, ed. A.~{Mickaelian},
-  A.~{Lawrence}, \& T.~{Magakian}, 107
+{Lawrence} A.,  2016, in {Mickaelian} A.,  {Lawrence} A.,   {Magakian} T.,
+  eds,  Astronomical Society of the Pacific Conference Series Vol. 505,
+  Astronomical Surveys and Big Data. p.~107 (\mn@eprint {arXiv} {1605.09331})
 
-\bibitem[\protect\citeauthoryear{MacLeod et~al.}{MacLeod
-  et~al.}{2011}]{macleod2011}
-MacLeod, C.~L., et~al. 2011, The Astrophysical Journal, 728, 26
-
-\bibitem[\protect\citeauthoryear{MacLeod et~al.}{MacLeod
+\bibitem[\protect\citeauthoryear{MacLeod et~al.,}{MacLeod
   et~al.}{2010}]{macleod2010}
-MacLeod, C.~L., et~al. 2010, The Astrophysical Journal, 721, 1014
+MacLeod C.~L.,  et~al., 2010, The Astrophysical Journal, 721, 1014
 
-\bibitem[\protect\citeauthoryear{{Schmidt} et~al.}{{Schmidt}
-  et~al.}{2010}]{schmidt2010}
-{Schmidt}, K.~B., {Marshall}, P.~J., {Rix}, H.-W., {Jester}, S., {Hennawi},
-  J.~F.,  \& {Dobler}, G. 2010, \apj, 714, 1194
+\bibitem[\protect\citeauthoryear{MacLeod et~al.,}{MacLeod
+  et~al.}{2011}]{macleod2011}
+MacLeod C.~L.,  et~al., 2011, The Astrophysical Journal, 728, 26
 
-\bibitem[\protect\citeauthoryear{{Schneider} et~al.}{{Schneider}
+\bibitem[\protect\citeauthoryear{{Schmidt}, {Marshall}, {Rix}, {Jester},
+  {Hennawi}  \& {Dobler}}{{Schmidt} et~al.}{2010}]{schmidt2010}
+{Schmidt} K.~B.,  {Marshall} P.~J.,  {Rix} H.-W.,  {Jester} S.,  {Hennawi}
+  J.~F.,   {Dobler} G.,  2010, \mn@doi [\apj] {10.1088/0004-637X/714/2/1194},
+  \href {http://adsabs.harvard.edu/abs/2010ApJ...714.1194S} {714, 1194}
+
+\bibitem[\protect\citeauthoryear{{Schneider} et~al.,}{{Schneider}
   et~al.}{2008}]{schneider2008}
-{Schneider}, D.~P., et~al. 2008, VizieR Online Data Catalog, 7252
+{Schneider} D.~P.,  et~al., 2008, VizieR Online Data Catalog, \href
+  {http://adsabs.harvard.edu/abs/2008yCat.7252....0S} {7252}
 
-\bibitem[\protect\citeauthoryear{{Vanden Berk} et~al.}{{Vanden Berk}
+\bibitem[\protect\citeauthoryear{{Vanden Berk} et~al.,}{{Vanden Berk}
   et~al.}{2004}]{berk2004}
-{Vanden Berk}, D.~E., et~al. 2004, \apj, 601, 692
+{Vanden Berk} D.~E.,  et~al., 2004, \mn@doi [\apj] {10.1086/380563}, \href
+  {http://adsabs.harvard.edu/abs/2004ApJ...601..692V} {601, 692}
 
-\bibitem[\protect\citeauthoryear{{Vanderplas} et~al.}{{Vanderplas}
-  et~al.}{2012}]{astroML}
-{Vanderplas}, J., {Connolly}, A., {Ivezi{\'c}}, {\v Z}.,  \& {Gray}, A. 2012,
-  in Conference on Intelligent Data Understanding (CIDU), 47
+\bibitem[\protect\citeauthoryear{{Vanderplas}, {Connolly}, {Ivezi{\'c}}  \&
+  {Gray}}{{Vanderplas} et~al.}{2012}]{astroML}
+{Vanderplas} J.,  {Connolly} A.,  {Ivezi{\'c}} {\v Z}.,   {Gray} A.,  2012, in
+  Conference on Intelligent Data Understanding (CIDU). pp 47 --54,
+  \mn@doi{10.1109/CIDU.2012.6382200}
 
-\bibitem[\protect\citeauthoryear{{Zu} et~al.}{{Zu} et~al.}{2013}]{zu2013}
-{Zu}, Y., {Kochanek}, C.~S., {Koz{\l}owski}, S.,  \& {Udalski}, A. 2013, \apj,
-  765, 106
+\bibitem[\protect\citeauthoryear{{Zu}, {Kochanek}, {Koz{\l}owski}  \&
+  {Udalski}}{{Zu} et~al.}{2013}]{zu2013}
+{Zu} Y.,  {Kochanek} C.~S.,  {Koz{\l}owski} S.,   {Udalski} A.,  2013, \mn@doi
+  [\apj] {10.1088/0004-637X/765/2/106}, \href
+  {http://adsabs.harvard.edu/abs/2013ApJ...765..106Z} {765, 106}
 
+\bibitem[\protect\citeauthoryear{{de Vries}, {Becker}, {White}  \&
+  {Loomis}}{{de Vries} et~al.}{2005}]{devries2005}
+{de Vries} W.~H.,  {Becker} R.~H.,  {White} R.~L.,   {Loomis} C.,  2005,
+  \mn@doi [\aj] {10.1086/427393}, \href
+  {http://adsabs.harvard.edu/abs/2005AJ....129..615D} {129, 615}
+
+\makeatother
 \end{thebibliography}
