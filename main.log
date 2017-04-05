@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  26 FEB 2017 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 APR 2017 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -858,47 +858,47 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 95.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 95
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 96.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 96
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/ntxsy/m/n on input line 95.
-LaTeX Font Info:    Try loading font information for OMS+ntxsy on input line 95
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMS/ntxsy/m/n on input line 96.
+LaTeX Font Info:    Try loading font information for OMS+ntxsy on input line 96
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/omsntxsy.fd
 File: omsntxsy.fd 2012/11/14 Fontinst v1.933 font definitions for OMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 95.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 95.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 96.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 96.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 95.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 96.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 96.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -943,7 +943,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 144.
 )
-Package hyperref Info: Link coloring ON on input line 95.
+Package hyperref Info: Link coloring ON on input line 96.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -953,9 +953,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count129
 )
-LaTeX Info: Redefining \ref on input line 95.
-LaTeX Info: Redefining \pageref on input line 95.
-LaTeX Info: Redefining \nameref on input line 95.
+LaTeX Info: Redefining \ref on input line 96.
+LaTeX Info: Redefining \pageref on input line 96.
+LaTeX Info: Redefining \nameref on input line 96.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
@@ -993,104 +993,104 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 9
-8.
+9.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 98.
+(Font)              scaled to size 14.4pt on input line 99.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.5pt on input line 98.
+(Font)              scaled to size 10.5pt on input line 99.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.9pt on input line 98.
+(Font)              scaled to size 7.9pt on input line 99.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 98.
+(Font)              size <10.95> substituted on input line 99.
 
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 98.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 99.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 98.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 99.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 98.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 99.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 98.
+LaTeX Font Info:    Try loading font information for U+msa on input line 99.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 98.
+LaTeX Font Info:    Try loading font information for U+msb on input line 99.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for T1+ntxsups on input line 9
-8.
+9.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/t1ntxsups.fd
 File: t1ntxsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 14.4pt on input line 98.
+(Font)              scaled to size 14.4pt on input line 99.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 98.
+(Font)              scaled to size 8.0pt on input line 99.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.2pt on input line 98.
+(Font)              scaled to size 6.2pt on input line 99.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 98.
+(Font)              scaled to size 5.5pt on input line 99.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 98.
+(Font)              size <5> substituted on input line 99.
 
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 131.
+(Font)              scaled to size 9.0pt on input line 132.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 131.
+(Font)              scaled to size 7.3pt on input line 132.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 140.
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 141.
 
-LaTeX Font Info:    No file TS1aer.fd. on input line 140.
+LaTeX Font Info:    No file TS1aer.fd. on input line 141.
 
 
 LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textcopyright' on input line 140.
+(Font)              for symbol `textcopyright' on input line 141.
 
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 173.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 174.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
 $[]$ [][][][]$\T1/aett/m/n/8 http : / / www . astro . washington . edu / users 
 / ivezic / cmacleod /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
 $[]$ [][][][]$\T1/aett/m/n/8 http : / / www . astro . washington . edu / users 
 / ivezic / sdss /
  []
@@ -1099,10 +1099,10 @@ $[]$ [][][][]$\T1/aett/m/n/8 http : / / www . astro . washington . edu / users
 File: Fig_1_QSO_CRTS_proc_stats.png Graphic file (type png)
 
 <use Fig_1_QSO_CRTS_proc_stats.png>
-Package pdftex.def Info: Fig_1_QSO_CRTS_proc_stats.png used on input line 193.
+Package pdftex.def Info: Fig_1_QSO_CRTS_proc_stats.png used on input line 194.
 (pdftex.def)             Requested size: 275.99854pt x 206.9972pt.
 
-Overfull \hbox (35.99854pt too wide) in paragraph at lines 193--200
+Overfull \hbox (35.99854pt too wide) in paragraph at lines 194--201
 [][]
  []
 
@@ -1111,16 +1111,16 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.208 \begin{equation}
+l.209 \begin{equation}
                        <./Fig_1_QSO_CRTS_proc_stats.png>] [3pdfTeX warning (ext
 4): destination with the same identifier (name{table.1}) has been already used,
  duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.306 
+l.307 
       ]
-Overfull \hbox (1.02055pt too wide) in paragraph at lines 322--322
+Overfull \hbox (1.02055pt too wide) in paragraph at lines 323--323
 $[]$ [][]\T1/aer/m/n/8 See http://www.astroml.org/book_figures/chapter5/index.h
 tml| 
  []
@@ -1128,33 +1128,33 @@ tml|
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 327.
+(amsmath)                 on input line 328.
 
 <Fig_2_18.5-19_panels.png, id=266, 867.24pt x 1156.32pt>
 File: Fig_2_18.5-19_panels.png Graphic file (type png)
 
 <use Fig_2_18.5-19_panels.png>
-Package pdftex.def Info: Fig_2_18.5-19_panels.png used on input line 346.
+Package pdftex.def Info: Fig_2_18.5-19_panels.png used on input line 347.
 (pdftex.def)             Requested size: 252.00073pt x 335.99469pt.
  [4pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.390 
+l.391 
        <./Fig_2_18.5-19_panels.png>]
 <Fig_3_histogram_panels.png, id=294, 837.1275pt x 820.06375pt>
 File: Fig_3_histogram_panels.png Graphic file (type png)
 
 <use Fig_3_histogram_panels.png>
-Package pdftex.def Info: Fig_3_histogram_panels.png used on input line 420.
+Package pdftex.def Info: Fig_3_histogram_panels.png used on input line 421.
 (pdftex.def)             Requested size: 264.00146pt x 258.60925pt.
 
 <Fig_4_SF_QSO_starsB_r_cut.png, id=300, 867.24pt x 867.24pt>
 File: Fig_4_SF_QSO_starsB_r_cut.png Graphic file (type png)
 
 <use Fig_4_SF_QSO_starsB_r_cut.png>
-Package pdftex.def Info: Fig_4_SF_QSO_starsB_r_cut.png used on input line 453.
+Package pdftex.def Info: Fig_4_SF_QSO_starsB_r_cut.png used on input line 454.
 (pdftex.def)             Requested size: 264.00146pt x 263.99835pt.
 
 <Fig_5_SF_QSO_starsB_r_cut_rest.png, id=307, 867.24pt x 867.24pt>
@@ -1162,26 +1162,26 @@ File: Fig_5_SF_QSO_starsB_r_cut_rest.png Graphic file (type png)
 
 <use Fig_5_SF_QSO_starsB_r_cut_rest.png>
 Package pdftex.def Info: Fig_5_SF_QSO_starsB_r_cut_rest.png used on input line 
-464.
+465.
 (pdftex.def)             Requested size: 264.00146pt x 263.99835pt.
  [5pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.510 
+l.511 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.510 
+l.511 
        <./Fig_3_histogram_panels.png>]
 <Fig_2_18.5-19.0_PTF_panels.png, id=341, 867.24pt x 1156.32pt>
 File: Fig_2_18.5-19.0_PTF_panels.png Graphic file (type png)
 
 <use Fig_2_18.5-19.0_PTF_panels.png>
-Package pdftex.def Info: Fig_2_18.5-19.0_PTF_panels.png used on input line 512.
+Package pdftex.def Info: Fig_2_18.5-19.0_PTF_panels.png used on input line 513.
 
 (pdftex.def)             Requested size: 264.00146pt x 351.99779pt.
  [6pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
@@ -1189,33 +1189,33 @@ Package pdftex.def Info: Fig_2_18.5-19.0_PTF_panels.png used on input line 512.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.563 
+l.564 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.563 
+l.564 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.563 
+l.564 
        <./Fig_4_SF_QSO_starsB_r_cut.png> <./Fig_5_SF_QSO_starsB_r_cut_rest.png>
 ] (./main.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 572.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 573.
  [7pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.572 \end{document}
+l.573 \end{document}
                      <./Fig_2_18.5-19.0_PTF_panels.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 572.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 573.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 572.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 572.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 573.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 573.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6AF5073AF2947E1A52C02BB072208599;875.
 
@@ -1226,7 +1226,10 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 572.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 573.
  ) 
 Here is how much of TeX's memory you used:
  11174 strings out of 493014
@@ -1268,7 +1271,7 @@ mf-dist/fonts/type1/public/txfonts/txmia.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 751057 bytes).
+Output written on main.pdf (7 pages, 751058 bytes).
 PDF statistics:
  471 PDF objects out of 1000 (max. 8388607)
  404 compressed objects within 5 object streams
