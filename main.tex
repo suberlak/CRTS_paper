@@ -630,8 +630,17 @@ uncertainty, both as function of median magnitude (per light curve).
 
 
 
-\section{Oscillation in the SF due to CSS calibration.} 
+\section{CSS calibration wiggles} 
 \label{sec:wiggles}
+
+We saw  an oscillatory pattern on plots of structure function and standard deviation using CRTS data on Figs.~\ref{fig:2}, \ref{fig:4}, \ref{fig:5}. We ruled any astrophysical origin since the effect also persisted when using only standard stars. Despite an anti-correlation of the pattern with the number of points per bin, we ruled out the statistical origin by fixing the number of points per bin.  Fig.~\ref{fig:CRTSwiggles} shows that wiggles persists even if we set the number of points per $\Delta t$  bin to 20000. We see the effect when points are separated by (2k+1)/2 years, with $k=0,1,2 ...$. We conclude that this variation is related to the airmass which fluctuates seasonally, which was  not properly accounted for in the CSS calibration process. This is because the primary aim of CSS was to detect moving objects which only requires intranight consistency, and not long-term accuracy \citep{drake2013}.
+
+\begin{figure}
+\includegraphics[width=1.0\columnwidth, center]{{Stars_CRTS_wiggles.png}}
+\caption{Robust standard deviation for CRTS standard stars, showing that the oscillatory pattern persists even with fixed number of points per bin. We combine the ``blue'' and ``red'' subsamples  (-1$<g-i<$3), yielding 5788, 3487 and 3823 stars in SDSS r-magnitude bins {\it bright} (green)  {\it medium} (orange)  and {\it faint} (blue), respectively (see Table~\ref{tab:object_count} for counts in individual subsamples). For each $\Delta t$  bin we randomly select  20000 $\Delta m$  points. If there are less than 20000 points in a bin, we do not plot anything (this affects less than 35 bins per magnitude bin, mostly towards longer timescales). It illustrates that the wiggles are purely due to differences in airmass, and possibly hidden zero point errors, unaccounted for in CSS pipeline. This pattern does not change our overall conclusions. 
+\label{fig:CRTSwiggles}} 
+\end{figure}
+
 
 
 
