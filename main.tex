@@ -9,67 +9,32 @@
 % Authors:
 % Keith T. Smith (Royal Astronomical Society)
 
-% Change log
-%
-% v3.0 May 2015
-%    Renamed to match the new package name
-%    Version number matches mnras.cls
-%    A few minor tweaks to wording
-% v1.0 September 2013
-%    Beta testing only - never publicly released
-%    First version: a simple (ish) template for creating an MNRAS paper
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Basic setup. Most papers should leave these options alone.
-\documentclass[fleqn,usenatbib]{mnras}  % a4paper,
-
-% MNRAS is set in Times font. If you don't have this installed (most LaTeX
-% installations will be fine) or prefer the old Computer Modern fonts, comment
-% out the following line
+% Basic setup. 
+\documentclass[fleqn,usenatbib]{mnras}  
 \usepackage{newtxtext,newtxmath}
-%\usepackage{txfonts}
-% Depending on your LaTeX fonts installation, you might get better results with one of these:
-%\usepackage{mathptmx}
-%\usepackage{txfonts}
 
-% this allows the use of ,center   in the figure environment ... 
+% this allows the use of center in the figure environment  
 \usepackage[export]{adjustbox}
 
 % Use vector fonts, so it zooms properly in on-screen viewing software
-% Don't change these lines unless you know what you are doing
 \usepackage[T1]{fontenc}
 \usepackage{ae,aecompl}
-%\usepackage{slashbox}
-
-
 \usepackage{natbib}
 
 
-%%%%% AUTHORS - PLACE YOUR OWN PACKAGES HERE %%%%%
-
-% Only include extra packages if you really need them. Common packages are:
+% additional packages 
 \usepackage{graphicx}	% Including figure files
 \usepackage{amsmath}	% Advanced maths commands
 \usepackage{amssymb}	% Extra maths symbols
-\usepackage{diagbox}
+\usepackage{diagbox}    % diagonal line in table
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%% AUTHORS - PLACE YOUR OWN COMMANDS HERE %%%%%
-
-% Please keep new commands to a minimum, and use \newcommand not \def to avoid
-% overwriting existing commands. Example:
-%\newcommand{\pcm}{\,cm$^{-2}$}	% per cm-squared
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% new comment to test the repo...
 %%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%
 
-% Title of the paper, and the short title which is used in the headers.
-% Keep the title short and informative.
 \title[Quasar Variability]{Solving the puzzle of discrepant quasar variability on monthly time scales implied by SDSS and CRTS datasets}
 
-% The list of authors, and the short list which is used in the headers.
-% If you need two or more lines of authors, add an extra line using \newauthor
 \author[K. Suberlak et al.]{
 Krzysztof Suberlak$^{1}$\thanks{E-mail: suberlak@uw.edu},
 \v{Z}eljko Ivezi\'c$^{1}$,
@@ -350,11 +315,6 @@ p(\rm{SF}) = \int_{0}^{\infty} {p(\rm{SF}, \mu |\{\Delta m_{i}\}, \{e_{i}\})} d 
 which is used to estimate the uncertainty (the credible region) of MAP estimate for SF. When there is no strong 
 evidence for intrinsic variability, SF tends to zero. 
 
-%\begin{equation}
-%\sigma_{G} = 0.741 (Z_{75\%} - Z_{25\%}), 
-%\end{equation}
-%where $Z$ is the sorted $\Delta m$ per bin, and $e_{50} = median(\sigma)$.
-
 
 \begin{figure}
 \includegraphics[width=1.05\columnwidth, center]{{Fig_2_18.5-19_panels}.png}
@@ -484,8 +444,6 @@ is about twice as small as in Fig.~\ref{fig:2}.}
 SF for quasars in agreement with corresponding results obtained by \citep{macleod2010}.}
 \label{fig:5}
 \end{figure}
-
-
 
 
 \subsection{SF Estimated from PTF Data}
@@ -631,10 +589,6 @@ uncertainty, both as function of median magnitude (per light curve).
 \end{figure}
 
 
-
-
-
-
 \section{CSS calibration wiggles} 
 \label{sec:wiggles}
 
@@ -647,23 +601,9 @@ We saw  an oscillatory pattern on plots of structure function and standard devia
 \end{figure}
 
 
-
-
 % Don't change these lines
 \bsp	% typesetting comment
 \label{lastpage}
 \end{document}
-% End of mnras_template.tex
-
-\begin{figure}
-\includegraphics[width=1.0\columnwidth, center]{{CRTS_stars_three_panels.png}}
-\caption{The top panel shows the variation with magnitude of the photometric
-scatter per light curve, normalized by reported CRTS photometric uncertainties (see eq.~\ref{eq:z}
-for definition), using CRTS light curves for $\sim$48,000 standard (non-variable) stars from the 
-\cite{ivezic2007} catalog. The middle panel shows the observed intrinsic scatter per light curve,
-and the bottom panel shows the distribution of reported photometric uncertainty, both as function
-of median magnitude (per light curve). 
-\label{fig:CRTSerrors}} 
-\end{figure}
 
 
