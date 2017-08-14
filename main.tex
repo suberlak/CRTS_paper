@@ -274,7 +274,7 @@ where $\{.\}$ denotes a set of values and $\mu$ is introduced to account for pos
 errors between observing epochs that define the bin's $\Delta t_i$ values. We note that this expression is only 
 an approximation to the true likelihood because it assumes that measurement errors for $\Delta m_i$ are 
 uncorrelated. This assumption is, strictly speaking, not true because different $\Delta m_i$ values can be 
-based on the same individual magnitude measurements. 
+based on the same individual magnitude measurements. In practice, the covariance between errors can introduce a bias in maximum likelihood solutions, but for large $M$ these errors are negligible compared to the SF. Indeed, we used the same maximum likelihood method as \cite{schmidt2010}, Eq.2, that assumes no correlation between errors. 
 
 There is no closed form solution for maximizing the likelihood given by eq.~\ref{eq:L} and
 we estimate SF numerically, using code\footnote{See http://www.astroml.org/book\_figures/chapter5/index.html}
