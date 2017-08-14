@@ -87,7 +87,7 @@ The diversity of  physical scenarios available to explain the origin of quasar v
 fitting based on damped random walk (DRW, also known as the Ornstein--Uhlenbeck process) model (\citealt{kelly2007}; \citealt{macleod2011}). An SF analysis essentially measures the 
 width of the magnitude difference distribution as a function of the time separation, $\Delta t$. 
 The DRW model approach is better suited for well-sampled light curves with a typical cadence of days \citep{zu2013, kozlowski2016}, whereas an ensemble SF analysis is better for sparsely sampled light curves \citep{hawkins2002, berk2004,  devries2005}; for a review and discussion see \cite{kozlowski2016}. Although the sampling for CRTS (the Catalina Real-time Transient Survey) light curves 
-analyzed here (see \S\ref{sec:crtsdata}) might be adequate for light curve fitting, we nevertheless opt for 
+analysed here (see \S\ref{sec:crtsdata}) might be adequate for light curve fitting, we nevertheless opt for 
 the SF approach because it allows for more straighforward analysis when data quality is suspect. 
 
 The observed SF is often characterised by a simple power law \citep{schmidt2010}. If the probed time scales are long enough 
@@ -114,8 +114,8 @@ and increased variability levels call in question DRW as a viable model for desc
 
 It is not obvious whether these discrepancies are due to various problems with the CRTS and/or SDSS datasets
 (inadequate sampling, incorrect estimates of photometric errors, etc), or perhaps are due to different analysis 
-methods (SWV vs. SF analysis). Here we reanalyze these CRTS data using the same SF method as used by
-\cite{macleod2010} to analyze SDSS data, and investigate the origin of these discrepant timescales and 
+methods (SWV vs. SF analysis). Here we reanalyse these CRTS data using the same SF method as used by
+\cite{macleod2010} to analyse SDSS data, and investigate the origin of these discrepant timescales and 
 variability levels. We argue that the most likely explanation of these discrepancies are slightly under-estimated
 photometric errors for CRTS light curve data. 
 
@@ -231,7 +231,7 @@ total       & 7407 &  5691 & 1265
 \section{Analysis}
 \label{sec:analysis}
 
-The structure function (SF) is a well-studied approach to characterizing light curves \citep{2004Ivezic, berk2004, devries2005, macleod2010, graham2013, kozlowski2016}. SF is closely related to the auto-correlation function (ACF), which in turn is the Fourier Transform of the  frequency power spectrum (PS) (for a detailed discussion,  see \citealt{ivezic2014,kozlowski2016}). We choose to analyze light curves with SF over PS because the main motivation for our paper is to resolve the discrepancy between quasar timescales  found with SDSS data using the SF method \citep{macleod2010, macleod2011, macleod2012}, and those based on CRTS data using the Slepian Wavelet Variance method \citep{graham2014}.  Given that we suspect the CRTS data quality to be the issue, we decided to also use the SF method with the CRTS dataset to ensure mathematical framework consistent with previous studies. Power spectrum analysis would introduce a third method, and thus would be less optimal to use in our study.  
+The structure function (SF) is a well-studied approach to characterizing light curves \citep{2004Ivezic, berk2004, devries2005, macleod2010, graham2013, kozlowski2016}. SF is closely related to the auto-correlation function (ACF), which in turn is the Fourier Transform of the  frequency power spectrum (PS) (for a detailed discussion,  see \citealt{ivezic2014,kozlowski2016}). We choose to analyse light curves with SF over PS because the main motivation for our paper is to resolve the discrepancy between quasar timescales  found with SDSS data using the SF method \citep{macleod2010, macleod2011, macleod2012}, and those based on CRTS data using the Slepian Wavelet Variance method \citep{graham2014}.  Given that we suspect the CRTS data quality to be the issue, we decided to also use the SF method with the CRTS dataset to ensure mathematical framework consistent with previous studies. Power spectrum analysis would introduce a third method, and thus would be less optimal to use in our study.  
 
 The SF for a light curve is a measure of the width of the magnitude difference distribution, as a function of the time separation, $\Delta t$ (see below for a discussion of how to account for observational errors). For two (day-averaged) epochs $j$ and $k$,  with $j > k$, the magnitude difference is computed as $\Delta m_{j,k} = m_{j} - m_{k}$, the time difference is  $\Delta t_{j,k} = t_{j} - t_{k}$, and  the combined magnitude measurement error (measurement uncertainty for $\Delta m_{j,k}$) is $e_{j,k} = (err_{j}^{2} + err_{k}^{2})^{1/2}$ (where $err_{j}$ is defined by eq.~\ref{eq:2}). 
 
@@ -473,7 +473,7 @@ photometric uncertainties.
 
 \section{Conclusions}
 
-We analyzed the error properties of the CRTS sample of quasars and standard stars. Using 
+We analysed the error properties of the CRTS sample of quasars and standard stars. Using 
 repeated CRTS observations of non-variable stars, we found that the photometric error estimates 
 computed by the CRTS photometric pipeline are slightly under-estimated for the majority of
 quasars. When quasar light curves are corrected for the impact of observational errors, the
