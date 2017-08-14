@@ -238,8 +238,8 @@ The SF for a light curve is a measure of the width of the magnitude difference d
 We compute SF as a function of time difference $\Delta t_{j,k}$ (hereafter, $\Delta t$ for brevity and similarly, $\Delta m$ for $\Delta m_{j,k}$ and $e$ for $e_{j,k}$) by binning ($\Delta t$, $\Delta m$, $e$) data along $\Delta t$ axis.  With a mean number of data points per light curve of  70, on average we generate $\sum_{j=2}^{70}{(j-1)} = 2,415$  ($\Delta t$, $\Delta m$, $e$) data points. This large number allows us  to simply use 200 linearly spaced bins of $\Delta t$, which provide adequate time resolution while ensuring sufficiently large number of  $\Delta m$ values per bin.
 
 Given that we suspect data and data processing problems as a plausible explanation for discrepant
-results between SDSS-based and CRTS-based studies, we first study variability in the observed frame (the available SDSS
-redshifts for all object enable analysis in the rest frame, too). 
+results between SDSS-based and CRTS-based studies, we choose to study variability in the observed frame (the available SDSS
+redshifts for all object enable analysis in the rest frame, too - see Fig.~\ref{fig:5}). 
 
 The top two panels in Fig.~\ref{fig:2} show the standard deviation for $\Delta m$, and the robust standard 
 deviation ($\sigma_G=0.741 (q_{75} - q_{25})$, where $q_{25}$ and $q_{75}$ are 25\% and 75\% quartiles) 
@@ -419,8 +419,7 @@ is about twice as small as in Fig.~\ref{fig:2}.}
 
 \vskip -0.15in
 \includegraphics[width=1.1\columnwidth, center]{Fig_5_SF_QSO_starsB_r_cut_rest.png}
-\caption{Analogous to Fig.~\ref{fig:4}, but here for $\Delta t$ in the quasar rest frame : t\textsubscript{rest} = t\textsubscript{obs} / (1+z), using known quasar redshifts from SDSS \citep{macleod2010}.  The rest frame correction shifts time lags to shorter timescales and produces
-SF for quasars in agreement with corresponding results obtained by \citep{macleod2010}.}
+\caption{Analogous to Fig.~\ref{fig:4}, but here for $\Delta t$ in the quasar rest frame : t\textsubscript{rest} = t\textsubscript{obs} / (1+z), using known quasar redshifts from SDSS \citep{macleod2010}.  The rest frame correction shifts time lags to shorter timescales and produces SF for quasars in agreement with corresponding results obtained by \citep{macleod2010}.}
 \label{fig:5}
 \end{figure}
 
