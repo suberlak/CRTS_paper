@@ -79,18 +79,18 @@ surveys -- quasars: general -- methods: data analysis -- techniques: photometric
 %%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-Variability can be used to both select and characterize quasars in sky surveys (for a recent overview see \citealt{lawrence2016a}). Although various time scales of variability can be linked to physical parameters, such as accretion disk viscosity, or corona geometry (\citealt{kelly2011}; \citealt{graham2014}), the physical mechanism remains elusive. Most viable explanations for observed
+Variability can be used to both select and characterise quasars in sky surveys (for a recent overview see \citealt{lawrence2016a}). Although various time scales of variability can be linked to physical parameters, such as accretion disk viscosity, or corona geometry (\citealt{kelly2011}; \citealt{graham2014}), the physical mechanism remains elusive. Most viable explanations for observed
 variability include accretion disk instabilities \citep{kawaguchi1998}, surface thermal fluctuations from magnetic field turbulence \citep{kelly2009}, and
 coronal x-ray heating \citep[][see \citealt{kozlowski2016} for a review]{kelly2011}.
 
-The diversity of  physical scenarios available to explain the origin of quasar variability results in a variety of ways to characterize it. The two most widely used approaches to describing the variability of quasars include a structure function (SF) analysis and light curve
+The diversity of  physical scenarios available to explain the origin of quasar variability results in a variety of ways to characterise it. The two most widely used approaches to describing the variability of quasars include a structure function (SF) analysis and light curve
 fitting based on damped random walk (DRW, also known as the Ornstein--Uhlenbeck process) model (\citealt{kelly2007}; \citealt{macleod2011}). An SF analysis essentially measures the 
 width of the magnitude difference distribution as a function of the time separation, $\Delta t$. 
 The DRW model approach is better suited for well-sampled light curves with a typical cadence of days \citep{zu2013, kozlowski2016}, whereas an ensemble SF analysis is better for sparsely sampled light curves \citep{hawkins2002, berk2004,  devries2005}; for a review and discussion see \cite{kozlowski2016}. Although the sampling for CRTS (the Catalina Real-time Transient Survey) light curves 
 analyzed here (see \S\ref{sec:crtsdata}) might be adequate for light curve fitting, we nevertheless opt for 
 the SF approach because it allows for more straighforward analysis when data quality is suspect. 
 
-The observed SF is often characterized by a simple power law \citep{schmidt2010}. If the probed time scales are long enough 
+The observed SF is often characterised by a simple power law \citep{schmidt2010}. If the probed time scales are long enough 
 ($\sim$ years), the power law flattens above a characteristic timescale, $\tau$ \citep{2004Ivezic, kelly2007, macleod2010}.
 This timescale may correspond to a transition from the stochastic thermal process that drives the variability to the physical 
 response of the disk that successfully  dampens the amplitude on longer timescales \citep{peterson2001, kelly2007, kelly2009, 
@@ -124,7 +124,7 @@ photometric errors for CRTS light curve data.
 
 We study stars and quasars selected from the sky region known as SDSS Stripe 82 (S82; a $\sim$300 deg$^2$ large
 region along the Celestial Equator: $22^{h} 24^{m} < \mathrm{RA} < 04^{h} 08^{m}$ and $\mathrm{| Dec |} < 1.27^\circ$). 
-We utilize both SDSS and CRTS photometric data. 
+We utilise both SDSS and CRTS photometric data. 
 
 \subsection{Sloan Digital Sky Survey (SDSS)}
 
@@ -138,7 +138,7 @@ was constructed as described in \cite{ivezic2007}.
 \subsection{Catalina Real-time Transient Survey (CRTS) \label{sec:crtsdata}}
 The main goal of CRTS was to find near-Earth objects. Its short intra-night cadence (4 exposures per
 night) was designed to allow a rapid follow-up \citep{graham2015b}, and white light (without filter) 
-light curves maximize the sensitivity for faint objects. Three survey telescopes (0.7m Catalina Sky Survey 
+light curves maximise the sensitivity for faint objects. Three survey telescopes (0.7m Catalina Sky Survey 
 Schmidt in Arizona,  1.5m Mount  Lemmon Survey telescope in Arizona, and the 0.5m Siding Spring Survey 
 Schmidt in Australia) were equipped with identical, 4kx4k CCDs (see \cite{djorgovski2011a} for technical details).
 Although in principle white light magnitudes can be calibrated to Johnson's V band zero point \citep{drake2013},
@@ -263,7 +263,7 @@ Gaussian distribution whose width is given by $\sigma_i  = (\rm{SF}^2 + e_i^2)^{
 case the distribution of all $\Delta m_i$ in a given bin {\it need not be a Gaussian at all!}
 
 We refer the reader for a detailed discussion of how to estimate SF in a general case to \cite{ivezic2014}, 
-and here briefly summarize the gist of their maximum likelihood method. The likelihood of a set of $M$
+and here briefly summarise the gist of their maximum likelihood method. The likelihood of a set of $M$
 measurements $\Delta m_i$ is given by 
 \begin{equation}
 \label{eq:L}
@@ -287,7 +287,7 @@ L_p(SF,\mu) = {\rm const.} - {1\over2} \sum_{i=1}^M \left( \ln(\rm{SF}^2+e_i^2)
 \end{equation}
 We evaluate $L_{p}$ on a grid\footnote{The grid size is set using approximate solutions described by \cite{ivezic2014}.}
 of $\mu$ and SF first, find its maximum which yields the maximum a posteriori (MAP) estimates for SF and $\mu$, 
-and then marginalize over $\mu$ to find the posterior pdf for SF: 
+and then marginalise over $\mu$ to find the posterior pdf for SF: 
 \begin{equation}
 p(\rm{SF}) = \int_{0}^{\infty} {p(\rm{SF}, \mu |\{\Delta m_{i}\}, \{e_{i}\})} d \mu,
 \end{equation}
@@ -556,7 +556,7 @@ of magnitude.
 \begin{figure}
 \includegraphics[width=1.0\columnwidth, center]{{Fig_A1_CRTS_stars.png}}
 \caption{The top panel shows the variation with magnitude of the photometric
-scatter per light curve, normalized by reported CRTS photometric uncertainties 
+scatter per light curve, normalised by reported CRTS photometric uncertainties 
 (see eq.~\ref{eq:z} for definition), using CRTS light curves for $\sim$48,000 standard 
 (non-variable) stars from the SDSS catalog. If the reported CRTS photometric uncertainties
 were correctly estimated, the $\sigma_G(z)$ distribution would be centered on unity and 
