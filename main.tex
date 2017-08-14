@@ -231,18 +231,11 @@ total       & 7407 &  5691 & 1265
 \section{Analysis}
 \label{sec:analysis}
 
-The structure function (SF) is a well-studied approach to characterizing light curves \citep{2004Ivezic, berk2004, devries2005, macleod2010, graham2013, kozlowski2016}. The SF for a light curve is a measure of the width of the magnitude difference distribution, as a function of
-the time separation, $\Delta t$ (see below for a discussion of how to account for observational errors). SF is closely related to auto-correlation
-function and the frequency power spectrum (for a detailed discussion,  see \citealt{ivezic2014}). For two (day-averaged) epochs $j$ and $k$, 
-with $j > k$, the magnitude difference is computed as $\Delta m_{j,k} = m_{j} - m_{k}$, the time difference is  $\Delta t_{j,k} = t_{j} - t_{k}$, and 
-the combined magnitude measurement error (measurement uncertainty for $\Delta m_{j,k}$) is $e_{j,k} = (err_{j}^{2} + err_{k}^{2})^{1/2}$ (where 
-$err_{j}$ is defined by eq.~\ref{eq:2}). 
+The structure function (SF) is a well-studied approach to characterizing light curves \citep{2004Ivezic, berk2004, devries2005, macleod2010, graham2013, kozlowski2016}. SF is closely related to the auto-correlation function (ACF), which in turn is the Fourier Transform of the  frequency power spectrum (PS) (for a detailed discussion,  see \citealt{ivezic2014,kozlowski2016}). We choose to analyze light curves with SF over PS because the main motivation for our paper is to resolve the discrepancy between quasar timescales  found with SDSS data using the SF method \citep{macleod2010, macleod2011, macleod2012}, and those based on CRTS data using the Slepian Wavelet Variance method \citep{graham2014}.  Given that we suspect the CRTS data quality to be the issue, we decided to also use the SF method with the CRTS dataset to ensure mathematical framework consistent with previous studies. Power spectrum analysis would introduce a third method, and thus would be less optimal to use in our study.  
 
-We compute SF as a function of time difference $\Delta t_{j,k}$ (hereafter, $\Delta t$ for brevity and similarly, $\Delta m$ for $\Delta m_{j,k}$
-and $e$ for $e_{j,k}$) by binning ($\Delta t$, $\Delta m$, $e$) data along $\Delta t$ axis.  With a mean number of data points per light curve of 
-70, on average we generate $\sum_{j=2}^{70}{(j-1)} = 2,415$  ($\Delta t$, $\Delta m$, $e$) data points. This large number allows us 
-to simply use 200 linearly spaced bins of $\Delta t$, which provide adequate time resolution while ensuring sufficiently
-large number of  $\Delta m$ values per bin.
+The SF for a light curve is a measure of the width of the magnitude difference distribution, as a function of the time separation, $\Delta t$ (see below for a discussion of how to account for observational errors). For two (day-averaged) epochs $j$ and $k$,  with $j > k$, the magnitude difference is computed as $\Delta m_{j,k} = m_{j} - m_{k}$, the time difference is  $\Delta t_{j,k} = t_{j} - t_{k}$, and  the combined magnitude measurement error (measurement uncertainty for $\Delta m_{j,k}$) is $e_{j,k} = (err_{j}^{2} + err_{k}^{2})^{1/2}$ (where $err_{j}$ is defined by eq.~\ref{eq:2}). 
+
+We compute SF as a function of time difference $\Delta t_{j,k}$ (hereafter, $\Delta t$ for brevity and similarly, $\Delta m$ for $\Delta m_{j,k}$ and $e$ for $e_{j,k}$) by binning ($\Delta t$, $\Delta m$, $e$) data along $\Delta t$ axis.  With a mean number of data points per light curve of  70, on average we generate $\sum_{j=2}^{70}{(j-1)} = 2,415$  ($\Delta t$, $\Delta m$, $e$) data points. This large number allows us  to simply use 200 linearly spaced bins of $\Delta t$, which provide adequate time resolution while ensuring sufficiently large number of  $\Delta m$ values per bin.
 
 Given that we suspect data and data processing problems as a plausible explanation for discrepant
 results between SDSS-based and CRTS-based studies, we first study variability in the observed frame (the available SDSS
