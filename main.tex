@@ -141,14 +141,14 @@ The main goal of CRTS was to find near-Earth objects. Its short intra-night cade
 night) was designed to allow a rapid follow-up \citep{graham2015b}, and white light (without filter) 
 light curves maximize the sensitivity for faint objects. Three survey telescopes (the 0.7m Catalina Sky Survey 
 Schmidt in Arizona,  the 1.5m Mount  Lemmon Survey telescope in Arizona, and the 0.5m Siding Spring Survey 
-Schmidt in Australia) were equipped with identical, 4kx4k CCDs (see \cite{djorgovski2011a} for technical details).
-Although in principle white light magnitudes can be calibrated to Johnson's V band zero point \citep{drake2013},
+Schmidt in Australia) were equipped with identical, 4kx4k CCDs (see \citealt{djorgovski2011a} for technical details).
+Although, in principle, white light magnitudes can be calibrated to Johnson's V-band zero-point \citep{drake2013},
 this step was unnecessary in our analysis. 
 
-In this study we used a sample of 7,932 spectroscopically confirmed S82 quasars from the CRTS Data Release 2, based 
-on the list by \cite{macleod2012}.  The majority (96\%) of  CRTS quasar light curves span the time of 7-9 years, 
-with typical sampling of 1 to 4 observations per night, 70 observing nights on average, and the 
-median interval between two successive observing nights is 17.52  days (see Fig.~\ref{fig:1}). We also use CRTS light curves for 52,133 randomly chosen 10\% subsample of the S82 
+In this study, we used a sample of 7,932 spectroscopically confirmed S82 quasars from the CRTS Data Release 2, based 
+on the list by \cite{macleod2012}.  The majority (96\%) of  CRTS quasar light curves span the time of 7--9 yr, 
+with typical sampling of 1--4 observations per night, 70 observing nights, on average, and the 
+median interval between two successive observing nights is 17.52  d (see Fig.~\ref{fig:1}). We also use CRTS light curves for 52,133 randomly chosen 10\% subsample of the S82 
 standard stars from \cite{ivezic2007}. 
 \begin{figure}
 \vskip -0.2in
@@ -168,16 +168,16 @@ All means here are calculated per lightcurve. }
 
 \subsection{Preprocessing}
 \label{sec:preprocessing}
-It is common to bin the data to reduce noise, by averaging over time-scales shorter than what is required by the science goals. In this study, the hourly time-scale of intra-night variability of CRTS light curves, with $\sim4$ epochs each night, is much shorter than the time-scales of interest (of the order of tens of days).  We day-averaged all CRTS light curves following a procedure similar to \cite{charisi2016}. We adopt a convention that an index  $i$ runs over intra-night observations, and an index $j$ separates distinct observing nights. Thus the day-averaged timestamp is : 
+It is common to bin the data to reduce noise, by averaging over time-scales shorter than what is required by the science goals. In this study, the hourly time-scale of intra-night variability of CRTS light curves, with $\sim4$ epochs each night, is much shorter than the time-scales of interest (of the order of tens of days).  We day-averaged all CRTS light curves following a procedure similar to \cite{charisi2016}. We adopt a convention that an index  $i$ runs over intra-night observations, and an index $j$ separates distinct observing nights. Thus the day-averaged time-stamp is : 
 \begin{equation}
 t_{j} = \langle t_{ij} \rangle =  N^{-1} \, \sum_{i=1}^{N}{ t_{ij} }
 \end{equation}
-where N is the number of observations per night. We similarly replace each set of N brightness measurements from the  $j$-th  night by their mean weighted by the inverse square of error:
+where $N$ is the number of observations per night. We similarly replace each set of $N$ brightness measurements from the  $j$-th  night by their mean weighted by the inverse square of error:
 \begin{equation}
 \label{eq:1}
  m_{j} = \langle m_{ij} \rangle = \frac{\sum_{i=1}^{N} {w_{i,j} m_{i,j}} } {\sum_{i=1}^{N} {w_{i,j}} }
 \end{equation}
-with weights $w_{i,j} = err_{i,j}^{-2}$, where $err_{i,j}$ are photometric uncertainty (colloquially, ``error'') estimates
+with weights $w_{i,j} = err_{i,j}^{-2}$, where $err_{i,j}$ are photometric uncertainty (colloquially, `error') estimates
 for individual photometric data points computed by the CRTS photometric pipeline. Averaging in 
 flux space, instead of magnitude space, would not qualitatively change the results (because photometric 
 uncertainties are sufficiently small). 
@@ -187,7 +187,7 @@ Finally, we estimate the error on the weighted mean $m_{j}$ by the inverse squar
 \label{eq:2}
 err_{j} = \left(\sum_{i=1}^{N} {w_{i,j}}\right)^{-1/2}, 
 \end{equation} 
-and to avoid implausibly small error estimates, we add in quadrature 0.01$^m$ to $err_{j}$ if $err_{j} < 0.02^m$
+and to avoid implausibly small error estimates, we add in quadrature 0.01$^m$ to $err_{j}$ if $err_{j} < 0.02$ mag
 (note that for homoscedastic errors, $err_{i,j}=\overline{err}$, $err_j = \overline{err}/\sqrt{N}$). 
 
 
@@ -207,8 +207,8 @@ effects with respect to magnitude (most notably the increase of photometric nois
 the faint end) and colour, we first select  subsamples from three magnitude bins, using the SDSS $r$ magnitudes: 
 {\it bright:} 17-18,  {\it medium:} 18-18.5, and {\it faint:} 18.5-19. We note that the faint completeness limit 
 of the SDSS spectroscopic quasar sample is $r\sim19$, and that the CRTS white light magnitudes are strongly
-correlated with the SDSS $r$ magnitudes. Furthemore, we split the stellar sample using SDSS colour measurements
-into the ``blue'' ($-$1$<g-i<$1) and ``red'' (1$<g-i<$3) subsamples. Table~\ref{tab:object_count} shows the 
+correlated with the SDSS $r$ magnitudes. Furthermore, we split the stellar sample using SDSS colour measurements
+into the `blue' ($-$1$<g-i<$1) and `red' (1$<g-i<$3) subsamples. Table~\ref{tab:object_count} shows the 
 number of objects in each type-magnitude bin.  
 
 \begin{table}
