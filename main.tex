@@ -33,7 +33,7 @@
 
 %%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%
 
-\title[Quasar Variability]{Solving the puzzle of discrepant quasar variability on monthly time scales implied by SDSS and CRTS datasets}
+\title[Quasar Variability]{Solving the puzzle of discrepant quasar variability on monthly time-scales implied by SDSS and CRTS data sets}
 
 \author[K. Suberlak et al.]{
 Krzysztof Suberlak$^{1}$\thanks{E-mail: suberlak@uw.edu},
@@ -65,12 +65,13 @@ $^{5}$Max Planck Institute for Astronomy, K\"{o}nigstuhl 17, D-69117 Heidelberg,
 
 % Abstract of the paper
 \begin{abstract}
-We present an improved photometric error analysis for the 7,100 CRTS (Catalina Real-Time Transient Survey)  optical  light curves for quasars from the SDSS (Sloan Digital Sky Survey) Stripe 82 catalogue. The SDSS imaging survey  has provided a time-resolved photometric  dataset which greatly improved our understanding of the quasar optical continuum variability: data for monthly and longer timescales  are consistent with a damped random walk (DRW). Recently, newer data  obtained by CRTS provided  puzzling evidence for enhanced variability, compared to SDSS  results, on monthly timescales. Quantitatively, SDSS results predict  about 0.06 mag root-mean-square variability  for monthly timescales, while CRTS data show about a factor of two larger rms, for spectroscopically confirmed SDSS quasars. Our analysis has successfully resolved this discrepancy as due to slightly underestimated photometric uncertainties from the CRTS image processing pipelines. As a result, the correction for observational noise is too small and the implied quasar variability is too large. The CRTS photometric error correction factors, derived from detailed analysis of non-variable SDSS standard stars that were re-observed by CRTS, are about 20-30\%, and result in reconciling  quasar variability behaviour implied by the CRTS data with earlier SDSS results. An additional analysis based on independent light curve data for the same objects obtained by the Palomar Transient Factory provides further support for this conclusion. In summary, the quasar variability constraints on weekly and monthly timescales from SDSS, CRTS and PTF surveys are mutually compatible, as well as consistent with DRW model.
+We present an improved photometric error analysis for the 7,100 CRTS (Catalina Real-Time Transient Survey)  optical  light curves for quasars from the SDSS (Sloan Digital Sky Survey) Stripe 82 catalogue. The SDSS imaging survey  has provided a time-resolved photometric  data set which greatly improved our understanding of the quasar optical continuum variability: Data for monthly and longer time-scales  are consistent with a damped random walk (DRW). Recently, newer data  obtained by CRTS provided  puzzling evidence for enhanced variability, compared to SDSS  results, on monthly timescales. Quantitatively, SDSS results predict  about 0.06 mag root-mean-square (rms) variability  for monthly time-scales, while CRTS data show about a factor of 2 larger rms, for spectroscopically confirmed SDSS quasars. Our analysis has successfully resolved this discrepancy as due to slightly underestimated photometric uncertainties from the CRTS image processing pipelines. As a result, the correction for observational noise is too small and the implied quasar variability is too large. The CRTS photometric error correction factors, derived from detailed analysis of non-variable SDSS standard stars that were re-observed by CRTS, are about 20-30\%, and result in reconciling  quasar variability behaviour implied by the CRTS data with earlier SDSS results. An additional analysis based on independent light curve data for the same objects obtained by the Palomar Transient Factory provides further support for this conclusion. In summary, the quasar variability constraints on weekly and monthly time-scales from SDSS, CRTS and PTF surveys are mutually compatible, as well as consistent with DRW model.
 \end{abstract}
 
 % keywords 
 \begin{keywords}
-surveys -- quasars: general -- methods: data analysis -- techniques: photometric
+methods: data analysis -- techniques: photometric -- surveys -- quasars: general
+
 \end{keywords}
 
 
@@ -79,36 +80,36 @@ surveys -- quasars: general -- methods: data analysis -- techniques: photometric
 %%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-Variability can be used to both select and characterise quasars in sky surveys (for a recent overview see \citealt{lawrence2016a}). Although various time scales of variability can be linked to physical parameters, such as accretion disk viscosity, or corona geometry (\citealt{kelly2011}; \citealt{graham2014}), the physical mechanism remains elusive. Most viable explanations for observed
-variability include accretion disk instabilities \citep{kawaguchi1998}, surface thermal fluctuations from magnetic field turbulence \citep{kelly2009}, and
-coronal x-ray heating \citep[][see \citealt{kozlowski2016} for a review]{kelly2011}.
+Variability can be used to both select and characterize quasars in sky surveys (for a recent overview see \citealt{lawrence2016a}). Although various time-scales of variability can be linked to physical parameters, such as accretion disc viscosity, or corona geometry (\citealt{kelly2011}; \citealt{graham2014}), the physical mechanism remains elusive. Most viable explanations for observed
+variability include accretion disc instabilities \citep{kawaguchi1998}, surface thermal fluctuations from magnetic field turbulence \citep{kelly2009}, and
+coronal X-ray heating \citep[][see \citealt{kozlowski2016} for a review]{kelly2011}.
 
-The diversity of  physical scenarios available to explain the origin of quasar variability results in a variety of ways to characterise it. The two most widely used approaches to describing the variability of quasars include a structure function (SF) analysis and light curve
+The diversity of  physical scenarios available to explain the origin of quasar variability results in a variety of ways to characterize it. The two most widely used approaches to describing the variability of quasars include a structure function (SF) analysis and light curve
 fitting based on damped random walk (DRW, also known as the Ornstein--Uhlenbeck process) model (\citealt{kelly2007}; \citealt{macleod2011}). An SF analysis essentially measures the 
 width of the magnitude difference distribution as a function of the time separation, $\Delta t$. 
 The DRW model approach is better suited for well-sampled light curves with a typical cadence of days \citep{zu2013, kozlowski2016}, whereas an ensemble SF analysis is better for sparsely sampled light curves \citep{hawkins2002, berk2004,  devries2005}; for a review and discussion see \cite{kozlowski2016}. Although the sampling for CRTS (the Catalina Real-time Transient Survey) light curves 
-analysed here (see \S\ref{sec:crtsdata}) might be adequate for light curve fitting, we nevertheless opt for 
-the SF approach because it allows for more straighforward analysis when data quality is suspect. 
+analysed here (see Section~\ref{sec:crtsdata}) might be adequate for light curve fitting, we nevertheless opt for 
+the SF approach because it allows for more straightforward analysis when data quality is suspect. 
 
-The observed SF is often characterised by a simple power law \citep{schmidt2010}. If the probed time scales are long enough 
-($\sim$ years), the power law flattens above a characteristic timescale, $\tau$ \citep{2004Ivezic, kelly2007, macleod2010}.
-This timescale may correspond to a transition from the stochastic thermal process that drives the variability to the physical 
-response of the disk that successfully  dampens the amplitude on longer timescales \citep{peterson2001, kelly2007, kelly2009, 
+The observed SF is often characterized by a simple power law \citep{schmidt2010}. If the probed time-scales are long enough 
+($\sim$ years), the power law flattens above a characteristic tim-scale, $\tau$ \citep{2004Ivezic, kelly2007, macleod2010}.
+This time-scale may correspond to a transition from the stochastic thermal process that drives the variability to the physical 
+response of the disc that successfully  dampens the amplitude on longer time-scales \citep{peterson2001, kelly2007, kelly2009, 
 kelly2011, lawrence2016a}. In the context of a DRW model, the expected SF is described by 
 \begin{equation}
 \label{eq:DRWSF}
         {\rm SF}(\Delta t) = {\rm SF}_\infty \, \left[1 - \exp(-\Delta t / \tau) \right]^{1/2},
 \end{equation}
-where ${\rm SF}_\infty$ is the asymptotic value of the structure function (for $\Delta t \ll \tau$, SF($\Delta t$) $\propto \Delta t^{1/2}$). 
+where ${\rm SF}_\infty$ is the asymptotic value of the SF (for $\Delta t \ll \tau$, SF($\Delta t$) $\propto \Delta t^{1/2}$). 
 
-Most studies found that $\tau > 100$ days (\citealt{macleod2010};  \citealt{kozlowski2016}). It is a relatively short timescale compared to the dominant timescale of variation for quasars, that exceeds 10 years \citep{hawkins2007}. Recently, \cite{graham2014} 
-found a characteristic time scale in quasar's rest frame of about 54 days, using the Slepian Wavelet Variance (SWV) analysis
-of CRTS light curves (the SWV time scale denotes the point at which the ensemble SWV for quasars deviates from
+Most studies found that $\tau > 100$ d (\citealt{macleod2010};  \citealt{kozlowski2016}). It is a relatively short time-scale compared to the dominant time-scale of variation for quasars, that exceeds 10 years \citep{hawkins2007}. Recently, \cite{graham2014} 
+found a characteristic time-scale in quasar's rest frame of about 54 d, using the Slepian wavelet variance (SWV) analysis
+of CRTS light curves (the SWV time-scale denotes the point at which the ensemble SWV for quasars deviates from
 the ensemble SWV for a DRW  realization of the same data set, and is thus different from $\tau$ obtained in DRW analysis). 
-This short timescale implies much stronger variability on monthly time scales than observed in SDSS 
-data: SDSS results from \cite{macleod2010} predict about 0.06 mag root-mean-square (rms) variability for timescales below 
-50 days, while this CRTS-based analysis implies about a factor of two larger rms. These discrepancies have serious
-implications for physical interpretations of quasar variability: observed time scales are directly related to physical processes
+This short time-scale implies much stronger variability on monthly time-scales than observed in SDSS 
+data: SDSS results from \cite{macleod2010} predict about 0.06 mag root-mean-square (rms) variability for time-scales below 
+50 d, while this CRTS-based analysis implies about a factor of 2 larger rms. These discrepancies have serious
+implications for physical interpretations of quasar variability: Observed time-scales are directly related to physical processes
 and increased variability levels call in question DRW as a viable model for describing quasar light curves 
 (\citealt{macleod2010};  \citealt{kozlowski2016}). 
 
@@ -246,7 +247,7 @@ deviation ($\sigma_G=0.741 (q_{75} - q_{25})$, where $q_{25}$ and $q_{75}$ are 2
 estimate computed from the interquartile range, as a function of $\Delta t$ for quasars, and 
 separately for blue and red stars. $\sigma_G$ is somewhat smaller than the standard deviation, which indicates mild 
 non-Gaussianity of $\Delta m$ distributions. For $\Delta t$ below about 100 days, all three subsamples 
-show similar behaviour, while for longer time scales quasars show appreciably larger scatter of observed 
+show similar behaviour, while for longer time-scales quasars show appreciably larger scatter of observed 
 $\Delta m$ due to intrinsic variability. In order to estimate the intrinsic variability, these ``raw'' 
 measurements need to be corrected for the effects of observational (measurement) errors, as described next.
 
@@ -459,8 +460,8 @@ total       & 2981 &  2122 & 627
 The SF results based on PTF light curve data are shown in Fig.~\ref{fig:2PTF}.  For these uncorrected PTF data, 
 it is evident that there is no sign of variability for quasars on short timescales ($\Delta t < 100 \, \mathrm{days}$) 
 above the SDSS-level of $\sim$0.05$^m$ (unlike for CRTS data, see Fig.~\ref{fig:2}). Note also that standard stars 
-show no appreciable variability at any time scale (SF$\approx0$). Therefore, this PTF-based analysis further 
-supports our conclusion that extraneous quasar variability at short time scales was due to slightly understimated
+show no appreciable variability at any time-scale (SF$\approx0$). Therefore, this PTF-based analysis further 
+supports our conclusion that extraneous quasar variability at short time-scales was due to slightly understimated
 photometric uncertainties. 
 
 \begin{figure}
@@ -485,7 +486,7 @@ a plausible explanation for the increased quasar variability level in CRTS light
 by \cite{graham2014}, compared to earlier SDSS-based results obtained by \cite{macleod2010}.
 An additional analysis based on independent light curve data for the same objects obtained by 
 the Palomar Transient Factory provides further support for this conclusion. We conclude that
-the quasar variability constraints on weekly and monthly time scales from SDSS, CRTS and PTF 
+the quasar variability constraints on weekly and monthly time-scales from SDSS, CRTS and PTF 
 surveys are mutually compatible, as well as consistent with DRW model. 
 
 
